@@ -1,0 +1,13 @@
+@keyframes desliza{
+    from { top: -200px; }
+    to { top: 200%; }
+}
+@keyframes desliza2{
+    from { top: -200%; }
+    to { top: 200%; }
+}
+@keyframes transita_comands {
+    0% { height: 0%; }
+    50% { height: 100%; top: 0%; }
+    100% { top: 100%; }
+}

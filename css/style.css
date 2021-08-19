@@ -1,0 +1,164 @@
+body{
+    background-color: rgb(26, 26, 31) !important;
+    color: white !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+header{
+    position: absolute;
+    background-color: rgb(38, 38, 43);
+    box-shadow: 0px 0px 15px black;
+    width: 100%;
+    padding: 15px;
+    z-index: 3;
+}
+#corpo_pag{
+    overflow-y: scroll;
+}
+#buttons_nav{
+    float: right;
+}
+.button, .button_nav{
+    text-decoration: none;
+    width: auto;
+    padding: 15px;
+    background-color: rgb(114, 137, 218);
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    transition: backgroundColor .5s;
+}
+.button_nav{
+    padding: 5px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.button:hover, .button_nav:hover{
+    color: white;
+    background-color: rgb(84, 112, 210);
+}
+.convite{
+    background-color: rgb(166, 213, 23);
+}
+.convite:hover{
+    color: white;
+    background-color: rgb(112, 157, 17);
+}
+#img_alonsal{
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+}
+#descri_top{
+    width: 85%;
+    text-align: center;
+    padding-left: 50%;
+    padding-top: 18%;
+}
+#descri_aln{
+    font-size: 20px;
+}
+.deslizante{
+    background-color: rgb(41, 187, 142);
+    width: 30px;
+    left: 50px;
+    height: 200px;
+    animation: desliza 5s infinite !important;
+    position: absolute;
+    z-index: 1;
+}
+.deslizante2{
+    background-color: rgb(41, 187, 142);
+    width: 20px;
+    left: 85px;
+    height: 150px;
+    animation: desliza2 4s infinite !important;
+    position: absolute;
+    z-index: 1;
+}
+.dls2{
+    width: 10px;
+    left: 35px;
+    height: 60px;
+    animation: desliza2 6s infinite !important;
+}
+.dls3{
+    width: 10px;
+    left: 35px;
+    height: 100px;
+    animation: desliza2 3s infinite !important;
+}
+.dls4{
+    width: 5px;
+    left: 110px;
+    height: 100px;
+    animation: desliza 4s infinite !important;
+}
+.deslizante3{
+    background-color: rgb(41, 187, 142);
+    width: 20px;
+    left: 5px;
+    height: 300px;
+    animation: desliza2 10s infinite !important;
+    position: absolute;
+}
+#comandos{
+    display: none;
+    z-index: 1;
+    background-color: rgb(44, 47, 51);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+}
+.comandos_menu{
+    background-color: rgb(64, 68, 75);
+    border-radius: 5px;
+    width: 50%;
+    min-height: 448px;
+    border: 0px;
+    font-size: 18px;
+    padding: 30px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+#menu_reacoes{
+    float: left;
+    position: absolute;
+    top: 93%;
+    left: 25%;
+}
+.button_react{
+    padding: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    background-color: rgb(47, 49, 54);
+    box-shadow: 0px 0px 2px black;
+    transition: all .3s;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.button_react:hover{
+    background-color: rgb(50, 53, 58);
+    border: 1px solid rgb(93, 96, 100);
+    box-shadow: 0px 0px 0px black;
+}
+#transitador{
+    background-color: rgb(41, 187, 142);
+    z-index: 2;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0%;
+}
+.comando_line{
+    background-color: rgb(32, 34, 37);
+    color: rgb(220, 221, 210);
+    font-weight: 500;
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}

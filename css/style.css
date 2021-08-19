@@ -59,10 +59,6 @@ header{
 #descri_aln{
     font-size: 20px;
 }
-#buttons_aln{
-    background-color: red;
-    width: 50%;
-}
 #animacoes{
     width: 100%;
     overflow: hidden;

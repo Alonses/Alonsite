@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf8">
+    <title>👽 Alonsal</title>
+    <link rel="shortcut icon" href="img/alonsal.png">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animacoes.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="js/engi.js"></script>
+</head>
+<body onload="troca_pag(0)">
+
+    <header>
+        <h1 style="padding-left: 2%; float: left;">Aoba, Eu sou o Alonsal!</h1>
+
+        <nav id="buttons_nav">
+            <a class="button_nav" href="#" onclick="transita_comands()">Comandos</a> &nbsp;
+            <a class="button_nav convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992">Convidar</a>
+        </nav>
+    </header>
+
+    <div id="transitador"></div>
+
+    <div>
+        <img id="img_alonsal" src="img/alonsal.png">
+
+        <div id="descri_top">
+            <p id="descri_aln">Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!</p> <br><br><br>
+
+            <a class="button convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992">Me Convide 😻</a> 
+            <a class="button" href="https://discord.gg/pDzsE4YfJr">Meu servidor</a>
+        </div>
+    </div>
+
+    <div id="comandos">
+        <div class="comandos_menu">
+            <h2>Abaixo está minha lista de comandos ;D</h2>
+            <p id="pagina_comandos"></p>
+        </div>
+
+        <div id="menu_reacoes">
+            <span class="button_react select_0" onclick="troca_pag(0)">😜</span>
+            <span class="button_react select_1" onclick="troca_pag(1)">🧭</span>
+            <span class="button_react select_2" onclick="troca_pag(2)">⛳</span>
+            <span class="button_react select_3" onclick="troca_pag(3)">🛠️</span>
+            <span class="button_react select_4" onclick="troca_pag(4)">🖼️</span>
+            <span class="button_react select_5" onclick="troca_pag(5)">📜</span>
+        </div>
+    </div>
+
+    <!--  -->
+    <span class="deslizante"></span>
+    <span class="deslizante2"></span>
+    <span class="deslizante2 dls2"></span>
+    <span class="deslizante2 dls3"></span>
+    <span class="deslizante dls4"></span>
+    <span class="deslizante3"></span>
+
+</body>
+</html>

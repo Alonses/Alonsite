@@ -132,13 +132,14 @@ header{
     background-color: rgb(64, 68, 75);
     border-radius: 5px;
     width: 50%;
-    min-height: 448px;
+    height: 440px;
     border: 0px;
     font-size: 18px;
     padding: 30px;
     position: absolute;
     top: 20%;
     left: 25%;
+    overflow-y: auto;
 }
 #menu_reacoes{
     float: left;

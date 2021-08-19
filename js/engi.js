@@ -7,10 +7,13 @@ function transita_comands(){
     transitador.style.animation = "transita_comands 1s";
 
     setTimeout(() => {
-        if(comandos == 1)
+        if(comandos == 1){
             document.getElementById("comandos").style.display = "none";
-        else
-            document.getElementById("comandos").style.display = "Block";
+            document.getElementById("infos_iniciais").style.display = "block";
+        }else{
+            document.getElementById("comandos").style.display = "block";
+            document.getElementById("infos_iniciais").style.display = "none";
+        }
     }, 500);
 
     setTimeout(() => {
@@ -37,9 +40,8 @@ function troca_pag(num_pag){
         alvos[i].style.border = "1px solid rgba(0, 0, 0, 0)";
     }
 
-
     altera_selecionado = document.getElementsByClassName("select_"+ num_pag);
     
-    altera_selecionado[0].style.backgroundColor = "rgb(75, 73, 87)";
+    altera_selecionado[0].style.backgroundColor = "rgb(59, 64, 90)";
     altera_selecionado[0].style.border = "1px solid rgb(88, 101, 242)";
 }

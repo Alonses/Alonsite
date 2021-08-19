@@ -1,0 +1,30 @@
+@media only screen and (min-width: 0px) and (max-width: 720px){
+    #img_alonsal{
+        width: 80%;
+        top: 20%;
+        left: 18%;
+        z-index: 2;
+        position: relative;
+        padding-top: 100px;
+    }
+    #descri_top{
+        width: 95%;
+        padding-left: 5%;
+        padding-top: 15px;
+    }
+    #comandos{
+        position: relative;
+    }
+    .comandos_menu{
+        padding-top: 150px;
+        width: 95%;
+        min-height: 671px;
+        position: relative;
+        left: 2.5%;
+    }
+    #menu_reacoes{
+        position: relative;
+        top: 5%;
+        left: 0%;
+    }
+}

@@ -11,6 +11,10 @@ header{
     padding: 15px;
     z-index: 4;
 }
+#infos_iniciais{
+    z-index: 2;
+    position: relative;
+}
 #corpo_pag{
     overflow-y: scroll;
 }
@@ -60,11 +64,12 @@ header{
     font-size: 20px;
 }
 #animacoes{
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
     top: 0px;
     left: 0px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 0 !important;
 }
 .deslizante{
     background-color: rgb(41, 187, 142);

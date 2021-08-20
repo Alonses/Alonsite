@@ -1,7 +1,17 @@
 body{
-    background-color: rgb(26, 26, 31) !important;
     color: white !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('../img/texturas/mosaico.png');
+    background-color: rgb(41,187,142) !important;
+}
+#fundo_pag{
+    background: rgb(26,26,31); 
+    background: linear-gradient(180deg, rgba(26,26,31,1) 0%, rgba(26,26,31,1) 78%, rgba(26,111,85,.9) 91%, rgba(41,187,142,0) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
 }
 header{
     position: absolute;
@@ -14,6 +24,7 @@ header{
 #infos_iniciais{
     z-index: 2;
     position: relative;
+    padding-bottom: 50px;
 }
 #corpo_pag{
     overflow-y: scroll;
@@ -30,6 +41,7 @@ header{
     font-size: 30px;
     border-radius: 5px;
     transition: backgroundColor .5s;
+    transition: all .5s;
 }
 .button_nav{
     padding: 5px !important;
@@ -38,21 +50,22 @@ header{
 }
 .button:hover, .button_nav:hover{
     color: white;
-    background-color: rgb(84, 112, 210);
+    background-color: rgb(69, 91, 172);
 }
 .convite{
-    background-color: rgb(166, 213, 23);
+    background-color: rgb(41,187,142);
+    transition: all .5s;
 }
 .convite:hover{
     color: white;
-    background-color: rgb(112, 157, 17);
+    background-color: rgb(27, 126, 96);
 }
 #img_alonsal{
     width: 400px;
     border-radius: 50%;
     position: absolute;
     top: 20%;
-    left: 18%;
+    left: 16%;
 }
 #descri_top{
     width: 85%;
@@ -108,6 +121,12 @@ header{
     left: 110px;
     height: 100px;
     animation: desliza 4s infinite !important;
+}
+.dls5{
+    width: 5px;
+    left: 30px;
+    height: 100px;
+    animation: desliza 2s infinite !important;
 }
 .deslizante3{
     background-color: rgb(41, 187, 142);

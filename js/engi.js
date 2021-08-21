@@ -61,7 +61,7 @@ function alterar_idioma(){
 
     if(idioma == "en-us")
         idioma = "pt-br";
-    else if(typeof idioma == "undefined" || idioma == "pt-br")
+    else if(typeof idioma == "undefined" || idioma == "pt-br" || idioma == "null")
         idioma = "en-us";
 
     localStorage.setItem("idioma_site_alonsal", idioma);

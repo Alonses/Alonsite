@@ -1,7 +1,6 @@
 body{
     color: white !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url('../img/texturas/mosaico.png');
     background-color: rgb(41,187,142) !important;
 }
 #fundo_pag{
@@ -53,6 +52,12 @@ header{
     color: white;
     background-color: rgb(69, 91, 172);
 }
+.trad_button{
+    background-color: rgb(179, 176, 19);
+}
+.trad_button:hover{
+    background-color: rgb(116, 114, 14);
+}
 .convite{
     background-color: rgb(41,187,142);
     transition: all .5s;
@@ -60,9 +65,6 @@ header{
 .convite:hover{
     color: white;
     background-color: rgb(27, 126, 96);
-}
-.cvt_aln{
-    box-shadow: 0px 10px 10px black;
 }
 #img_alonsal{
     width: 400px;

@@ -14,16 +14,19 @@
 
     <script src="js/engi.js"></script>
 </head>
-<body>
+<body onload="traduz_site()">
 
     <div id="fundo_pag"></div>
 
     <header>
-        <h1 style="padding-left: 2%; float: left;">Aoba, Eu sou o Alonsal!</h1>
+        <h1 style="padding-left: 2%; float: left;"><span id="trad_aoba">Aoba, Eu sou o Alonsal!</span></h1>
 
         <nav id="buttons_nav">
-            <a class="button_nav" href="#" onclick="transita_comands()">Comandos</a> &nbsp;
-            <a class="button_nav convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992">Convidar</a>
+
+            <a class="button_nav trad_button" href="#" onclick="alterar_idioma()"><span id="trad_bandeira">🇧🇷</span></a> &nbsp;
+
+            <a class="button_nav" href="#" onclick="transita_comands()"><span id="trad_comands">Comandos</span></a> &nbsp;
+            <a class="button_nav convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992"><span id="trad_convidar">Convidar</span></a>
         </nav>
     </header>
 
@@ -43,16 +46,16 @@
         <img id="img_alonsal" src="img/alonsal.png">
 
         <div id="descri_top">
-            <p id="descri_aln">Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!</p> <br><br><br>
+            <p id="descri_aln"><span id="trad_descri_inicial">Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!</span></p> <br><br><br>
 
-            <a class="button convite cvt_aln" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992">Me Convide 😻</a> <br><br><br>
-            <a class="button" href="https://discord.gg/ZxHnxQDNwn">Meu servidor</a>
+            <a class="button convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992"><span id="trad_convide">Me Convide</span> 😻</a> <br><br><br>
+            <a class="button" href="https://discord.gg/ZxHnxQDNwn"><span id="trad_server">Meu servidor</span></a>
         </div>
     </div>
 
     <div id="comandos">
         <div class="comandos_menu">
-            <h2>Abaixo está minha lista de comandos ;D</h2>
+            <h2><span id="trad_comands_apr">Abaixo está minha lista de comandos ;D</span></h2>
             <p id="pagina_comandos"></p>
         </div>
 
@@ -77,5 +80,17 @@
     document.getElementById("animacoes").style.height = height_total +"px";
 
     troca_pag(0);
+
+    idioma = localStorage.getItem("idioma_site_alonsal");
+
+    if(typeof idioma == "undefined")
+        idioma = "pt-br";
+
+    let comandos_local = localStorage.getItem("site_alonsal_comandos");
+
+    if(typeof comandos_local != "undefined"){
+        if(parseInt(comandos_local) == 1)
+            transita_comands("auto");
+    }
 </script>
 </html>

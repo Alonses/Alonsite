@@ -27,4 +27,8 @@
         top: 5%;
         left: 0%;
     }
+    .button_nav{
+        padding: 10px;
+        font-size: 22px;
+    }
 }

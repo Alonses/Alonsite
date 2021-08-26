@@ -13,22 +13,30 @@
         padding-top: 15px;
     }
     #comandos{
-        position: relative;
+        position: fixed;
     }
     .comandos_menu{
-        padding-top: 150px;
+        top: 20%;
+        padding: 30px;
         width: 95%;
-        min-height: 671px;
+        max-height: 500px;
         position: relative;
         left: 2.5%;
     }
     #menu_reacoes{
         position: relative;
-        top: 5%;
+        top: 22%;
         left: 0%;
     }
     .button_nav{
         padding: 10px;
         font-size: 22px;
+    }
+    #texto_detalhes{
+        width: 100%;
+        padding-left: 10%;
+    }
+    #icone_redes{
+        right: 5%;
     }
 }

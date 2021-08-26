@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/animacoes.css">
     <link rel="stylesheet" type="text/css" href="css/responsividade.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <script src="js/engi.js"></script>
@@ -19,14 +20,14 @@
     <div id="fundo_pag"></div>
 
     <header>
-        <h1 style="padding-left: 2%; float: left;"><span id="trad_aoba">Aoba, Eu sou o Alonsal!</span></h1>
+        <h1 style="padding-left: 2%; float: left;"><span class="trad_aoba">Aoba, Eu sou o Alonsal!</span></h1>
 
         <nav id="buttons_nav">
 
-            <a class="button_nav" href="#" onclick="transita_comands()"><span id="trad_comands">Comandos</span></a> &nbsp;
-            <a class="button_nav convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992"><span id="trad_convidar">Convidar</span></a> &nbsp;
+            <a class="button_nav" href="#" onclick="transita_comands()"><span class="trad_comands">Comandos</span></a> &nbsp;
+            <a class="button_nav convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992"><span class="trad_convidar">Convidar</span></a> &nbsp;
 
-            <a class="button_nav trad_button" href="#" onclick="alterar_idioma()"><span id="trad_bandeira">🇧🇷</span></a> 
+            <a class="button_nav trad_button" href="#" onclick="alterar_idioma()"><span class="trad_bandeira">🇧🇷</span></a> 
         </nav>
     </header>
 
@@ -46,16 +47,32 @@
         <img id="img_alonsal" src="img/alonsal.png">
 
         <div id="descri_top">
-            <p id="descri_aln"><span id="trad_descri_inicial">Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!</span></p> <br><br><br>
+            <p id="descri_aln"><span class="trad_descri_inicial">Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!</span></p> <br><br><br>
 
-            <a class="button convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992"><span id="trad_convide">Me Convide</span> 😻</a> <br><br><br>
-            <a class="button" href="https://discord.gg/ZxHnxQDNwn"><span id="trad_server">Meu servidor</span></a>
+            <a class="button convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992"><span class="trad_convide">Me Convide</span> 😻</a> <br><br><br>
+            <a class="button" href="https://discord.gg/ZxHnxQDNwn"><span class="trad_server">Meu servidor</span></a>
+        </div>
+    </div>
+
+    <div id="infos_secundarias">
+        <div id="texto_detalhes">
+            <h5><span class="trad_infos_secundarias">Estou dividido em 6 categorias diferentes, sendo elas:</span><br><br>
+
+                <li><span class="trad_diversao">Diversão</span></li>
+                <li><span class="trad_utilidades">Utilidades</span></li>
+                <li><span class="trad_jogos">Jogos</span></li>
+                <li><span class="trad_manutencao">Manutenção</span></li>
+                <li><span class="trad_manipul_imagens">Manipulação de imagens</span></li>
+                <li><span class="trad_moderativos">Comandos moderativos</span></li> <br>
+
+                <span class="trad_infos_secundarias2">Atualmente tenho 36 comandos!</span>
+            </h5>
         </div>
     </div>
 
     <div id="comandos">
         <div class="comandos_menu">
-            <h2><span id="trad_comands_apr">Abaixo está minha lista de comandos ;D</span></h2>
+            <h2><span class="trad_comands_apr">Abaixo está minha lista de comandos ;D</span></h2>
             <p id="pagina_comandos"></p>
         </div>
 
@@ -68,6 +85,18 @@
             <span class="button_react select_5" onclick="troca_pag(5)">📜</span>
         </div>
     </div>
+
+    <footer>
+        <nav>
+            <a href="https://github.com/brnd-21/Alonsal">Github</a>
+            <a href="#" onclick="transita_comands()"><span class="trad_comands">Comandos</span></a>
+        </nav>
+        
+        <div id="icone_redes">
+            <a href="https://github.com/brnd-21/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a> &nbsp;
+            <a href="https://discord.gg/ZxHnxQDNwn"><i class="fab fa-discord fa-3x" aria-hidden="true"></i></a>
+        </div>
+    </footer>
 </body>
 
 <script>
@@ -78,6 +107,7 @@
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
 
     document.getElementById("animacoes").style.height = height_total +"px";
+    // document.getElementById("comandos").style.height = height_total +"px";
 
     troca_pag(0);
 

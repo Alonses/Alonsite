@@ -13,7 +13,7 @@ body{
     top: 0px;
 }
 header{
-    position: absolute;
+    position: fixed;
     background-color: rgb(38, 38, 43);
     box-shadow: 0px 0px 15px black;
     width: 100%;
@@ -24,6 +24,16 @@ header{
     z-index: 2;
     position: relative;
     padding-bottom: 50px;
+}
+#infos_secundarias{
+    z-index: 2;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#texto_detalhes{
+    width: 50%;
+    padding-left: 20%;
 }
 #corpo_pag{
     overflow-y: scroll;
@@ -202,4 +212,31 @@ header{
     border-radius: 5px;
     padding-left: 3px;
     padding-right: 3px;
+}
+footer{
+    background-color: rgb(44, 47, 51);
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+footer > nav{
+    width: 100px;
+    padding-left: 15px;
+}
+footer > nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white !important;
+}
+#icone_redes{
+    text-shadow: 0px 0px 10px black;
+    min-width: 10%;
+    right: 0px;
+    top: 30%;
+    position: absolute;
+    height: auto;
 }

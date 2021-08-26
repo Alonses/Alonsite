@@ -13,9 +13,11 @@ function transita_comands(auto){
         if(comandos == 1){
             document.getElementById("comandos").style.display = "none";
             document.getElementById("infos_iniciais").style.display = "block";
+            document.getElementById("infos_secundarias").style.display = "block";
         }else{
             document.getElementById("comandos").style.display = "block";
             document.getElementById("infos_iniciais").style.display = "none";
+            document.getElementById("infos_secundarias").style.display = "none";
         }
     }, 500);
 
@@ -75,15 +77,19 @@ function traduz_site(){
         return;
     else{
 
-        let strings_traduz = ["trad_aoba", "trad_comands_apr", "trad_server", "trad_convide", "trad_convidar", "trad_comands", "trad_descri_inicial", "trad_bandeira"];
+        let strings_traduz = ["trad_aoba", "trad_comands_apr", "trad_server", "trad_convide", "trad_convidar", "trad_comands", "trad_descri_inicial", "trad_bandeira", "trad_infos_secundarias", "trad_infos_secundarias2", "trad_diversao", "trad_utilidades", "trad_jogos", "trad_manutencao", "trad_manipul_imagens", "trad_moderativos"];
 
         if(idioma == "en-us")
-            traducoes = ["Hey, I'm Alonsal!", "Below is my list of commands ;D", "My Server", "Invite Me", "Invite", "Commands", "I was born with the desire to help people in some useful functions, and with your permission, I can contribute to various places on your server!", "🇧🇷"];
+            traducoes = ["Hey, I'm Alonsal!", "Below is my list of commands ;D", "My Server", "Invite Me", "Invite", "Commands", "I was born with the desire to help people in some useful functions, and with your permission, I can contribute to various places on your server!", "🇧🇷", "I'm divided into 6 different categories, they:", "I currently have 36 commands!", "Fun", "Utilities", "Games", "Managment", "Image manipulation", "Moderative commands"];
         else
-            traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸"];
+            traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸", "Estou dividido em 6 categorias diferentes, sendo elas:", "Atualmente tenho 36 comandos!", "Diversão", "Utilidades", "Jogos", "Manutenção", "Manipulação de imagens", "Comandos moderativos"];
         
         for(var i = 0; i < strings_traduz.length; i++){
-            document.getElementById(strings_traduz[i]).innerHTML = traducoes[i];
+            alvos = document.getElementsByClassName(strings_traduz[i]);
+
+            for(var x = 0; x < alvos.length; x++){
+                alvos[x].innerHTML = traducoes[i];
+            }
         }
     }
 

@@ -80,9 +80,10 @@
             <span class="button_react select_0" onclick="troca_pag(0)">😜</span>
             <span class="button_react select_1" onclick="troca_pag(1)">🧭</span>
             <span class="button_react select_2" onclick="troca_pag(2)">⛳</span>
-            <span class="button_react select_3" onclick="troca_pag(3)">🛠️</span>
-            <span class="button_react select_4" onclick="troca_pag(4)">🖼️</span>
-            <span class="button_react select_5" onclick="troca_pag(5)">📜</span>
+            <span class="button_react select_3" onclick="troca_pag(3)">🎶</span>
+            <span class="button_react select_4" onclick="troca_pag(4)">🛠️</span>
+            <span class="button_react select_5" onclick="troca_pag(5)">🖼️</span>
+            <span class="button_react select_6" onclick="troca_pag(6)">📜</span>
         </div>
     </div>
 
@@ -103,11 +104,9 @@
     var body = document.body,
     html = document.documentElement;
 
-    var height_total = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+    var height_total = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
     document.getElementById("animacoes").style.height = height_total +"px";
-    // document.getElementById("comandos").style.height = height_total +"px";
 
     troca_pag(0);
 

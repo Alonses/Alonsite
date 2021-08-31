@@ -218,6 +218,7 @@ footer{
     padding: 15px;
     position: relative;
     z-index: 1;
+    bottom: 0px;
 }
 footer > nav{
     width: 100px;
@@ -235,7 +236,7 @@ a{
 #icone_redes{
     text-shadow: 0px 0px 10px black;
     min-width: 10%;
-    right: 0px;
+    right: 10px;
     top: 30%;
     position: absolute;
     height: auto;

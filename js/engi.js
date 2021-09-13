@@ -77,12 +77,12 @@ function traduz_site(){
         return;
     else{
 
-        let strings_traduz = ["trad_aoba", "trad_comands_apr", "trad_server", "trad_convide", "trad_convidar", "trad_comands", "trad_descri_inicial", "trad_bandeira", "trad_infos_secundarias", "trad_infos_secundarias2", "trad_diversao", "trad_utilidades", "trad_jogos", "trad_musicas", "trad_manutencao", "trad_manipul_imagens", "trad_moderativos"];
+        let strings_traduz = ["trad_aoba", "trad_comands_apr", "trad_server", "trad_convide", "trad_convidar", "trad_comands", "trad_descri_inicial", "trad_bandeira", "trad_infos_secundarias", "trad_infos_secundarias2", "trad_diversao", "trad_utilidades", "trad_jogos", "trad_musicas", "trad_manutencao", "trad_manipul_imagens", "trad_moderativos", "trad_versao"];
 
         if(idioma == "en-us")
-            traducoes = ["Hey, I'm Alonsal!", "Below is my list of commands ;D", "My Server", "Invite Me", "Invite", "Commands", "I was born with the desire to help people in some useful functions, and with your permission, I can contribute to various places on your server!", "🇧🇷", "I'm divided into 7 categories, they:", "I currently have 48 commands!", "Fun", "Utilities", "Games", "Music", "Managment", "Image manipulation", "Moderative commands"];
+            traducoes = ["Hey, I'm Alonsal!", "Below is my list of commands ;D", "My Server", "Invite Me", "Invite", "Commands", "I was born with the desire to help people in some useful functions, and with your permission, I can contribute to various places on your server!", "🇧🇷", "I'm divided into 7 categories, they:", "I currently have 55 commands!", "Fun", "Utilities", "Games", "Music", "Managment", "Image manipulation", "Moderative commands", "Version"];
         else
-            traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸", "Estou dividido em 7 categorias, sendo elas:", "Atualmente tenho 48 comandos!", "Diversão", "Utilidades", "Jogos", "Músicas", "Manutenção", "Manipulação de imagens", "Comandos moderativos"];
+            traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸", "Estou dividido em 7 categorias, sendo elas:", "Atualmente tenho 55 comandos!", "Diversão", "Utilidades", "Jogos", "Músicas", "Manutenção", "Manipulação de imagens", "Comandos moderativos", "Versão"];
         
         for(var i = 0; i < strings_traduz.length; i++){
             alvos = document.getElementsByClassName(strings_traduz[i]);

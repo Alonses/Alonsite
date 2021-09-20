@@ -11,3 +11,7 @@
     50% { height: 100%; top: 0%; }
     100% { top: 100%; }
 }
+@keyframes carrega_pag {
+    0% { z-index: 5; height: 100%; top: 0px; box-shadow: 0px 0px 15px black; }
+    100% { top: 100%; z-index: 5; box-shadow: 0px 0px 15px black; }
+}

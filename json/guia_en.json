@@ -18,15 +18,15 @@
             "comando" : "Couple",
             "emoji" : "💖",
             "aliases" : ".alove, .amor",
-            "usos" : ">@< >@<|mencione duas pessoas, >ID< >ID< use o ID de duas pessoas",
-            "funcao" : "Mostra o nível de afinidade entre duas pessoas"
+            "usos" : ">@< >@<|mention two people, >ID< >ID<|use two user id",
+            "funcao" : "Shows the level of affinity between two people"
         },
         {
             "comando" : "Baidu",
             "emoji" : "🙌",
             "aliases" : ".adu, .abaidu",
-            "usos" : "",
-            "funcao" : "Envia uma saudação ao baidu no chat"
+            "usos" : "|",
+            "funcao" : "Send a greeting to baidu in the chat"
         },
         {
             "comando" : "Reproduction",

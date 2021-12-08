@@ -303,7 +303,7 @@
         },
         {
             "comando" : "Anagramas",
-            "emoji" : "📜",
+            "emoji" : "💅",
             "aliases" : ".ana, .anagrama, .anagram",
             "usos" : "slomdo|retorna 3 anagramas formados com a entrada \"slomdo\"",
             "funcao" : "Cria anagramas com a entrada informada, também exibe a quantidade de combinaçõe possíveis e 3 outras combinações geradas randomicamente"

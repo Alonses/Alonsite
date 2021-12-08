@@ -17,7 +17,7 @@
         {
             "comando" : "Couple",
             "emoji" : "💖",
-            "aliases" : ".alove, .amor",
+            "aliases" : ".alove, .amor. .acasal",
             "usos" : ">@< >@<|mention two people, >ID< >ID<|use two user id",
             "funcao" : "Shows the level of affinity between two people"
         },
@@ -31,7 +31,7 @@
         {
             "comando" : "Reproduction",
             "emoji" : "📻",
-            "aliases" : ".arep, .areproducao",
+            "aliases" : ".arep",
             "usos" : "eight and seven|makes alonsal say \"eight-seven\" with TTS in the chat, >FILE<|re-sends the file sent by the user",
             "funcao" : "Alonsal will speak in TTS or send files with this command"
         },
@@ -45,7 +45,7 @@
         {
             "comando" : "Jokes",
             "emoji" : "🃏",
-            "aliases" : ".aj, .ajoke",
+            "aliases" : ".aj, .ajoke, .arisos",
             "usos" : "|tell a random joke",
             "funcao" : "Alonsal will tell a random joke (only in Portuguese)"
         },
@@ -67,8 +67,15 @@
             "comando" : "Morse",
             "emoji" : "🔣",
             "aliases" : ".am, .amorse",
-            "usos" : ">your_text<|code your text in morse, >your_morse<|decode your text from morse",
+            "usos" : ">your_text<|code your text in morse, >your_morse<|decode your text from morse, rev >your_text<|(De)codes your text/morse and even reverses the character order",
             "funcao" : "Encode and decode whatever you want to/from Morse"
+        },
+        {
+            "comando" : "Binary",
+            "emoji" : "👨🏻‍💻",
+            "aliases" : ".abn, .abinario, .abn rev",
+            "usos" : ">your_text<|encodes your text to binary, >your_binary<|decode your text from binary, rev >your_text<|(De)codes your text/binary and even reverses the character order",
+            "funcao" : "Encodes and decodes what you input to/from the binary"
         },
         {
             "comando" : "Reverse",

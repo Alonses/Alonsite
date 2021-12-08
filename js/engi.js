@@ -124,14 +124,17 @@ function infos_comandos(idioma, comando){
         document.getElementById("comando_aliases").innerHTML = `Aliases : ${aliases.join(" ")}`;
 
         let usos = comando_alvo.usos.split(",");
+
         for(let i = 0; i < usos.length; i++){
-            const descricao = usos[i].split("|")[1]; 
-            usos[i] = `<mr>${aliases[i].replace("<mr>", "").replace("</mr>", "")} ${usos[i].split("|")[0]}</mr> - ${descricao}`;
+
+            const descricao = usos[i].split("|")[1];
+
+            usos[i] = `<mr>${aliases[0].replace("<mr>", "").replace("</mr>", "")} ${usos[i].split("|")[0]}</mr> - ${descricao}`;
         }
 
         document.getElementById("comando_usos").innerHTML = `Usos :<br> ${usos.join("<br>")}`;
     })
-    .catch(err => {
-        console.log(err);
+    .catch(() => {
+        document.getElementById("comando_nome").innerHTML = "Não foi possível carregar informações deste comando no momento";
     })
 }

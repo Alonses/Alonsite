@@ -15,3 +15,8 @@
     0% { z-index: 5; height: 100%; top: 0px; box-shadow: 0px 0px 15px black; }
     100% { top: 0%; height: 0%; z-index: 5; box-shadow: 0px 0px 15px black; opacity: .8;}
 }
+@keyframes pisca_comando{
+    0% { box-shadow: 0px 0px 0px black; }
+    50% { box-shadow: 0px 0px 15px yellow; }
+    100% { box-shadow: 0px 0px 0px black; }
+}

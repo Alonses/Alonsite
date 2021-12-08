@@ -19,7 +19,7 @@
 <body onload="traduz_site()">
 
     <div id="fundo_pag"></div>
-    <canvas id='canv'></canvas>
+    <!-- <canvas id='canv'></canvas> -->
 
     <header>
         <h1 style="padding-left: 2%; float: left;"><span class="trad_aoba"></span></h1>
@@ -32,7 +32,7 @@
         </nav>
     </header>
 
-    <div id="transitador"></div>
+    <!-- <div id="transitador"></div> -->
 
     <div id="animacoes">
         <span class="anima_1 deslizante"></span>
@@ -78,17 +78,31 @@
     </div>
 
     <div id="comandos">
-        <div class="comandos_menu">
-            <h2><span class="trad_comands_apr"></span></h2>
-            <p id="pagina_comandos"></p>
+        <div id="comandos_geral">
+            <div id="comandos_menu">
+                <h2><span class="trad_comands_apr"></span></h2>
+                <p id="pagina_comandos"></p>
+            </div>
+
+            <div id="menu_reacoes">
+                <span class="button_react select_0" onclick="troca_pag(0)">😜</span>
+                <span class="button_react select_1" onclick="troca_pag(1)">🧭</span>
+                <span class="button_react select_2" onclick="troca_pag(2)">⛳</span>
+                <span class="button_react select_3" onclick="troca_pag(3)">🛠️</span>
+                <span class="button_react select_4" onclick="troca_pag(4)">📜</span>
+            </div>
         </div>
 
-        <div id="menu_reacoes">
-            <span class="button_react select_0" onclick="troca_pag(0)">😜</span>
-            <span class="button_react select_1" onclick="troca_pag(1)">🧭</span>
-            <span class="button_react select_2" onclick="troca_pag(2)">⛳</span>
-            <span class="button_react select_3" onclick="troca_pag(3)">🛠️</span>
-            <span class="button_react select_4" onclick="troca_pag(4)">📜</span>
+        <div id="comandos_infos">
+            <h1 id="comando_nome"></h1>
+            <hr>
+            <p id="comando_aliases"></p>
+
+            <p id="comando_usos"></p>
+
+            <p id="comando_descricao"></p>
+
+            <button onclick="infos_comandos('pt')">importar</button>
         </div>
     </div>
 

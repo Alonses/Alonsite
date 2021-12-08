@@ -25,7 +25,7 @@
             "comando" : "Baidu",
             "emoji" : "🙌",
             "aliases" : ".adu, .abaidu",
-            "usos" : "|Louvado seja!",
+            "usos" : "|louvado seja!",
             "funcao" : "Envia uma saudação ao baidu no chat"
         },
         {
@@ -60,63 +60,63 @@
             "comando" : "Ping",
             "emoji" : "🏓",
             "aliases" : ".ap, .aping",
-            "usos" : "|Informa seu ping",
+            "usos" : "|informa seu ping",
             "funcao" : "Veja seu ping e o ping do Alonsal"
         },
         {
             "comando" : "Morse",
             "emoji" : "🔣",
             "aliases" : ".am, .amorse",
-            "usos" : ">seu_texto<|Codifica seu texto para o morse, >seu_morse<|Decodifica seu texto do morse, rev >seu_texto<|(De)codifica seu texto/morse e ainda inverte a ordem dos caracteres",
+            "usos" : ">seu_texto<|codifica seu texto para o morse, >seu_morse<|decodifica seu texto do morse, rev >seu_texto<|(De)codifica seu texto/morse e ainda inverte a ordem dos caracteres",
             "funcao" : "Codifica e decodifica o que você informar para o/do morse"
         },
         {
             "comando" : "Binário",
             "emoji" : "👨🏻‍💻",
             "aliases" : ".abn, .abinario, .abn rev",
-            "usos" : ">seu_texto<|Codifica seu texto para o binário, >seu_binário<|Decodifica seu texto do binário, rev >seu_texto<|(De)codifica seu texto/binário e ainda inverte a ordem dos caracteres",
+            "usos" : ">seu_texto<|codifica seu texto para o binário, >seu_binário<|decodifica seu texto do binário, rev >seu_texto<|(De)codifica seu texto/binário e ainda inverte a ordem dos caracteres",
             "funcao" : "Codifica e decodifica o que você informar para o/do binário"
         },
         {
             "comando" : "Reverso",
             "emoji" : "◀️",
             "aliases" : ".arev, .ainverso, .areverter, .areverse",
-            "usos" : ">seu_texto<|Inverte seu texto",
+            "usos" : ">seu_texto<|inverte seu texto",
             "funcao" : "Inverte e desinverte o texto informado"
         },
         {
             "comando" : "Criptografia",
             "emoji" : "🔐",
             "aliases" : ".acr, .adr, .acripto, .acrypto",
-            "usos" : ">chave< >seu_texto<|Criptografa seu texto com a chave informada, >chave< >texto_criptografado<|Descriptografa o texto com a chave informada",
+            "usos" : ">chave< >seu_texto<|criptografa seu texto com a chave informada, >chave< >texto_criptografado<|descriptografa o texto com a chave informada",
             "funcao" : "Criptografa e descriptografa o texto informado com uma chave"
         },
         {
             "comando" : "Wikipédia",
             "emoji" : "🔍",
             "aliases" : ".aw, .asearch, .abuscar, .busca, .awikipedia",
-            "usos" : ">sua_pesquisa<|Pesquisa por algo na wikipédia",
+            "usos" : ">sua_pesquisa<|pesquisa por algo na wikipédia",
             "funcao" : "Pesquisa o que for informado na wikipédia, o idioma da wikipédia e seu conteúdo é definido com base no idioma do Alonsal, use <mr>.alang en</mr> caso queira pesquisar em inglês"
         },
         {
             "comando" : "Tempo",
             "emoji" : "⛅",
             "aliases" : ".at, .aclima, .aweather, .awe, .aprevisao",
-            "usos" : ">algum_local<|Mostra o tempo atual em algum local pesquisado, sao paulo|Mostra o tempo em São Paulo, s#a5o p0a%$ulo|Mostra o tempo em São Paulo, \"Saint-Louis-du-Ha! Ha!\"|Mostra o tempo em Saint-Louis-du-Ha! Ha! sem desconsiderar os caracteres informados",
+            "usos" : ">algum_local<|mostra o tempo atual em algum local pesquisado, sao paulo|mostra o tempo em São Paulo, s#a5o p0a%$ulo|mostra o tempo em São Paulo, \"Saint-Louis-du-Ha! Ha!\"|mostra o tempo em Saint-Louis-du-Ha! Ha! sem desconsiderar os caracteres informados",
             "funcao" : "Mostra o tempo atual e muitas outras informações em algum lugar, pesquise usando \"aspás\" para não ignorar nenhum caractere"
         },
         {
             "comando" : "Acontecimentos",
             "emoji" : "🏛",
-            "aliases" : ".acon, .acons, .ahistory, .atoday, .ahoje. ahs, .afato, .acontecimento",
-            "usos" : "|Mostra algum acontecimento no dia de hoje, 21-01|Mostra algum acontecimento aleatório na data de 21 de janeiro",
+            "aliases" : ".acon, .acons, .ahistory, .atoday, .ahoje, .ahs, .afato, .acontecimento",
+            "usos" : "|mostra algum acontecimento no dia de hoje, 21-01|mostra algum acontecimento aleatório na data de 21 de janeiro",
             "funcao" : "Exibe acontecimentos pela história na data informada, pode mostrar do dia atual e de qualquer outra data, criando listas com todos em um dia ou não"
         },
         {
             "comando" : "Aumentar emoji",
             "emoji" : "🦗",
             "aliases" : ".amoji, .aemoji",
-            "usos" : ">seu_emoji< | Aumenta o emoji enviado",
+            "usos" : ">seu_emoji<|aumenta o emoji enviado",
             "funcao" : "Aumenta o emoji customizado informado ( funciona apenas com emojis customizados do servidor )"
         },
         {
@@ -292,13 +292,13 @@
             "emoji" : "<img src=\"https://th.bing.com/th/id/R.dc9023a21d267f5a69f80d73f6e89dc2?rik=3XtZuRHyuD3yhQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ffroyoshark%2fenkel%2f512%2fSteam-icon.png&ehk=Q%2bLzz3YeY7Z8gPsTI2r1YF4KgfPnV%2bHMJkEoSx%2bKPy0%3d&risl=&pid=ImgRaw&r=0\" style=\"height: 46px\">",
             "aliases" : ".asus, .astus, .asteam",
             "usos" : "slondotk|mostra o perfil do slondo na Steam",
-            "funcao" : "Exibe várias informações de um perfil pesquisado, informações como, jogos possuídos, conquistas alcançadas, jogos 100% finalizados, insígneas, nível, capturas de tela e etc"
+            "funcao" : "Exibe várias informações de um perfil pesquisado, informações como, jogos possuídos, conquistas alcançadas, jogos 100% finalizados, insígnias, nível, capturas de tela e etc.<br>Para pesquisar seu perfil, crie um link customizado para seu perfil Steam e use ele ao pesquisar com o <mr>.asus</mr>"
         },
         {
             "comando" : "Escolha entre",
             "emoji" : "📌",
             "aliases" : ".ach, .aescolha, .adecida, .aselecione",
-            "usos" : "s t k|escolhe entre <mr>s</mr>, <mr>t</mr> e <mr>k</mr>, [2 s t k|escolhe 2 opções de <mr>s</mr>, <mr>t</mr> e <mr>k</mr>",
+            "usos" : "s t k|escolhe entre <mr>s</mr> <mr>t</mr> e <mr>k</mr>, [2 s t k|escolhe 2 opções de <mr>s</mr> <mr>t</mr> e <mr>k</mr>",
             "funcao" : "Escolhe 1 ou várias opções informadas"
         },
         {
@@ -320,7 +320,7 @@
             "emoji" : "📝",
             "aliases" : ".arm, .arp, .areplace, .aremover, .asubstituir",
             "usos" : "o slomdo|remove todos os o's da palavra/frase",
-            "funcao" : "Remove ou substituí todos os caracteres da palavra/frase informada, para substituir, como <mr>.arp o i slomdo</mr>, todos os <mr>o's</mr> serão substituídos por <mr>i's</mr>"
+            "funcao" : "Remove ou substituí todos os caracteres da palavra/frase informada, para substituir, use como <mr>.arp o i slomdo</mr>, todos os <mr>o's</mr> serão substituídos por <mr>i's</mr>"
         },
         {
             "comando" : "Travar & destravar canal",

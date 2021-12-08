@@ -67,8 +67,71 @@
             "comando" : "Morse",
             "emoji" : "🔣",
             "aliases" : ".am, .amorse",
-            "usos" : ">your_text<|Code your text in morse, >your_morse<|Decode your text from morse",
+            "usos" : ">your_text<|code your text in morse, >your_morse<|decode your text from morse",
             "funcao" : "Encode and decode whatever you want to/from Morse"
+        },
+        {
+            "comando" : "Reverse",
+            "emoji" : "◀️",
+            "aliases" : ".arev, .ainverso, .areverter, .areverse",
+            "usos" : ">your_text<|inverts your text",
+            "funcao" : "Inverts and uninverts the entered text"
+        },
+        {
+            "comando" : "Cryptography",
+            "emoji" : "🔐",
+            "aliases" : ".acr, .adr, .acripto, .acrypto",
+            "usos" : ">key< >your_text<|encrypt your text with the entered key, >key< >encrypted_text<|decrypts the text with the given key",
+            "funcao" : "Encrypt and decrypt the text entered with a key"
+        },
+        {
+            "comando" : "Wikipedia",
+            "emoji" : "🔍",
+            "aliases" : ".aw, .asearch, .abuscar, .busca, .awikipedia",
+            "usos" : ">your_search<|Search for something on wikipedia",
+            "funcao" : "Search what is informed on wikipedia, the language of wikipedia and its content is defined based on the language of Alonsal."
+        },
+        {
+            "comando" : "Weather",
+            "emoji" : "⛅",
+            "aliases" : ".at, .aclima, .aweather, .awe, .aprevisao",
+            "usos" : ">some_location<|Shows the current time in some searched location, los angeles|Shows the weather in Los Angeles, l#o5s an0g%$eles|Shows the weather in Los Angeles, \"Saint-Louis-du-Ha! Ha!\"|Show the weather in Saint-Louis-du-Ha! Ha! without disregarding the entered characters",
+            "funcao" : "Show current time and lots of other information somewhere, search using \"quotes\" to not skip any characters"
+        },
+        {
+            "comando" : "Events",
+            "emoji" : "🏛",
+            "aliases" : ".acon, .acons, .ahistory, .atoday, .ahoje, .ahs, .afato, .acontecimento",
+            "usos" : "|show any event today, 01-21 |show some random event on January 21st",
+            "funcao" : "Displays events by history on the date informed, can show the current day and any other date, creating lists with all in one day or not (only in Portuguese)"
+        },
+        {
+            "comando" : "Increase emoji",
+            "emoji" : "🦗",
+            "aliases" : ".amoji, .aemoji",
+            "usos" : ">your_emoji<|increase the emoji sent",
+            "funcao" : "Increases the emoji entered (only works with custom emojis from the server)"
+        },
+        {
+            "comando" : "Avatar",
+            "emoji" : "👤",
+            "aliases" : ".avatar, .aperfil",
+            "usos" : "|show your avatar, >@<|show the avatar of the mentioned user, >ID<|show avatar based on user id",
+            "funcao" : "Show your or a user's avatar"
+        },
+        {
+            "comando" : "Server icon",
+            "emoji" : "👥",
+            "aliases" : ".aicon, .asvicon",
+            "usos" : "|show server icon",
+            "funcao" : "Shows the icon of the server where you used the command, you can save the image"
+        },
+        {
+            "comando" : "",
+            "emoji" : "",
+            "aliases" : "",
+            "usos" : "",
+            "funcao" : ""
         }
     ]
 }

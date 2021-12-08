@@ -137,10 +137,9 @@
 
     let comandos_local = localStorage.getItem("site_alonsal_comandos");
 
-    if(typeof comandos_local != "undefined"){
-        if(parseInt(comandos_local) == 1)
+    if(typeof comandos_local !== "undefined")
+        if(parseInt(comandos_local) === 1)
             transita_comands("auto");
-    }
 </script>
 
 <script src="js/neve.js"></script>

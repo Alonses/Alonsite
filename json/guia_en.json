@@ -25,7 +25,7 @@
             "comando" : "Baidu",
             "emoji" : "🙌",
             "aliases" : ".adu, .abaidu",
-            "usos" : "|",
+            "usos" : "|Praised be!",
             "funcao" : "Send a greeting to baidu in the chat"
         },
         {

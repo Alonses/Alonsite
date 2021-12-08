@@ -5,7 +5,7 @@
             "emoji" : "🏅",
             "aliases" : ".ar, .arank",
             "usos" : ">@<|mencione um usuário, >ID<|use o ID de um usuário, >num_pagina<|a página do rank",
-            "funcao" : "O rank exibe o nível dos membros no servidor, membros ativos possuem mais experiência e assim ficam mais destacados no rank, às vezes o rank pode conceder até 5x XP por cada mensagem"
+            "funcao" : "O rank exibe o nível dos membros no servidor, membros ativos possuem mais experiência e assim ficam mais destacados, às vezes o rank pode conceder até 5 XP's por cada mensagem"
         },
         {
             "comando" : "Gado",
@@ -13,6 +13,62 @@
             "aliases" : ".aga, .agado",
             "usos" : ">@<|mencione um usuário",
             "funcao" : "Confirma se um usuário é gado ou não"
+        },
+        {
+            "comando" : "Casal",
+            "emoji" : "💖",
+            "aliases" : ".alove, .amor",
+            "usos" : ">@< >@<|mencione duas pessoas, >ID< >ID< use o ID de duas pessoas",
+            "funcao" : "Mostra o nível de afinidade entre duas pessoas"
+        },
+        {
+            "comando" : "Baidu",
+            "emoji" : "🙌",
+            "aliases" : ".adu, .abaidu",
+            "usos" : "",
+            "funcao" : "Envia uma saudação ao baidu no chat"
+        },
+        {
+            "comando" : "Reprodução",
+            "emoji" : "📻",
+            "aliases" : ".arep, .areproducao",
+            "usos" : "oito e sete|faz o alonsal falar \"oito e sete\" com TTS no chat, >ARQUIVO<|re-envia o arquivo enviado pelo usuário",
+            "funcao" : "O Alonsal falará em TTS ou enviará arquivos com este comando"
+        },
+        {
+            "comando" : "Curiosidades",
+            "emoji" : "📘",
+            "aliases" : ".ac, .acurio",
+            "usos" : "|conta uma curiosidade aleatória",
+            "funcao" : "O Alonsal contará uma curiosidade aleatória"
+        },
+        {
+            "comando" : "Piadas",
+            "emoji" : "🃏",
+            "aliases" : ".aj, .ajoke",
+            "usos" : "|conta uma piada aleatória",
+            "funcao" : "O Alonsal contará uma piada aleatória"
+        },
+        {
+            "comando" : "Sans",
+            "emoji" : "✒",
+            "aliases" : ".asans",
+            "usos" : ">seu_texto<|SeU TeXtO SaIrÁ AsSiM",
+            "funcao" : "Deixará seu texto estiloso"
+        },
+        {
+            "comando" : "Ping",
+            "emoji" : "🏓",
+            "aliases" : ".ap, .aping",
+            "usos" : "|Informa seu ping",
+            "funcao" : "Veja seu ping e o ping do Alonsal"
+        },
+        {
+            "comando" : "Morse",
+            "emoji" : "🔣",
+            "aliases" : ".am, .amorse",
+            "usos" : ">seu_texto<|Codifica seu texto para o morse, >seu_morse<|Decodifica seu texto do morse",
+            "funcao" : "Codifica e decodifica o que você informar para o morse"
         }
     ]
 }

@@ -8,11 +8,67 @@
             "funcao" : "The member's level ranking on the server, active members have more experience and therefore are more prominent in the ranking; sometimes the rating can grant up to 5x XP for each message"
         },
         {
-            "comando" : "Gado",
+            "comando" : "Cattle",
             "emoji" : "🐮",
             "aliases" : ".aga, .agado",
             "usos" : ">@<",
             "funcao" : "Confirm whether a user is cattle or not"
+        },
+        {
+            "comando" : "Couple",
+            "emoji" : "💖",
+            "aliases" : ".alove, .amor",
+            "usos" : ">@< >@<|mencione duas pessoas, >ID< >ID< use o ID de duas pessoas",
+            "funcao" : "Mostra o nível de afinidade entre duas pessoas"
+        },
+        {
+            "comando" : "Baidu",
+            "emoji" : "🙌",
+            "aliases" : ".adu, .abaidu",
+            "usos" : "",
+            "funcao" : "Envia uma saudação ao baidu no chat"
+        },
+        {
+            "comando" : "Reproduction",
+            "emoji" : "📻",
+            "aliases" : ".arep, .areproducao",
+            "usos" : "eight and seven|makes alonsal say \"eight-seven\" with TTS in the chat, >FILE<|re-sends the file sent by the user",
+            "funcao" : "Alonsal will speak in TTS or send files with this command"
+        },
+        {
+            "comando" : "Curiosities",
+            "emoji" : "📘",
+            "aliases" : ".ac, .acurio",
+            "usos" : "|tell a random curiosity",
+            "funcao" : "Alonsal will tell a random curiosity (only in Portuguese)"
+        },
+        {
+            "comando" : "Jokes",
+            "emoji" : "🃏",
+            "aliases" : ".aj, .ajoke",
+            "usos" : "|tell a random joke",
+            "funcao" : "Alonsal will tell a random joke (only in Portuguese)"
+        },
+        {
+            "comando" : "Sans",
+            "emoji" : "✒",
+            "aliases" : ".asans",
+            "usos" : ">your_text<|YoUr tExT WiLl lOoK LiKe tHiS",
+            "funcao" : "It will make your text stylish"
+        },
+        {
+            "comando" : "Ping",
+            "emoji" : "🏓",
+            "aliases" : ".ap, .aping",
+            "usos" : "|show your ping",
+            "funcao" : "See your ping and Alonsal's ping"
+        },
+        {
+            "comando" : "Morse",
+            "emoji" : "🔣",
+            "aliases" : ".am, .amorse",
+            "usos" : ">your_text<|Code your text in morse, >your_morse<|Decode your text from morse",
+            "funcao" : "Encode and decode whatever you want to/from Morse"
         }
     ]
 }

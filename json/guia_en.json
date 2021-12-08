@@ -4,7 +4,7 @@
             "comando" : "Rank",
             "emoji" : "🏅",
             "aliases" : ".ar, .arank",
-            "usos" : "<@>, <num>",
+            "usos" : "<@>|mention a user, <ID>|id of a user, <num_pagina>|the rank page",
             "funcao" : "The member's level ranking on the server, active members have more experience and therefore are more prominent in the ranking; sometimes the rating can grant up to 5x XP for each message"
         },
         {

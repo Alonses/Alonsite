@@ -110,18 +110,26 @@ function infos_comandos(idioma, comando){
     .then(response => response.json())
     .then(async dados => {
         
-        const comando_alvo = dados[comando];
+        const comando_alvo = dados.guia[comando];
 
         document.getElementById("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`;
-        document.getElementById("comando_usos").innerHTML = `${comando_alvo.aliases.split(",")[0]}  ${comando_alvo.usos}`;
-        document.getElementById("comando_descricao").innerHTML = comando_alvo.funcao;
+        document.getElementById("comando_usos").innerHTML = `Uso : <mr>${comando_alvo.aliases.split(",")[0]} ${comando_alvo.usos.split(",")[0]}</mr>`;
+        document.getElementById("comando_descricao").innerHTML = `Funcionamento : ${comando_alvo.funcao}`;
 
         let aliases = comando_alvo.aliases.split(",");
         for(let i = 0; i < aliases.length; i++){
             aliases[i] = `<mr>${aliases[i]}</mr>`;
         }
 
-        document.getElementById("comando_aliases").innerHTML = aliases.join(" ");
+        document.getElementById("comando_aliases").innerHTML = `Aliases : ${aliases.join(" ")}`;
+
+        let usos = comando_alvo.usos.split(",");
+        for(let i = 0; i < usos.length; i++){
+            const descricao = usos[i].split("|")[1]; 
+            usos[i] = `<mr>${aliases[i].replace("<mr>", "").replace("</mr>", "")} ${usos[i].split("|")[0]}</mr> - ${descricao}`;
+        }
+
+        document.getElementById("comando_usos").innerHTML = `Usos :<br> ${usos.join("<br>")}`;
     })
     .catch(err => {
         console.log(err);

@@ -18,14 +18,14 @@
             "comando" : "Casal",
             "emoji" : "💖",
             "aliases" : ".alove, .amor",
-            "usos" : ">@< >@<|mencione duas pessoas, >ID< >ID< use o ID de duas pessoas",
+            "usos" : ">@< >@<|mencione duas pessoas, >ID< >ID<|use o ID de duas pessoas",
             "funcao" : "Mostra o nível de afinidade entre duas pessoas"
         },
         {
             "comando" : "Baidu",
             "emoji" : "🙌",
             "aliases" : ".adu, .abaidu",
-            "usos" : "",
+            "usos" : "|",
             "funcao" : "Envia uma saudação ao baidu no chat"
         },
         {
@@ -67,8 +67,64 @@
             "comando" : "Morse",
             "emoji" : "🔣",
             "aliases" : ".am, .amorse",
-            "usos" : ">seu_texto<|Codifica seu texto para o morse, >seu_morse<|Decodifica seu texto do morse",
-            "funcao" : "Codifica e decodifica o que você informar para o morse"
+            "usos" : ">seu_texto<|Codifica seu texto para o morse, >seu_morse<|Decodifica seu texto do morse, rev >seu_texto<|(De)codifica seu texto/morse e ainda inverte a ordem dos caracteres",
+            "funcao" : "Codifica e decodifica o que você informar para o/do morse"
+        },
+        {
+            "comando" : "Binário",
+            "emoji" : "👨🏻‍💻",
+            "aliases" : ".abn, .abinario, .abn rev",
+            "usos" : ">seu_texto<|Codifica seu texto para o binário, >seu_binário<|Decodifica seu texto do binário, rev >seu_texto<|(De)codifica seu texto/binário e ainda inverte a ordem dos caracteres",
+            "funcao" : "Codifica e decodifica o que você informar para o/do binário"
+        },
+        {
+            "comando" : "Reverso",
+            "emoji" : "◀️",
+            "aliases" : ".arev",
+            "usos" : ">seu_texto<|Inverte seu texto",
+            "funcao" : "Inverte e desinverte o texto informado"
+        },
+        {
+            "comando" : "Criptografia",
+            "emoji" : "🔐",
+            "aliases" : ".acr, .acripto",
+            "usos" : ">chave< >seu_texto<|Criptografa seu texto com a chave informada, >chave< >texto_criptografado<|Descriptografa o texto com a chave informada",
+            "funcao" : "Criptografa e descriptografa o texto informado com uma chave"
+        },
+        {
+            "comando" : "Wikipédia",
+            "emoji" : "🔍",
+            "aliases" : ".awiki, .asearch, .aw",
+            "usos" : ">sua_pesquisa<|Pesquisa por algo na wikipédia",
+            "funcao" : "Pesquisa o que for informado na wikipédia, o idioma da wikipédia e seu conteúdo é definido com base no idioma do Alonsal, use <mr>.alang en</mr> caso queira pesquisar em inglês"
+        },
+        {
+            "comando" : "Tempo",
+            "emoji" : "⛅",
+            "aliases" : ".at, .atime, .aweather",
+            "usos" : ">algum_local<|Mostra o tempo atual em algum local pesquisado, sao paulo|Mostra o tempo em São Paulo, s#a5o p0a%$ulo|Mostra o tempo em São Paulo, \"Saint-Louis-du-Ha! Ha!\"|Mostra o tempo em Saint-Louis-du-Ha! Ha! sem desconsiderar os caracteres informados",
+            "funcao" : "Mostra o tempo atual e muitas outras informações em algum lugar, pesquise usando \"aspás\" para não ignorar nenhum caractere"
+        },
+        {
+            "comando" : "Acontecimentos",
+            "emoji" : "🏛",
+            "aliases" : ".acon, .acons, .ahistory",
+            "usos" : "|Mostra algum acontecimento no dia de hoje, 21-01|Mostra algum acontecimento aleatório na data de 21 de janeiro",
+            "funcao" : "Exibe acontecimentos pela história na data informada, pode mostrar do dia atual e de qualquer outra data, criando listas com todos em um dia ou não"
+        },
+        {
+            "comando" : "Aumentar emoji",
+            "emoji" : "🦗",
+            "aliases" : ".amoji, .aemoji",
+            "usos" : ">seu_emoji< | Aumenta o emoji enviado",
+            "funcao" : "Aumenta o emoji customizado informado ( funciona apenas com emojis customizados do servidor )"
+        },
+        {
+            "comando" : "",
+            "emoji" : "",
+            "aliases" : "",
+            "usos" : "",
+            "funcao" : ""
         }
     ]
 }

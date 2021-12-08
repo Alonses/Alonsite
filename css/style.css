@@ -168,7 +168,7 @@ header{
     animation-direction: alternate-reverse !important;
 }
 #comandos{
-    display: none;
+    /* display: none; */
     z-index: 2;
     background-color: rgb(44, 47, 51);
     width: 100%;
@@ -176,7 +176,10 @@ header{
     position: absolute;
     top: 0%;
 }
-.comandos_menu{
+#comandos_geral{
+    left: 5%;
+}
+#comandos_menu{
     background-color: rgb(64, 68, 75);
     border-radius: 5px;
     width: 50%;
@@ -186,14 +189,27 @@ header{
     padding: 30px;
     position: absolute;
     top: 20%;
-    left: 25%;
+    left: 5%;
+    overflow-y: auto;
+}
+#comandos_infos{
+    background-color: rgb(64, 68, 75);
+    border-radius: 5px;
+    width: 35%;
+    height: 440px;
+    border: 0px;
+    font-size: 18px;
+    padding: 30px;
+    position: absolute;
+    top: 20%;
+    right: 5%;
     overflow-y: auto;
 }
 #menu_reacoes{
     float: left;
     position: absolute;
     top: 93%;
-    left: 25%;
+    left: 5%;
 }
 .button_react{
     padding: 5px;
@@ -262,6 +278,7 @@ mr{
     border-radius: 5px;
     padding-left: 3px;
     padding-right: 3px;
+    animation: pisca_comando 2s;
 }
 #ceira_solutions{
     width: 150px;

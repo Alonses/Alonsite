@@ -1,0 +1,18 @@
+{
+    "guia": [
+        {
+            "comando" : "Rank",
+            "emoji" : "🏅",
+            "aliases" : ".ar, .arank",
+            "usos" : "<@>, <num>",
+            "funcao" : "O rank exibe o nível dos membros no servidor, membros ativos possuem mais experiência e assim ficam mais destacados no rank, às vezes o rank pode conceder até 5x XP por cada mensagem"
+        },
+        {
+            "comando" : "Gado",
+            "emoji" : "🐮",
+            "aliases" : ".aga, .agado",
+            "usos" : "<@>",
+            "funcao" : "Confirma se um usuário é gado ou não"
+        }
+    ]
+}

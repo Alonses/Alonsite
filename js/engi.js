@@ -73,13 +73,13 @@ function alterar_idioma(){
 
 function traduz_site(){
 
-    if(typeof idioma == "undefined")
+    if(typeof idioma === "undefined")
         return;
     else{
 
         let strings_traduz = ["trad_aoba", "trad_comands_apr", "trad_server", "trad_convide", "trad_convidar", "trad_comands", "trad_descri_inicial", "trad_bandeira", "trad_infos_secundarias", "trad_infos_secundarias2", "trad_diversao", "trad_utilidades", "trad_jogos", "trad_manutencao", "trad_moderativos", "trad_versao"];
 
-        if(idioma == "en-us")
+        if(idioma === "en-us")
             traducoes = ["Hey, I'm Alonsal!", "Below is my list of commands ;D", "My Server", "Invite Me", "Invite", "Commands", "I was born with the desire to help people in some useful functions, and with your permission, I can contribute to various places on your server!", "🇧🇷", "I'm divided into 5 categories, they:", "I currently have 40 commands!", "Fun", "Utilities", "Games", "Managment", "Moderative commands", "Version"];
         else
             traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸", "Estou dividido em 5 categorias, sendo elas:", "Atualmente tenho 40 comandos!", "Diversão", "Utilidades", "Jogos", "Manutenção", "Comandos moderativos", "Versão"];
@@ -94,4 +94,36 @@ function traduz_site(){
     }
 
     troca_pag(numero_pagina);
+    infos_comandos(idioma, 0);
+}
+
+
+function infos_comandos(idioma, comando){
+
+    if(typeof idioma === "undefined")
+        idioma = "pt";
+    
+    if(idioma === "en-us") idioma = "en";
+    if(idioma === "pt-br") idioma = "pt";
+
+    fetch(`https://raw.githubusercontent.com/brnd-21/site-do-alonsal/main/json/guia_${idioma}.json`)
+    .then(response => response.json())
+    .then(async dados => {
+        
+        const comando_alvo = dados[comando];
+
+        document.getElementById("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`;
+        document.getElementById("comando_usos").innerHTML = `${comando_alvo.aliases.split(",")[0]}  ${comando_alvo.usos}`;
+        document.getElementById("comando_descricao").innerHTML = comando_alvo.funcao;
+
+        let aliases = comando_alvo.aliases.split(",");
+        for(let i = 0; i < aliases.length; i++){
+            aliases[i] = `<mr>${aliases[i]}</mr>`;
+        }
+
+        document.getElementById("comando_aliases").innerHTML = aliases.join(" ");
+    })
+    .catch(err => {
+        console.log(err);
+    })
 }

@@ -1,0 +1,18 @@
+{
+    "guia": [
+        {
+            "comando" : "Rank",
+            "emoji" : "🏅",
+            "aliases" : ".ar, .arank",
+            "usos" : "<@>, <num>",
+            "funcao" : "The member's level ranking on the server, active members have more experience and therefore are more prominent in the ranking; sometimes the rating can grant up to 5x XP for each message"
+        },
+        {
+            "comando" : "Gado",
+            "emoji" : "🐮",
+            "aliases" : ".aga, .agado",
+            "usos" : "<@>",
+            "funcao" : "Confirm whether a user is cattle or not"
+        }
+    ]
+}

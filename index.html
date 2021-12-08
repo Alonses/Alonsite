@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/alonsal.png">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/neve.css">
     <link rel="stylesheet" type="text/css" href="css/animacoes.css">
     <link rel="stylesheet" type="text/css" href="css/responsividade.css">
 
@@ -18,12 +19,12 @@
 <body onload="traduz_site()">
 
     <div id="fundo_pag"></div>
+    <canvas id='canv'></canvas>
 
     <header>
         <h1 style="padding-left: 2%; float: left;"><span class="trad_aoba"></span></h1>
 
         <nav id="buttons_nav">
-
             <a class="button_nav" href="#" onclick="transita_comands()"><span class="trad_comands"></span></a> &nbsp;
             <a class="button_nav convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1611004992"><span class="trad_convidar"></span></a> &nbsp;
 
@@ -34,17 +35,24 @@
     <div id="transitador"></div>
 
     <div id="animacoes">
-        <span class="deslizante"></span>
-        <span class="deslizante2"></span>
-        <span class="deslizante2 dls2"></span>
-        <span class="deslizante2 dls3"></span>
-        <span class="deslizante dls4"></span>
-        <span class="deslizante2 dls5"></span>
-        <span class="deslizante3"></span>
+        <span class="anima_1 deslizante"></span>
+        <span class="anima_1 deslizante2"></span>
+        <span class="anima_1 deslizante2 dls2"></span>
+        <span class="anima_1 deslizante2 dls3"></span>
+        <span class="anima_1 deslizante dls4"></span>
+        <span class="anima_1 deslizante2 dls5"></span>
+        <span class="anima_1 deslizante3"></span>
     </div>
     
+    <div id="animacoes2">
+        <span class="anima_2 deslizante"></span>
+        <span class="anima_2 deslizante2"></span>
+        <span class="anima_2 deslizante2 dls5"></span>
+        <span class="anima_2 deslizante3"></span>
+    </div>
+
     <div id="infos_iniciais">
-        <img id="img_alonsal" src="img/alonsal.png">
+        <img id="img_alonsal" src="img/natx.png">
 
         <div id="descri_top">
             <p id="descri_aln"><span class="trad_descri_inicial"></span></p> <br><br><br>
@@ -91,10 +99,11 @@
         </nav>
     
         <div id="icone_redes">
-            <p style="float: left; padding-top: 10px;"><span class="trad_versao"></span> 1.8</p> &nbsp; &nbsp;
+            <p style="float: left; padding-top: 10px;"><span class="trad_versao"></span> 1.9</p> &nbsp; &nbsp;
             
             <a href="https://github.com/brnd-21/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a> &nbsp;
             <a href="https://discord.gg/ZxHnxQDNwn"><i class="fab fa-discord fa-3x" aria-hidden="true"></i></a>
+            <img id="ceira_solutions" src="img/CeiraSolutions.png">
         </div>
     </footer>
 </body>
@@ -121,4 +130,6 @@
             transita_comands("auto");
     }
 </script>
+
+<script src="js/neve.js"></script>
 </html>

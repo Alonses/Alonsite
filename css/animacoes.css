@@ -1,10 +1,10 @@
 @keyframes desliza{
-    from { top: -200px; }
-    to { top: 200%; }
+    from { top: 200%; }
+    to { top: -200px; }
 }
 @keyframes desliza2{
-    from { top: -200%; }
-    to { top: 200%; }
+    from { top: 200%; }
+    to { top: -200%; }
 }
 @keyframes transita_comands {
     0% { height: 0%; }
@@ -13,5 +13,5 @@
 }
 @keyframes carrega_pag {
     0% { z-index: 5; height: 100%; top: 0px; box-shadow: 0px 0px 15px black; }
-    100% { top: 100%; z-index: 5; box-shadow: 0px 0px 15px black; }
+    100% { top: 0%; height: 0%; z-index: 5; box-shadow: 0px 0px 15px black; opacity: .8;}
 }

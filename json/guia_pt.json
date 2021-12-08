@@ -120,6 +120,181 @@
             "funcao" : "Aumenta o emoji customizado informado ( funciona apenas com emojis customizados do servidor )"
         },
         {
+            "comando" : "Avatar",
+            "emoji" : "👤",
+            "aliases" : "",
+            "usos" : "|mostra o seu avatar, >@<|mostra o avatar do usuário mencionado, >ID<|mostra o avatar com base no ID do usuário",
+            "funcao" : "Mostra o avatar seu ou de um usuário"
+        },
+        {
+            "comando" : "Icone",
+            "emoji" : "👥",
+            "aliases" : "",
+            "usos" : "|mostra o icone do servidor",
+            "funcao" : "Mostra o icone do servidor que você usar comando, sendo possível salvar a imagem"
+        },
+        {
+            "comando" : "Inventário Minecraft",
+            "emoji" : "🌎",
+            "aliases" : ".amc, .amine, .ainventario",
+            "usos" : "diamante|pesquisa por diamante no inventário do minecraft, sela|pesquisa por sela no inventário do minecraft",
+            "funcao" : "Pesquisa e exibe informações sobre um item do minecraft, ao todo são mais de 1300 itens a disposição para pesquisa"
+        },
+        {
+            "comando" : "Informações do server",
+            "emoji" : "🌐",
+            "aliases" : ".asvinfo, .aserverinfo",
+            "usos" : "|mostra informações do servidor onde o comando é executado",
+            "funcao" : "Mostra informações do servidor, por exemplo, data de criação, dono, nível de moderação, quantidade de membros, canais de voz, áudio e categorias e etc"
+        },
+        {
+            "comando" : "Informações do usuário",
+            "emoji" : "🎐",
+            "aliases" : ".ausinfo, .auserinfo",
+            "usos" : "|mostra informações suas, >@<|mostra informações do membro mencionado, >ID<|mostra informações do membro mencionado com o ID",
+            "funcao" : "Mostra informações suas ou de um usuário pesquisado, por exemplo, data de criação da conta, quando entrou no servidor e ID"
+        },
+        {
+            "comando" : "Informações do canal",
+            "emoji" : "📑",
+            "aliases" : ".acinfo, .achannelinfo",
+            "usos" : "|mostra informações do canal onde o comando é executado, >#<|mostra informações do canal mencionado, 8223423429|mostra informações do canal com o ID informado",
+            "funcao" : "Mostra informações do canal informado, tais como data de criação, se é NSFW, se é um canal de áudio, o servidor, seu ID e etc"
+        },
+        {
+            "comando" : "Jokenpô",
+            "emoji" : "✂️",
+            "aliases" : ".ajkp, .ajokenpo",
+            "usos" : "|joga jokenpo sem uma escolha definida, papel|joga jokenpo com papel escolhido",
+            "funcao" : "Jogar jokenpo de forma automática ou definida, jogar sem informar pedra papel ou tesoura fará com que sua escolha seja aleatória"
+        },
+        {
+            "comando" : "Cara ou coroa",
+            "emoji" : "🟡",
+            "aliases" : ".aco, .acoin",
+            "usos" : "cara|joga com a opção de cara, coroa|joga com a opção de coroa",
+            "funcao" : "Jogar cara ou coroa, é necessário informar uma das duas opções para poder jogar, este comando muda suas entradas se o Alonsal estiver em outro idioma"
+        },
+        {
+            "comando" : "Rolar dados",
+            "emoji" : "🎲",
+            "aliases" : ".ada, .adado, .adi, .adice",
+            "usos" : "|roda 1 dado com 6 faces, 5 6|roda 5 dados com 6 faces, 10 50|roda 10 dados com 50 faces",
+            "funcao" : "Roda 1 ou vários dados com várias faces, o valor minimo de faces são 4 e o máximo é 10.000, e o limite máximo de dados é 50"
+        },
+        {
+            "comando" : "Pula prédios",
+            "emoji" : "🏗️",
+            "aliases" : ".apula, .apredios",
+            "usos" : "|retorna um link para o Pula Prédios!",
+            "funcao" : "O jogo em javascript montado pelo Slondo, enceirado ao máximo como deve ser"
+        },
+        {
+            "comando" : "Anúncio de games",
+            "emoji" : "🎮",
+            "aliases" : ".angm",
+            "usos" : ">@< |define um canal para receber anúncios de games gratuitos, rem|desliga o anúncio de games para o canal",
+            "funcao" : "Avisa o cargo informado toda vez que houver jogos gratuitos disponíveis por tempo limitado"
+        },
+        {
+            "comando" : "Informações do Alonsal",
+            "emoji" : "🆔",
+            "aliases" : ".ainfo",
+            "usos" : "|informações do alonsal",
+            "funcao" : "Retorna informações sobre o Alonsal"
+        },
+        {
+            "comando" : "Site do Alonsal",
+            "emoji" : "💻",
+            "aliases" : ".asite",
+            "usos" : "|site do alonsal",
+            "funcao" : "Retorna o link para este site!"
+        },
+        {
+            "comando" : "Mensageria do Alonsal",
+            "emoji" : "✉️",
+            "aliases" : ".amail",
+            "usos" : ">seu_texto<|envia um texto para o Alonsal",
+            "funcao" : "Envie mensagens e sugestões para o Alonsal com o comando <mr>.amail</mr>"
+        },
+        {
+            "comando" : "Convite do Alonsal",
+            "emoji" : "💌",
+            "aliases" : ".acvv, .aconvite, .ainv, .ainvite",
+            "usos" : "|convite para adicionar o Alonsal num server",
+            "funcao" : "Convide o alonsal para um servidor!"
+        },
+        {
+            "comando" : "Server do Alonsal",
+            "emoji" : "💃",
+            "aliases" : ".ahub, .aserver",
+            "usos" : "|convite para o servidor do Alonsal",
+            "funcao" : "Entre no servidor do Alonsal"
+        },
+        {
+            "comando" : "Ajude o Alonsal",
+            "emoji" : "🍰",
+            "aliases" : ".asuporte",
+            "usos" : "|links para ajudar o Alonsal",
+            "funcao" : "Ajude a desenvolver e manter o Alonsal, toda ajuda é bem vinda"
+        },
+        {
+            "comando" : "Idioma do Alonsal",
+            "emoji" : "🇧🇷",
+            "aliases" : ".alang",
+            "usos" : "br|define o idioma do Alonsal como português, en|define o idioma do Alonsal como inglês",
+            "funcao" : "Altera o idioma do Alonsal no servidor, todos os comandos e retornos do Alonsal são baseados no idioma definido do servidor, até mensagens em mensagem direta"
+        },
+        {
+            "comando" : "Adicionar emojis",
+            "emoji" : "🕺",
+            "aliases" : ".addmoji, .addemoji",
+            "usos" : "🕺 dancando|adiciona um emoji customizado com o nome \"dancando\", >arquivo_de_imagem< dancando|adiciona um emoji customizado em arquivo, >link_do_emoji< dancando|adiciona um emoji customizado com base no link enviado",
+            "funcao" : "Adiciona um emoji novo ao servidor com o nome informado, a entrada pode ser um emoji (caso você tenha discord nitro), um arquivo com menos de 256kb ou um link de emoji copiado de outro servidor"
+        },
+        {
+            "comando" : "Remover emojis",
+            "emoji" : "😢",
+            "aliases" : ".armoji",
+            "usos" : "😢|remove o emoji informado, >ID_do_emoji<|remove o emoji com o ID informado",
+            "funcao" : "Remove o emoji do servidor"
+        },
+        {
+            "comando" : "Limpar chat",
+            "emoji" : "🗑️",
+            "aliases" : ".acl",
+            "usos" : "50|remove as últimas 50 mensagens do chat",
+            "funcao" : "Apaga as mensagens do chat, mensagens enviadas há 2 semanas ou mais não são apagadas por limitações do Discord"
+        },
+        {
+            "comando" : "Banido",
+            "emoji" : "🔨",
+            "aliases" : ".aban",
+            "usos" : ">@<|bane o membro mencionado, >ID<|bane o membro com o ID informado",
+            "funcao" : "Bane um membro do servidor"
+        },
+        {
+            "comando" : "Expulso",
+            "emoji" : "👎",
+            "aliases" : ".akick",
+            "usos" : ">@<|expulsa o membro mencionado, >ID<|expulsa o membro com o ID informado",
+            "funcao" : "Expulsa um membro do servidor"
+        },
+        {
+            "comando" : "Alterar o prefixo",
+            "emoji" : "🔣",
+            "aliases" : ".apx",
+            "usos" : "!|altera o prefixo do Alonsal para <mr>!</mr>",
+            "funcao" : "Altera o prefixo do Alonsal no servidor inteiro, todos os retornos de comandos que possuem prefixos inclusos também são atualizados, o menu e todo o Alonsal"
+        },
+        {
+            "comando" : "Perfil da Steam",
+            "emoji" : "<img src=\"https://th.bing.com/th/id/R.dc9023a21d267f5a69f80d73f6e89dc2?rik=3XtZuRHyuD3yhQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ffroyoshark%2fenkel%2f512%2fSteam-icon.png&ehk=Q%2bLzz3YeY7Z8gPsTI2r1YF4KgfPnV%2bHMJkEoSx%2bKPy0%3d&risl=&pid=ImgRaw&r=0\" style=\"width: 25px\">",
+            "aliases" : ".asus, .asteam",
+            "usos" : "slondotk|mostra o perfil do slondo na Steam",
+            "funcao" : "Exibe várias informações de um perfil pesquisado, informações como, jogos possuídos, conquistas alcançadas, jogos 100% finalizados, insígneas, nível, capturas de tela e etc"
+        },
+        {
             "comando" : "",
             "emoji" : "",
             "aliases" : "",

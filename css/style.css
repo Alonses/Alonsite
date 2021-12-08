@@ -297,3 +297,10 @@ mr{
 a{
     text-decoration: none !important;
 }
+#emj_steam{
+    filter: drop-shadow(0px 0px 3px black);
+    margin-left: 5px;
+    padding-right: 2px;
+    width: 25px; 
+    float: left;
+}

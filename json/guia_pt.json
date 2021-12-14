@@ -103,7 +103,7 @@
             "emoji" : "⛅",
             "aliases" : ".at, .aclima, .aweather, .awe, .aprevisao",
             "usos" : ">algum_local<|mostra o tempo atual em algum local pesquisado, sao paulo|mostra o tempo em São Paulo, s#a5o p0a%$ulo|mostra o tempo em São Paulo, \"Saint-Louis-du-Ha! Ha!\"|mostra o tempo em Saint-Louis-du-Ha! Ha! sem desconsiderar os caracteres informados",
-            "funcao" : "Mostra o tempo atual e muitas outras informações em algum lugar, pesquise usando \"aspás\" para não ignorar nenhum caractere"
+            "funcao" : "Mostra o tempo atual e muitas outras informações em algum lugar, pesquise usando \"aspas\" para não ignorar nenhum caractere"
         },
         {
             "comando" : "Acontecimentos",
@@ -306,7 +306,7 @@
             "emoji" : "💅",
             "aliases" : ".ana, .anagrama, .anagram",
             "usos" : "slomdo|retorna 3 anagramas formados com a entrada \"slomdo\"",
-            "funcao" : "Cria anagramas com a entrada informada, também exibe a quantidade de combinaçõe possíveis e 3 outras combinações geradas randomicamente"
+            "funcao" : "Cria anagramas com a entrada informada, também exibe a quantidade de combinações possíveis e 3 outras combinações geradas randomicamente"
         },
         {
             "comando" : "Calculadora",

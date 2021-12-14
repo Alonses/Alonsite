@@ -109,7 +109,7 @@
             "comando" : "Events",
             "emoji" : "🏛",
             "aliases" : ".acon, .acons, .ahistory, .atoday, .ahoje, .ahs, .afato, .acontecimento",
-            "usos" : "|show any event today, 01-21 |show some random event on January 21st",
+            "usos" : "|show any event today, 01-21|show some random event on January 21st",
             "funcao" : "Displays events by history on the date informed, can show the current day and any other date, creating lists with all in one day or not (only in Portuguese)"
         },
         {

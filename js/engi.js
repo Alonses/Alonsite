@@ -110,7 +110,7 @@ function infos_comandos(idioma, comando){
     if(idioma === "pt-br") idioma = "pt";
 
     if(json_comandos.length < 1){ // Salvando os dados num array para usar localmente
-        fetch(`https://raw.githubusercontent.com/brnd-21/site-do-alonsal/main/json/guia_${idioma}.json`)
+        fetch(`https://raw.githubusercontent.com/odnols/site-do-alonsal/main/json/guia_${idioma}.json`)
         .then(response => response.json())
         .then(async dados => {
             

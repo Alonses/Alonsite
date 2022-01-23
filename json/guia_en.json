@@ -137,7 +137,7 @@
             "comando" : "Minecraft Inventory",
             "emoji" : "🌎",
             "aliases" : ".amc, .amine, .acraft, .amcs",
-            "usos" : "diamond|minecraft inventory diamond research, minecraft inventory saddle research",
+            "usos" : "diamond|minecraft inventory diamond research, saddle|minecraft inventory saddle research",
             "funcao" : "Search and display information about a minecraft item, in all there are more than 1300 items available for research"
         },
         {
@@ -298,7 +298,7 @@
             "comando" : "Choose between",
             "emoji" : "📌",
             "aliases" : ".ach, .aescolha, .adecida, .aselecione",
-            "usos" : "s t k|choose between <mr>s</mr> <mr>t</mr> and <mr>k</mr>, [2 stk|choose 2 options of <mr>s</mr> <mr>t</ mr> and <mr>k</mr>",
+            "usos" : "s t k|choose between <mr>s</mr> <mr>t</mr> and <mr>k</mr>, [2 stk|choose 2 options of <mr>s</mr> <mr>t</mr> and <mr>k</mr>",
             "funcao" : "Choose 1 or several options provided"
         },
         {
@@ -312,7 +312,7 @@
             "comando" : "Calculator",
             "emoji" : "🧮",
             "aliases" : ".acalc, .asum, .acalculadora, .acal",
-            "usos" : "1 + 1|returns the value of 1 + 1, +5 1 2 3 4 5|returns all entered numbers plus 5, *3.14 1 2 3 4 5|returns all entered numbers multiplied by 3.14, 5!|returns the value of 5 factorial, 5! + 8!|adds 5 factorial and 8 factorial and returns <mr>40,440</mr>, + 1 2 3 4 5|returns the sum of all numbers entered, * 1 2 3 4 5|returns multiplication of all numbers",
+            "usos" : "1 + 1|returns the value of 1 + 1, +5 1 2 3 4 5|returns all entered numbers plus 5, *3.14 1 2 3 4 5|returns all entered numbers multiplied by 3.14, 5!|returns the value of 5 factorial, 5! + 8!|adds 5 factorial and 8 factorial and returns <mr>40.440</mr>, + 1 2 3 4 5|returns the sum of all numbers entered, * 1 2 3 4 5|returns multiplication of all numbers",
             "funcao" : "Returns the result of the operations entered, all basic operators (+, -, /, *) are accepted, numbers with comma can be used normally"
         },
         {

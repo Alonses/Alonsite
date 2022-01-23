@@ -240,7 +240,7 @@
         },
         {
             "comando" : "Idioma do Alonsal",
-            "emoji" : "🇧🇷",
+            "emoji" : "🇺🇸",
             "aliases" : ".alang, .aidioma, .alanguage",
             "usos" : "br|define o idioma do Alonsal como português, en|define o idioma do Alonsal como inglês",
             "funcao" : "Altera o idioma do Alonsal no servidor, todos os comandos e retornos do Alonsal são baseados no idioma definido do servidor, até mensagens em mensagem direta"

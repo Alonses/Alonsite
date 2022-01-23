@@ -158,7 +158,7 @@
             "comando" : "Informações do canal",
             "emoji" : "📑",
             "aliases" : ".acinfo, .achannelinfo, .achinfo",
-            "usos" : "|mostra informações do canal onde o comando é executado, >#<|mostra informações do canal mencionado, 8223423429|mostra informações do canal com o ID informado",
+            "usos" : "|mostra informações do canal onde o comando é executado, >#<|mostra informações do canal mencionado, >ID<|mostra informações do canal com o ID informado",
             "funcao" : "Mostra informações do canal informado, tais como data de criação, se é NSFW, se é um canal de áudio, o servidor, seu ID e etc"
         },
         {
@@ -330,11 +330,25 @@
             "funcao" : "Trava e destrava o canal, para destravar o canal use <mr>.aunlk</mr> e as configurações serão repostas ao padrão anterior"
         },
         {
-            "comando" : "",
-            "emoji" : "",
-            "aliases" : "",
-            "usos" : "",
-            "funcao" : ""
+            "comando" : "Ranking de comandos",
+            "emoji" : "⚙️",
+            "aliases" : ".arc",
+            "usos" : "|exibe a lista de comandos ordenando pelas ativações, >num_pagina<|a página do rank",
+            "funcao" : "O rank de comandos exibe a lista de comandos ativados por toda a história do Alonsal, destacando dos comandos mais populares até os menos populares"
+        },
+        {
+            "comando" : "Gerador de Senhas",
+            "emoji" : "🔏",
+            "aliases" : ".apsw",
+            "usos" : "|cria uma senha aleatória com vários caracteres, >tamanho_senha<|cria a senha com o tamanho informado, 10|cria uma senha com 10 caracteres",
+            "funcao" : "Gera várias senhas aleatórias para você poder usar em suas contas, ainda assim recomendamos o uso de aplicativos de autenticação em dois fatores"
+        },
+        {
+            "comando" : "Super Jokenpô",
+            "emoji" : "🐲",
+            "aliases" : ".asjkp",
+            "usos" : "pedra|inicia o super jokenpô como pedra, pedra papel tesoura|joga 3x com 3 itens diferentes, dragao cobra lobo lobo|joga 4x com 4 itens",
+            "funcao" : "O Super Jokenpô contém 15 possibilidades para se escolher, jogue apenas uma ou até 10 vezes de uma vez informando vários itens, você pode escolher entre ( pedra, papel, tesoura, fogo, cobra, humano, arvore, lobo, esponja, ar, agua, dragao, capeta, raio & arma )"
         }
     ]
 }

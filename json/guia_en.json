@@ -3,266 +3,266 @@
         {
             "comando" : "Rank",
             "emoji" : "🏅",
-            "aliases" : ".ar, .arank",
-            "usos" : ">@<|mention a user, >ID<|ID of a user, >num_pagina<|the rank page",
+            "aliases" : "/rank",
+            "usos" : ">@<|mention a user, >num_pagina<|the rank page",
             "funcao" : "The member's level ranking on the server, active members have more experience and therefore are more prominent in the ranking; sometimes the rating can grant up to 5x XP for each message"
         },
         {
             "comando" : "Cattle",
             "emoji" : "🐮",
-            "aliases" : ".aga, .agado",
+            "aliases" : "/gado",
             "usos" : ">@<",
             "funcao" : "Confirm whether a user is cattle or not"
         },
         {
             "comando" : "Couple",
             "emoji" : "💖",
-            "aliases" : ".alove, .amor. .acasal",
+            "aliases" : "/love",
             "usos" : ">@< >@<|mention two people, >ID< >ID<|use two user id",
             "funcao" : "Shows the level of affinity between two people"
         },
         {
             "comando" : "Baidu",
             "emoji" : "🙌",
-            "aliases" : ".adu, .abaidu",
+            "aliases" : "/baidu",
             "usos" : "|Praised be!",
             "funcao" : "Send a greeting to baidu in the chat"
         },
         {
             "comando" : "Reproduction",
             "emoji" : "📻",
-            "aliases" : ".arep",
+            "aliases" : "/rep",
             "usos" : "eight and seven|makes alonsal say \"eight-seven\" with TTS in the chat, >FILE<|re-sends the file sent by the user",
             "funcao" : "Alonsal will speak in TTS or send files with this command"
         },
         {
             "comando" : "Curiosities",
             "emoji" : "📘",
-            "aliases" : ".ac, .acurio",
+            "aliases" : "/curiosidade",
             "usos" : "|tell a random curiosity",
             "funcao" : "Alonsal will tell a random curiosity (only in Portuguese)"
         },
         {
             "comando" : "Jokes",
             "emoji" : "🃏",
-            "aliases" : ".aj, .ajoke, .arisos",
+            "aliases" : "/cazalbe piada",
             "usos" : "|tell a random joke",
             "funcao" : "Alonsal will tell a random joke (only in Portuguese)"
         },
         {
             "comando" : "Sans",
             "emoji" : "✒",
-            "aliases" : ".asans",
+            "aliases" : "/sans",
             "usos" : ">your_text<|YoUr tExT WiLl lOoK LiKe tHiS",
             "funcao" : "It will make your text stylish"
         },
         {
             "comando" : "Ping",
             "emoji" : "🏓",
-            "aliases" : ".ap, .aping",
+            "aliases" : "/ping",
             "usos" : "|show your ping",
             "funcao" : "See your ping and Alonsal's ping"
         },
         {
             "comando" : "Morse",
             "emoji" : "🔣",
-            "aliases" : ".am, .amorse",
+            "aliases" : "/morse",
             "usos" : ">your_text<|code your text in morse, >your_morse<|decode your text from morse, rev >your_text<|(De)codes your text/morse and even reverses the character order",
             "funcao" : "Encode and decode whatever you want to/from Morse"
         },
         {
             "comando" : "Binary",
             "emoji" : "👨🏻‍💻",
-            "aliases" : ".abn, .abinario, .abn rev",
+            "aliases" : "/binario",
             "usos" : ">your_text<|encodes your text to binary, >your_binary<|decode your text from binary, rev >your_text<|(De)codes your text/binary and even reverses the character order",
             "funcao" : "Encodes and decodes what you input to/from the binary"
         },
         {
             "comando" : "Reverse",
             "emoji" : "◀️",
-            "aliases" : ".arev, .ainverso, .areverter, .areverse",
+            "aliases" : "/reverse",
             "usos" : ">your_text<|inverts your text",
             "funcao" : "Inverts and uninverts the entered text"
         },
         {
             "comando" : "Cryptography",
             "emoji" : "🔐",
-            "aliases" : ".acr, .adr, .acripto, .acrypto",
+            "aliases" : "/crypto",
             "usos" : ">key< >your_text<|encrypt your text with the entered key, >key< >encrypted_text<|decrypts the text with the given key",
             "funcao" : "Encrypt and decrypt the text entered with a key"
         },
         {
             "comando" : "Wikipedia",
             "emoji" : "🔍",
-            "aliases" : ".aw, .asearch, .abuscar, .busca, .awikipedia",
+            "aliases" : "/wiki",
             "usos" : ">your_search<|Search for something on wikipedia",
             "funcao" : "Search what is informed on wikipedia, the language of wikipedia and its content is defined based on the language of Alonsal."
         },
         {
             "comando" : "Weather",
             "emoji" : "⛅",
-            "aliases" : ".at, .aclima, .aweather, .awe, .aprevisao",
+            "aliases" : "/tempo",
             "usos" : ">some_location<|Shows the current time in some searched location, los angeles|Shows the weather in Los Angeles, l#o5s an0g%$eles|Shows the weather in Los Angeles, \"Saint-Louis-du-Ha! Ha!\"|Show the weather in Saint-Louis-du-Ha! Ha! without disregarding the entered characters",
             "funcao" : "Show current time and lots of other information somewhere, search using \"quotes\" to not skip any characters"
         },
         {
             "comando" : "Events",
             "emoji" : "🏛",
-            "aliases" : ".acon, .acons, .ahistory, .atoday, .ahoje, .ahs, .afato, .acontecimento",
+            "aliases" : "/history",
             "usos" : "|show any event today, 01-21|show some random event on January 21st",
             "funcao" : "Displays events by history on the date informed, can show the current day and any other date, creating lists with all in one day or not (only in Portuguese)"
         },
         {
             "comando" : "Increase emoji",
             "emoji" : "🦗",
-            "aliases" : ".amoji, .aemoji",
+            "aliases" : "/emoji",
             "usos" : ">your_emoji<|increase the emoji sent",
             "funcao" : "Increases the emoji entered (only works with custom emojis from the server)"
         },
         {
             "comando" : "Avatar",
             "emoji" : "👤",
-            "aliases" : ".avatar, .aperfil",
+            "aliases" : "/avatar",
             "usos" : "|show your avatar, >@<|show the avatar of the mentioned user, >ID<|show avatar based on user id",
             "funcao" : "Show your or a user's avatar"
         },
         {
             "comando" : "Server icon",
             "emoji" : "👥",
-            "aliases" : ".aicon, .asvicon",
+            "aliases" : "/servericon",
             "usos" : "|show server icon",
             "funcao" : "Shows the icon of the server where you used the command, you can save the image"
         },
         {
             "comando" : "Minecraft Inventory",
             "emoji" : "🌎",
-            "aliases" : ".amc, .amine, .acraft, .amcs",
+            "aliases" : "/mine",
             "usos" : "diamond|minecraft inventory diamond research, saddle|minecraft inventory saddle research",
             "funcao" : "Search and display information about a minecraft item, in all there are more than 1300 items available for research"
         },
         {
             "comando" : "Server information",
             "emoji" : "🌐",
-            "aliases" : ".asvinfo, .aserverinfo",
+            "aliases" : "/serverinfo",
             "usos" : "|shows information of the server where the command is executed",
             "funcao" : "Displays server information, for example, creation date, owner, moderation level, number of members, voice channels, audio channels, categories and etc."
         },
         {
             "comando" : "User information",
             "emoji" : "🎐",
-            "aliases" : ".ausinfo, .auserinfo, .ausif, .ausuarioinfo",
+            "aliases" : "/userinfo",
             "usos" : "|shows information about you, >@<|shows information about mentioned member, >ID<|shows information about member mentioned with ID",
             "funcao" : "Displays information about you or a searched user, for example, account creation date, when you joined the server and ID"
         },
         {
             "comando" : "Channel information",
             "emoji" : "📑",
-            "aliases" : ".acinfo, .achannelinfo, .achinfo",
+            "aliases" : "/channelinfo",
             "usos" : "|shows information of the channel where the command is executed, >#<|shows information of the mentioned channel, >ID<|shows information of the channel with the given ID",
             "funcao" : "Mostra informações do canal informado, tais como data de criação, se é NSFW, se é um canal de áudio, o servidor, seu ID e etc"
         },
         {
             "comando" : "Jokenpo",
             "emoji" : "✂️",
-            "aliases" : ".ajkp, .ajokenpo",
+            "aliases" : "/jokenpo",
             "usos" : "|play jokenpo without a defined choice, paper|play jokenpo with chosen role",
             "funcao" : "Play jokenpo automatically or set, playing without informing rock paper or scissors will make your choice random"
         },
         {
             "comando" : "Heads or tails",
             "emoji" : "🟡",
-            "aliases" : ".aco, .acoin, .amoeda",
+            "aliases" : "/moeda",
             "usos" : "heads|play with heads option, tails|play with tails option",
             "funcao" : "To play heads or tails, it is necessary to inform one of the two options to be able to play, this command changes your entries if Alonsal is in another language"
         },
         {
             "comando" : "Roll dice",
             "emoji" : "🎲",
-            "aliases" : ".ada, .adado, .adi, .adice",
+            "aliases" : "/dado",
             "usos" : "|rolls 1 6-sided dice, 5 6|rolls 5 6-sided dice, 10 50|rolls 10 50-sided dice",
             "funcao" : "Rolls 1 or multiple dice with multiple faces, the minimum value of faces is 4 and the maximum is 10,000, and the maximum dice limit is 50"
         },
         {
             "comando" : "Pula prédios",
             "emoji" : "🏗️",
-            "aliases" : ".apula, .apredios, .ajogo",
+            "aliases" : "/pulapredios",
             "usos" : "|returns a link to Pula Prédios!",
             "funcao" : "The javascript game set up by Slondo, waxed to the max as it should be"
         },
         {
             "comando" : "Game announcements",
             "emoji" : "🎮",
-            "aliases" : ".angm, .anungames",
+            "aliases" : "/games notifica",
             "usos" : ">@<|set a channel to receive free game ads, rem|turn off game ad for the channel",
             "funcao" : "Notifies the informed role whenever free games are available for a limited time"
         },
         {
             "comando" : "Alonsal information",
             "emoji" : "🆔",
-            "aliases" : ".ainfo",
+            "aliases" : "/info",
             "usos" : "|alonsal information",
             "funcao" : "Returns information about Alonsal"
         },
         {
             "comando" : "Alonsal's website",
             "emoji" : "💻",
-            "aliases" : ".asite, .awebsite",
+            "aliases" : "/site",
             "usos" : "|alonsal's website",
             "funcao" : "Returns the link to this site!"
         },
         {
             "comando" : "Alonsal's message",
             "emoji" : "✉️",
-            "aliases" : ".amail",
+            "aliases" : "/mail",
             "usos" : ">your_text<|sends a text to Alonsal",
             "funcao" : "Send messages and suggestions to Alonsal with the command <mr>.amail</mr>"
         },
         {
             "comando" : "Alonsal's Invitation",
             "emoji" : "💌",
-            "aliases" : ".acvv, .aconvite, .ainvite",
+            "aliases" : "/convite",
             "usos" : "|invitation to add Alonsal to a server",
             "funcao" : "Invite alonsal to a server!"
         },
         {
             "comando" : "Alonsal's Server",
             "emoji" : "💃",
-            "aliases" : ".ahub, .aserver",
+            "aliases" : "/server",
             "usos" : "|invitation to the Alonsal server",
             "funcao" : "Join the Alonsal server"
         },
         {
             "comando" : "Alonsal Support",
             "emoji" : "🍰",
-            "aliases" : ".asuporte, .asupport, .apatrocinio, .amoney, .apremium",
+            "aliases" : "/suporte",
             "usos" : "|links to help Alonsal",
             "funcao" : "Ajude a desenvolver e manter o Alonsal, toda ajuda é bem vinda"
         },
         {
             "comando" : "Language of Alonsal",
             "emoji" : "🇧🇷",
-            "aliases" : ".alang, .aidioma, .alanguage",
+            "aliases" : "/idioma",
             "usos" : "br|sets Alonsal's language to Portuguese, n|sets Alonsal's language to English",
             "funcao" : "Changes the Alonsal language on the server, all Alonsal commands and returns are based on the defined server language, even direct message messages"
         },
         {
             "comando" : "Add emojis",
             "emoji" : "🕺",
-            "aliases" : ".addmoji, .addemoji .adicionaremoji",
+            "aliases" : "/adicionaremoji",
             "usos" : "🕺 dancing|adds a custom emoji with the name \"dancing\", >image_file< dancing|added a custom emoji in file, >emoji_link< dancing|added a custom emoji based on the submitted link",
             "funcao" : "Adds a new emoji to the server with the given name, the input can be an emoji (if you have nitro discord), a file smaller than 256kb or an emoji link copied from another server"
         },
         {
             "comando" : "Remove emojis",
             "emoji" : "😢",
-            "aliases" : ".armoji, .aremovemoji",
+            "aliases" : "/removemoji",
             "usos" : "😢|remove the given emoji, >emoji_id<|remove the emoji with the given id",
             "funcao" : "Remove the emoji from the server"
         },
         {
             "comando" : "Clear chat",
             "emoji" : "🗑️",
-            "aliases" : ".acl, .alimpar, .apagar, .aclear",
+            "aliases" : "/clear",
             "usos" : "50|remove the last 50 chat messages",
             "funcao" : "Delete chat messages, messages sent 2 weeks ago or more are not deleted due to Discord limitations"
         },
@@ -290,7 +290,7 @@
         {
             "comando" : "Steam Profile",
             "emoji" : "<img src=\"https://th.bing.com/th/id/R.dc9023a21d267f5a69f80d73f6e89dc2?rik=3XtZuRHyuD3yhQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ffroyoshark%2fenkel%2f512%2fSteam-icon.png&ehk=Q%2bLzz3YeY7Z8gPsTI2r1YF4KgfPnV%2bHMJkEoSx%2bKPy0%3d&risl=&pid=ImgRaw&r=0\" style=\"height: 46px\">",
-            "aliases" : ".asus, .astus, .asteam",
+            "aliases" : "/steam",
             "usos" : "slondotk|shows slondo's profile on Steam",
             "funcao" : "Displays various information from a searched profile, information such as games owned, achievements achieved, games 100% completed, badges, level, screenshots and etc.<br>To search your profile, create a custom link to your Steam profile and use it when searching with <mr>.asus</mr>"
         },
@@ -304,7 +304,7 @@
         {
             "comando" : "Anagrams",
             "emoji" : "💅",
-            "aliases" : ".ana, .anagrama, .anagram",
+            "aliases" : "/anagrama",
             "usos" : "slomdo|returns 3 anagrams formed with the input \"slomdo\"",
             "funcao" : "Creates anagrams with the given input, also displays the number of possible combinations and 3 other randomly generated combinations"
         },
@@ -339,7 +339,7 @@
         {
             "comando" : "Password Generator",
             "emoji" : "🔏",
-            "aliases" : ".apsw",
+            "aliases" : "/password",
             "usos" : "|create a random password with several characters, >password_length<|create the password with the given length, 10|create a password with 10 characters",
             "funcao" : "Generates several random passwords for you to use on your accounts, we still recommend using two-factor authentication apps"
         },

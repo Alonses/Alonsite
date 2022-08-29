@@ -271,7 +271,7 @@ a{
     position: absolute;
     height: auto;
 }
-mr{
+mr, mx{
     background-color: rgb(32, 34, 37);
     color: rgb(220, 221, 210);
     font-weight: 500;
@@ -279,6 +279,10 @@ mr{
     padding-left: 3px;
     padding-right: 3px;
     animation: pisca_comando 2s;
+}
+mx{
+    animation: none;
+    padding: 2px;
 }
 #ceira_solutions{
     width: 150px;

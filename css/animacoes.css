@@ -1,22 +1,65 @@
-@keyframes desliza{
-    from { top: 200%; }
-    to { top: -200px; }
+@keyframes desliza {
+    from {
+        top: 200%;
+    }
+
+    to {
+        top: -200px;
+    }
 }
-@keyframes desliza2{
-    from { top: 200%; }
-    to { top: -200%; }
+
+@keyframes desliza2 {
+    from {
+        top: 200%;
+    }
+
+    to {
+        top: -200%;
+    }
 }
+
 @keyframes transita_comands {
-    0% { height: 0%; }
-    50% { height: 100%; top: 0%; }
-    100% { top: 100%; }
+    0% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+        top: 0%;
+    }
+
+    100% {
+        top: 100%;
+    }
 }
+
 @keyframes carrega_pag {
-    0% { z-index: 5; height: 100%; top: 0px; box-shadow: 0px 0px 15px black; }
-    100% { top: 0%; height: 0%; z-index: 5; box-shadow: 0px 0px 15px black; opacity: .8;}
+    0% {
+        z-index: 5;
+        height: 100%;
+        top: 0px;
+        box-shadow: 0px 0px 15px black;
+    }
+
+    100% {
+        top: 0%;
+        height: 0%;
+        z-index: 5;
+        box-shadow: 0px 0px 15px black;
+        opacity: .8;
+    }
 }
-@keyframes pisca_comando{
-    0% { box-shadow: 0px 0px 0px black; }
-    50% { box-shadow: 0px 0px 15px yellow; }
-    100% { box-shadow: 0px 0px 0px black; }
+
+@keyframes pisca_comando {
+    0% {
+        box-shadow: 0px 0px 0px black;
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px yellow;
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px black;
+    }
 }

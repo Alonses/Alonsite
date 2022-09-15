@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf8">
     <title>👽 Alonsal</title>
@@ -11,11 +12,14 @@
     <link rel="stylesheet" type="text/css" href="css/animacoes.css">
     <link rel="stylesheet" type="text/css" href="css/responsividade.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <script src="js/engi.js"></script>
 </head>
+
 <body onload="traduz_site()">
 
     <div id="fundo_pag"></div>
@@ -26,9 +30,12 @@
 
         <nav id="buttons_nav">
             <a class="button_nav" href="#" onclick="transita_comands()"><span class="trad_comands"></span></a> &nbsp;
-            <a class="button_nav convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1614150720"><span class="trad_convidar"></span></a> &nbsp;
+            <a class="button_nav convite"
+                href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1614150720"><span
+                    class="trad_convidar"></span></a> &nbsp;
 
-            <a class="button_nav trad_button" href="#" onclick="alterar_idioma()"><span class="trad_bandeira">🇧🇷</span></a> 
+            <a class="button_nav trad_button" href="#" onclick="alterar_idioma()"><span
+                    class="trad_bandeira">🇧🇷</span></a>
         </nav>
     </header>
 
@@ -43,7 +50,7 @@
         <span class="anima_1 deslizante2 dls5"></span>
         <span class="anima_1 deslizante3"></span>
     </div>
-    
+
     <div id="animacoes2">
         <span class="anima_2 deslizante"></span>
         <span class="anima_2 deslizante2"></span>
@@ -57,7 +64,9 @@
         <div id="descri_top">
             <p id="descri_aln"><span class="trad_descri_inicial"></span></p> <br><br><br>
 
-            <a class="button convite" href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1614150720"><span class="trad_convide"></span> 😻</a><br><br><br>
+            <a class="button convite"
+                href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1614150720"><span
+                    class="trad_convide"></span> 😻</a><br><br><br>
             <a class="button" href="https://discord.gg/ZxHnxQDNwn"><span class="trad_server"></span></a>
         </div>
     </div>
@@ -107,38 +116,41 @@
             <a href="https://github.com/brnd-21/Alonsal">Github</a>
             <a href="#" onclick="transita_comands()"><span class="trad_comands"></span></a>
         </nav>
-    
+
         <div id="icone_redes">
             <p style="float: left; padding-top: 10px;"><span class="trad_versao"></span> 2.0</p> &nbsp; &nbsp;
-            
-            <a href="https://github.com/brnd-21/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a> &nbsp;
+
+            <a href="https://github.com/brnd-21/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a>
+            &nbsp;
             <a href="https://discord.gg/ZxHnxQDNwn"><i class="fab fa-discord fa-3x" aria-hidden="true"></i></a>
-            <a href="https://github.com/lllggghhhaaa/WaxCommandHandler"><img id="ceira_solutions" src="img/CeiraSolutions.png"></a>
+            <a href="https://github.com/lllggghhhaaa/WaxCommandHandler"><img id="ceira_solutions"
+                    src="img/CeiraSolutions.png"></a>
         </div>
     </footer>
 </body>
 
 <script>
     var body = document.body,
-    html = document.documentElement;
+        html = document.documentElement;
 
     var height_total = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
-    document.getElementById("animacoes").style.height = height_total +"px";
+    document.getElementById("animacoes").style.height = height_total + "px";
 
     troca_pag(0);
 
     idioma = localStorage.getItem("idioma_site_alonsal");
 
-    if(typeof idioma == "undefined")
+    if (typeof idioma == "undefined")
         idioma = "pt-br";
 
     let comandos_local = localStorage.getItem("site_alonsal_comandos");
 
-    if(typeof comandos_local !== "undefined")
-        if(parseInt(comandos_local) === 1)
+    if (typeof comandos_local !== "undefined")
+        if (parseInt(comandos_local) === 1)
             transita_comands("auto");
 </script>
 
 <!-- <script src="js/neve.js"></script> -->
+
 </html>

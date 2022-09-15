@@ -1,18 +1,20 @@
-body{
+body {
     color: white !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(41,187,142) !important;
+    background-color: rgb(41, 187, 142) !important;
 }
-#fundo_pag{
-    background: rgb(26,26,31); 
-    background: linear-gradient(180deg, rgba(26,26,31,1) 0%, rgba(26,26,31,1) 78%, rgba(26,111,85,.9) 91%, rgba(41,187,142,0) 100%);
+
+#fundo_pag {
+    background: rgb(26, 26, 31);
+    background: linear-gradient(180deg, rgba(26, 26, 31, 1) 0%, rgba(26, 26, 31, 1) 78%, rgba(26, 111, 85, .9) 91%, rgba(41, 187, 142, 0) 100%);
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 0;
     top: 0px;
 }
-header{
+
+header {
     position: fixed;
     background-color: rgb(38, 38, 43);
     box-shadow: 0px 0px 15px black;
@@ -20,28 +22,35 @@ header{
     padding: 15px;
     z-index: 4;
 }
-#infos_iniciais{
+
+#infos_iniciais {
     z-index: 2;
     position: relative;
     padding-bottom: 50px;
 }
-#infos_secundarias{
+
+#infos_secundarias {
     z-index: 2;
     position: relative;
     padding-top: 100px;
     padding-bottom: 50px;
 }
-#texto_detalhes{
+
+#texto_detalhes {
     width: 50%;
     padding-left: 20%;
 }
-#corpo_pag{
+
+#corpo_pag {
     overflow-y: scroll;
 }
-#buttons_nav{
+
+#buttons_nav {
     float: right;
 }
-.button, .button_nav{
+
+.button,
+.button_nav {
     text-decoration: none;
     width: auto;
     padding: 15px;
@@ -53,30 +62,38 @@ header{
     transition: all .5s;
     box-shadow: 0px 8px 20px black;
 }
-.button_nav{
+
+.button_nav {
     padding: 5px !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
-.button:hover, .button_nav:hover{
+
+.button:hover,
+.button_nav:hover {
     color: white;
     background-color: rgb(69, 91, 172);
 }
-.trad_button{
+
+.trad_button {
     background-color: rgb(179, 176, 19);
 }
-.trad_button:hover{
+
+.trad_button:hover {
     background-color: rgb(116, 114, 14);
 }
-.convite{
-    background-color: rgb(41,187,142);
+
+.convite {
+    background-color: rgb(41, 187, 142);
     transition: all .5s;
 }
-.convite:hover{
+
+.convite:hover {
     color: white;
     background-color: rgb(27, 126, 96);
 }
-#img_alonsal{
+
+#img_alonsal {
     filter: drop-shadow(0px 0px 15px black);
     width: 400px;
     border-radius: 25% !important;
@@ -84,16 +101,19 @@ header{
     top: 20%;
     left: 16%;
 }
-#descri_top{
+
+#descri_top {
     width: 85%;
     text-align: center;
     padding-left: 50%;
     padding-top: 18%;
 }
-#descri_aln{
+
+#descri_aln {
     font-size: 20px;
 }
-#animacoes{
+
+#animacoes {
     top: 0px;
     left: 0px;
     width: 100%;
@@ -101,7 +121,8 @@ header{
     position: fixed;
     z-index: 0 !important;
 }
-#animacoes2{
+
+#animacoes2 {
     top: 0px;
     right: 0px;
     width: 10%;
@@ -110,7 +131,8 @@ header{
     position: fixed;
     z-index: 0 !important;
 }
-.deslizante{
+
+.deslizante {
     background-color: rgb(41, 187, 142);
     width: 30px;
     left: 50px;
@@ -120,7 +142,8 @@ header{
     z-index: 1;
     overflow: hidden;
 }
-.deslizante2{
+
+.deslizante2 {
     background-color: rgb(41, 187, 142);
     width: 20px;
     left: 85px;
@@ -130,31 +153,36 @@ header{
     z-index: 1;
     overflow: hidden;
 }
-.dls2{
+
+.dls2 {
     width: 10px;
     left: 35px;
     height: 60px;
     animation: desliza2 6s infinite !important;
 }
-.dls3{
+
+.dls3 {
     width: 10px;
     left: 35px;
     height: 100px;
     animation: desliza2 3s infinite !important;
 }
-.dls4{
+
+.dls4 {
     width: 5px;
     left: 110px;
     height: 100px;
     animation: desliza 4s infinite !important;
 }
-.dls5{
+
+.dls5 {
     width: 5px;
     left: 30px;
     height: 100px;
     animation: desliza 2s infinite !important;
 }
-.deslizante3{
+
+.deslizante3 {
     background-color: rgb(41, 187, 142);
     width: 20px;
     left: 5px;
@@ -164,10 +192,12 @@ header{
     z-index: 1;
     overflow: hidden;
 }
-.anima_2{
+
+.anima_2 {
     animation-direction: alternate-reverse !important;
 }
-#comandos{
+
+#comandos {
     display: none;
     z-index: 2;
     background-color: rgb(44, 47, 51);
@@ -176,10 +206,12 @@ header{
     position: absolute;
     top: 0%;
 }
-#comandos_geral{
+
+#comandos_geral {
     left: 5%;
 }
-#comandos_menu{
+
+#comandos_menu {
     background-color: rgb(64, 68, 75);
     border-radius: 5px;
     width: 50%;
@@ -192,7 +224,8 @@ header{
     left: 5%;
     overflow-y: auto;
 }
-#comandos_infos{
+
+#comandos_infos {
     background-color: rgb(64, 68, 75);
     border-radius: 5px;
     width: 35%;
@@ -205,13 +238,15 @@ header{
     right: 5%;
     overflow-y: auto;
 }
-#menu_reacoes{
+
+#menu_reacoes {
     float: left;
     position: absolute;
     top: 93%;
     left: 5%;
 }
-.button_react{
+
+.button_react {
     padding: 5px;
     padding-left: 16px;
     padding-right: 16px;
@@ -221,12 +256,14 @@ header{
     transition: all .3s;
     border: 1px solid rgba(0, 0, 0, 0);
 }
-.button_react:hover{
+
+.button_react:hover {
     background-color: rgb(50, 53, 58);
     border: 1px solid rgb(93, 96, 100);
     box-shadow: 0px 0px 0px black;
 }
-#transitador{
+
+#transitador {
     background-color: rgb(41, 187, 142);
     z-index: 3;
     width: 100%;
@@ -235,7 +272,8 @@ header{
     top: 0%;
     animation: carrega_pag 1s;
 }
-.comando_line{
+
+.comando_line {
     background-color: rgb(32, 34, 37);
     color: rgb(220, 221, 210);
     font-weight: 500;
@@ -243,27 +281,32 @@ header{
     padding-left: 3px;
     padding-right: 3px;
 }
-footer{
+
+footer {
     background-color: rgb(44, 47, 51);
     padding: 15px;
     position: relative;
     z-index: 1;
     bottom: 0px;
 }
-footer > nav{
+
+footer>nav {
     width: 100px;
     padding-left: 15px;
 }
-footer > nav > a{
+
+footer>nav>a {
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white !important;
 }
-#icone_redes{
+
+#icone_redes {
     text-shadow: 0px 0px 5px black;
     min-width: 10%;
     right: 10px;
@@ -271,7 +314,9 @@ a{
     position: absolute;
     height: auto;
 }
-mr, mx{
+
+mr,
+mx {
     background-color: rgb(32, 34, 37);
     color: rgb(220, 221, 210);
     font-weight: 500;
@@ -280,11 +325,13 @@ mr, mx{
     padding-right: 3px;
     animation: pisca_comando 2s;
 }
-mx{
+
+mx {
     animation: none;
     padding: 2px;
 }
-#ceira_solutions{
+
+#ceira_solutions {
     width: 150px;
     float: right;
     padding-left: 15px;
@@ -292,19 +339,22 @@ mx{
     padding-top: 2px;
     filter: drop-shadow(0px 0px 5px black);
 }
-.emj{
+
+.emj {
     text-align: center;
     width: 30px !important;
     float: left;
     filter: drop-shadow(0px 0px 3px black);
 }
-a{
+
+a {
     text-decoration: none !important;
 }
-#emj_steam{
+
+#emj_steam {
     filter: drop-shadow(0px 0px 3px black);
     margin-left: 5px;
     padding-right: 2px;
-    width: 25px; 
+    width: 25px;
     float: left;
 }

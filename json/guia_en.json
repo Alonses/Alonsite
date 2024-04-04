@@ -4,7 +4,12 @@
             "comando": "Rank",
             "emoji": "🏅",
             "aliases": "/rank",
-            "usos": ">@<|mention a user, >num_pagina<|the rank page",
+            "chaves": [
+                "👾 Server",
+                "🌐 Global",
+                "🏦 Bank"
+            ],
+            "usos": ">scope< >@<|mention a user, >scope< >num_page<|the rank page",
             "funcao": "The member's level ranking on the server, active members have more experience and therefore are more prominent in the ranking; sometimes the rating can grant up to 5x XP for each message"
         },
         {

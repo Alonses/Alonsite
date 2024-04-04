@@ -1,12 +1,19 @@
+* {
+    --cyan: #1d9b97;
+    --dark_cyan: #187c79;
+    --gray: rgb(44, 47, 51);
+    --dark_gray: rgb(29, 31, 34);
+}
+
 body {
     color: white !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(41, 187, 142) !important;
+    background-color: var(--cyan) !important;
 }
 
 #fundo_pag {
     background: rgb(26, 26, 31);
-    background: linear-gradient(180deg, rgba(26, 26, 31, 1) 0%, rgba(26, 26, 31, 1) 78%, rgba(26, 111, 85, .9) 91%, rgba(41, 187, 142, 0) 100%);
+    background: linear-gradient(180deg, rgba(26, 26, 31, 1) 0%, rgba(26, 26, 31, 1) 78%, var(--dark_cyan) 91%, rgba(41, 187, 142, 0) 100%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -84,13 +91,32 @@ header {
 }
 
 .convite {
-    background-color: rgb(41, 187, 142);
+    background-color: var(--cyan);
     transition: all .5s;
 }
 
 .convite:hover {
     color: white;
-    background-color: rgb(27, 126, 96);
+    background-color: var(--dark_cyan);
+}
+
+.terms {
+    background-color: rgb(189, 183, 171);
+}
+
+#termos {
+    display: none;
+    overflow-y: scroll;
+}
+
+.terms:hover {
+    background-color: rgb(119, 116, 109);
+}
+
+#conteudo_termos {
+    padding-top: 7%;
+    margin-left: 5%;
+    width: 90%;
 }
 
 #img_alonsal {
@@ -133,7 +159,7 @@ header {
 }
 
 .deslizante {
-    background-color: rgb(41, 187, 142);
+    background-color: var(--cyan);
     width: 30px;
     left: 50px;
     height: 200px;
@@ -144,7 +170,7 @@ header {
 }
 
 .deslizante2 {
-    background-color: rgb(41, 187, 142);
+    background-color: var(--cyan);
     width: 20px;
     left: 85px;
     height: 150px;
@@ -183,7 +209,7 @@ header {
 }
 
 .deslizante3 {
-    background-color: rgb(41, 187, 142);
+    background-color: var(--cyan);
     width: 20px;
     left: 5px;
     height: 300px;
@@ -197,17 +223,19 @@ header {
     animation-direction: alternate-reverse !important;
 }
 
-#comandos {
+#comandos,
+#termos {
     display: none;
     z-index: 2;
-    background-color: rgb(44, 47, 51);
+    background-color: var(--gray);
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0%;
 }
 
-#comandos_geral {
+#comandos_geral,
+#termos_servico {
     left: 5%;
 }
 
@@ -264,7 +292,7 @@ header {
 }
 
 #transitador {
-    background-color: rgb(41, 187, 142);
+    background-color: var(--cyan);
     z-index: 3;
     width: 100%;
     height: 0%;
@@ -283,11 +311,15 @@ header {
 }
 
 footer {
-    background-color: rgb(44, 47, 51);
+    background-color: var(--gray);
     padding: 15px;
     position: relative;
     z-index: 1;
     bottom: 0px;
+}
+
+#sub_footer {
+    background-color: var(--dark_gray);
 }
 
 footer>nav {
@@ -316,7 +348,8 @@ a {
 }
 
 mr,
-mx {
+mx,
+mx_tag {
     background-color: rgb(32, 34, 37);
     color: rgb(220, 221, 210);
     font-weight: 500;
@@ -329,6 +362,13 @@ mx {
 mx {
     animation: none;
     padding: 2px;
+}
+
+mx_tag {
+    padding: 2px;
+    animation: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #ceira_solutions {
@@ -357,4 +397,8 @@ a {
     padding-right: 2px;
     width: 25px;
     float: left;
+}
+
+footer>nav {
+    width: 50%;
 }

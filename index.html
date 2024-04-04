@@ -29,7 +29,9 @@
         <h1 style="padding-left: 2%; float: left;"><span class="trad_aoba"></span></h1>
 
         <nav id="buttons_nav">
-            <a class="button_nav" href="#" onclick="transita_comands()"><span class="trad_comands"></span></a> &nbsp;
+            <a class="button_nav terms" href="#" onclick="transita_terms()"><span class="trad_terms_2"></span></a>
+            &nbsp;
+            <a class="button_nav" href="#" onclick="transita_commands()"><span class="trad_commands"></span></a> &nbsp;
             <a class="button_nav convite"
                 href="https://discord.com/oauth2/authorize?client_id=833349943539531806&scope=bot&permissions=1614150720"><span
                     class="trad_convidar"></span></a> &nbsp;
@@ -75,10 +77,12 @@
         <div id="texto_detalhes">
             <h5><span class="trad_infos_secundarias"></span><br><br>
 
-                <mx>😂 <span class="trad_diversao"></span></mx>
-                <mx>💡 <span class="trad_utilidades"></span></mx> <br><br>
-                <mx>🎲 <span class="trad_jogos"></span></mx>
-                <mx>📡 <span class="trad_manutencao"></span></mx> <br><br>
+                <mx_tag>😂 <span class="trad_diversao"></span></mx_tag>
+                <mx_tag>💡 <span class="trad_utilidades"></span></mx_tag>
+                <mx_tag>🎲 <span class="trad_jogos"></span></mx_tag> <br><br>
+                <mx_tag>💂 <span class="trad_moderacao"></span></mx_tag>
+                <mx_tag>👤 <span class="trad_usuario"></span></mx_tag>
+                <mx_tag>📡 <span class="trad_manutencao"></span></mx_tag> <br><br>
 
                 <span class="trad_infos_secundarias2"></span>
             </h5>
@@ -88,13 +92,15 @@
     <div id="comandos">
         <div id="comandos_geral">
             <div id="comandos_menu">
-                <h2><span class="trad_comands_apr"></span></h2>
+                <h2><span class="trad_commands_apr"></span></h2>
                 <p id="pagina_comandos"></p>
             </div>
 
             <div id="menu_reacoes">
                 <span class="button_react select_0" onclick="troca_pag(0)">😂</span>
                 <span class="button_react select_1" onclick="troca_pag(1)">💡</span>
+                <span class="button_react select_4" onclick="troca_pag(4)">💂</span>
+                <!-- <span class="button_react select_5" onclick="troca_pag(5)">👤</span> -->
                 <span class="button_react select_2" onclick="troca_pag(2)">🎲</span>
                 <span class="button_react select_3" onclick="troca_pag(3)">📡</span>
             </div>
@@ -111,16 +117,41 @@
         </div>
     </div>
 
+    <div id="termos">
+        <div id="conteudo_termos">
+
+        </div>
+
+        <footer id="sub_footer">
+            <nav>
+                <a href="https://github.com/Alonses/Alonsal">Github</a> <br>
+                <a href="#" onclick="transita_commands()"><span class="trad_commands"></span></a> <br>
+                <a href="#" onclick="transita_terms()"><span class="trad_terms"></span></a>
+            </nav>
+
+            <div id="icone_redes">
+                <p style="float: left; padding-top: 10px;"><span class="trad_versao"></span> 5.5</p> &nbsp; &nbsp;
+
+                <a href="https://github.com/Alonses/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a>
+                &nbsp;
+                <a href="https://discord.gg/ZxHnxQDNwn"><i class="fab fa-discord fa-3x" aria-hidden="true"></i></a>
+                <a href="https://github.com/lllggghhhaaa/WaxCommandHandler"><img id="ceira_solutions"
+                        src="img/CeiraSolutions.png"></a>
+            </div>
+        </footer>
+    </div>
+
     <footer>
         <nav>
-            <a href="https://github.com/brnd-21/Alonsal">Github</a>
-            <a href="#" onclick="transita_comands()"><span class="trad_comands"></span></a>
+            <a href="https://github.com/Alonses/Alonsal">Github</a> <br>
+            <a href="#" onclick="transita_commands()"><span class="trad_commands"></span></a> <br>
+            <a href="#" onclick="transita_terms()"><span class="trad_terms"></span></a>
         </nav>
 
         <div id="icone_redes">
-            <p style="float: left; padding-top: 10px;"><span class="trad_versao"></span> 2.0</p> &nbsp; &nbsp;
+            <p style="float: left; padding-top: 10px;"><span class="trad_versao"></span> 5.5</p> &nbsp; &nbsp;
 
-            <a href="https://github.com/brnd-21/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://github.com/Alonses/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a>
             &nbsp;
             <a href="https://discord.gg/ZxHnxQDNwn"><i class="fab fa-discord fa-3x" aria-hidden="true"></i></a>
             <a href="https://github.com/lllggghhhaaa/WaxCommandHandler"><img id="ceira_solutions"
@@ -148,7 +179,7 @@
 
     if (typeof comandos_local !== "undefined")
         if (parseInt(comandos_local) === 1)
-            transita_comands("auto");
+            transita_commands("auto");
 </script>
 
 <!-- <script src="js/neve.js"></script> -->

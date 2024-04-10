@@ -77,10 +77,11 @@
         <div id="texto_detalhes">
             <h5><span class="trad_infos_secundarias"></span><br><br>
 
-                <mx_tag>😂 <span class="trad_diversao"></span></mx_tag>
-                <mx_tag>💡 <span class="trad_utilidades"></span></mx_tag>
-                <mx_tag>🎲 <span class="trad_jogos"></span></mx_tag> <br><br>
                 <mx_tag>💂 <span class="trad_moderacao"></span></mx_tag>
+                <mx_tag>💡 <span class="trad_utilidades"></span></mx_tag>
+                <mx_tag>😂 <span class="trad_diversao"></span></mx_tag> <br><br>
+                <mx_tag>🎉 <span class="trad_customizacao"></span></mx_tag>
+                <mx_tag>🎲 <span class="trad_jogos"></span></mx_tag>
                 <mx_tag>👤 <span class="trad_usuario"></span></mx_tag>
                 <mx_tag>📡 <span class="trad_manutencao"></span></mx_tag> <br><br>
 
@@ -132,11 +133,11 @@
             <div id="icone_redes">
                 <p style="float: left; padding-top: 10px;"><span class="trad_versao"></span> 5.5</p> &nbsp; &nbsp;
 
-                <a href="https://github.com/Alonses/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a>
+                <a href="https://github.com/Alonses/Alonsal"><img id="discord_logo" src="img/icons/Discord.png"></a>
                 &nbsp;
                 <a href="https://discord.gg/ZxHnxQDNwn"><i class="fab fa-discord fa-3x" aria-hidden="true"></i></a>
                 <a href="https://github.com/lllggghhhaaa/WaxCommandHandler"><img id="ceira_solutions"
-                        src="img/CeiraSolutions.png"></a>
+                        src="img/icons/CeiraSolutions.png"></a>
             </div>
         </footer>
     </div>
@@ -153,33 +154,41 @@
 
             <a href="https://github.com/Alonses/Alonsal"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a>
             &nbsp;
-            <a href="https://discord.gg/ZxHnxQDNwn"><i class="fab fa-discord fa-3x" aria-hidden="true"></i></a>
+            <a href="https://github.com/Alonses/Alonsal"><img id="discord_logo" src="img/icons/Discord.png"></a>
             <a href="https://github.com/lllggghhhaaa/WaxCommandHandler"><img id="ceira_solutions"
-                    src="img/CeiraSolutions.png"></a>
+                    src="img/icons/CeiraSolutions.png"></a>
         </div>
     </footer>
 </body>
 
 <script>
     var body = document.body,
-        html = document.documentElement;
+        html = document.documentElement
 
-    var height_total = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var height_total = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight)
 
-    document.getElementById("animacoes").style.height = height_total + "px";
+    document.getElementById("animacoes").style.height = `${height_total}px`
+    const url = window.location.href
 
-    troca_pag(0);
+    // Acionadores de sub-paginas
+    if (url.includes("#terms"))
+        transita_terms()
 
-    idioma = localStorage.getItem("idioma_site_alonsal");
+    if (url.includes("#commands"))
+        transita_commands()
+
+    troca_pag(0)
+
+    idioma = localStorage.getItem("idioma_site_alonsal")
 
     if (typeof idioma == "undefined")
-        idioma = "pt-br";
+        idioma = "pt-br"
 
-    let comandos_local = localStorage.getItem("site_alonsal_comandos");
+    let comandos_local = localStorage.getItem("site_alonsal_comandos")
 
     if (typeof comandos_local !== "undefined")
         if (parseInt(comandos_local) === 1)
-            transita_commands("auto");
+            transita_commands("auto")
 </script>
 
 <!-- <script src="js/neve.js"></script> -->

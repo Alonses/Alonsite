@@ -7,27 +7,27 @@
 
 body {
     color: white !important;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--cyan) !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #fundo_pag {
-    background: rgb(26, 26, 31);
-    background: linear-gradient(180deg, rgba(26, 26, 31, 1) 0%, rgba(26, 26, 31, 1) 78%, var(--dark_cyan) 91%, rgba(41, 187, 142, 0) 100%);
+    top: 0px;
+    z-index: 0;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 0;
-    top: 0px;
+    background: rgb(26, 26, 31);
+    background: linear-gradient(180deg, rgba(26, 26, 31, 1) 0%, rgba(26, 26, 31, 1) 78%, var(--dark_cyan) 91%, rgba(41, 187, 142, 0) 100%);
 }
 
 header {
-    position: fixed;
-    background-color: rgb(38, 38, 43);
-    box-shadow: 0px 0px 15px black;
+    z-index: 4;
     width: 100%;
     padding: 15px;
-    z-index: 4;
+    position: fixed;
+    box-shadow: 0px 0px 15px black;
+    background-color: rgb(38, 38, 43);
 }
 
 #infos_iniciais {
@@ -58,16 +58,16 @@ header {
 
 .button,
 .button_nav {
-    text-decoration: none;
     width: auto;
-    padding: 15px;
-    background-color: rgb(114, 137, 218);
     color: white;
+    padding: 15px;
     font-size: 30px;
     border-radius: 5px;
-    transition: backgroundColor .5s;
     transition: all .5s;
+    text-decoration: none;
     box-shadow: 0px 8px 20px black;
+    transition: backgroundColor .5s;
+    background-color: rgb(114, 137, 218);
 }
 
 .button_nav {
@@ -91,8 +91,8 @@ header {
 }
 
 .convite {
-    background-color: var(--cyan);
     transition: all .5s;
+    background-color: var(--cyan);
 }
 
 .convite:hover {
@@ -114,25 +114,25 @@ header {
 }
 
 #conteudo_termos {
+    width: 90%;
     padding-top: 7%;
     margin-left: 5%;
-    width: 90%;
 }
 
 #img_alonsal {
-    filter: drop-shadow(0px 0px 15px black);
-    width: 400px;
-    border-radius: 25% !important;
-    position: absolute;
     top: 20%;
     left: 16%;
+    width: 400px;
+    position: absolute;
+    border-radius: 25% !important;
+    filter: drop-shadow(0px 0px 15px black);
 }
 
 #descri_top {
     width: 85%;
-    text-align: center;
-    padding-left: 50%;
     padding-top: 18%;
+    padding-left: 50%;
+    text-align: center;
 }
 
 #descri_aln {
@@ -143,8 +143,8 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
-    overflow: hidden;
     position: fixed;
+    overflow: hidden;
     z-index: 0 !important;
 }
 
@@ -153,43 +153,43 @@ header {
     right: 0px;
     width: 10%;
     height: 100%;
-    overflow: hidden;
     position: fixed;
+    overflow: hidden;
     z-index: 0 !important;
 }
 
 .deslizante {
-    background-color: var(--cyan);
-    width: 30px;
-    left: 50px;
-    height: 200px;
-    animation: desliza 5s infinite !important;
-    position: absolute;
     z-index: 1;
+    left: 50px;
+    width: 30px;
+    height: 200px;
     overflow: hidden;
+    position: absolute;
+    background-color: var(--cyan);
+    animation: desliza 5s infinite !important;
 }
 
 .deslizante2 {
-    background-color: var(--cyan);
-    width: 20px;
-    left: 85px;
-    height: 150px;
-    animation: desliza2 4s infinite !important;
-    position: absolute;
     z-index: 1;
+    left: 85px;
+    width: 20px;
+    height: 150px;
     overflow: hidden;
+    position: absolute;
+    background-color: var(--cyan);
+    animation: desliza2 4s infinite !important;
 }
 
 .dls2 {
-    width: 10px;
     left: 35px;
+    width: 10px;
     height: 60px;
     animation: desliza2 6s infinite !important;
 }
 
 .dls3 {
-    width: 10px;
     left: 35px;
+    width: 10px;
     height: 100px;
     animation: desliza2 3s infinite !important;
 }
@@ -209,14 +209,14 @@ header {
 }
 
 .deslizante3 {
-    background-color: var(--cyan);
-    width: 20px;
     left: 5px;
-    height: 300px;
-    animation: desliza2 10s infinite !important;
-    position: absolute;
     z-index: 1;
+    width: 20px;
+    height: 300px;
     overflow: hidden;
+    position: absolute;
+    background-color: var(--cyan);
+    animation: desliza2 10s infinite !important;
 }
 
 .anima_2 {
@@ -225,13 +225,13 @@ header {
 
 #comandos,
 #termos {
-    display: none;
+    top: 0%;
     z-index: 2;
-    background-color: var(--gray);
     width: 100%;
     height: 100%;
+    display: none;
     position: absolute;
-    top: 0%;
+    background-color: var(--gray);
 }
 
 #comandos_geral,
@@ -240,38 +240,38 @@ header {
 }
 
 #comandos_menu {
-    background-color: rgb(64, 68, 75);
-    border-radius: 5px;
-    width: 50%;
-    height: 440px;
-    border: 0px;
-    font-size: 18px;
-    padding: 30px;
-    position: absolute;
     top: 20%;
     left: 5%;
+    width: 50%;
+    border: 0px;
+    padding: 30px;
+    height: 440px;
+    font-size: 18px;
     overflow-y: auto;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgb(64, 68, 75);
 }
 
 #comandos_infos {
-    background-color: rgb(64, 68, 75);
-    border-radius: 5px;
-    width: 35%;
-    height: 440px;
-    border: 0px;
-    font-size: 18px;
-    padding: 30px;
-    position: absolute;
     top: 20%;
     right: 5%;
+    width: 35%;
+    border: 0px;
+    height: 440px;
+    padding: 30px;
+    font-size: 18px;
     overflow-y: auto;
+    border-radius: 5px;
+    position: absolute;
+    background-color: rgb(64, 68, 75);
 }
 
 #menu_reacoes {
-    float: left;
-    position: absolute;
     top: 93%;
     left: 5%;
+    float: left;
+    position: absolute;
 }
 
 .button_react {
@@ -279,43 +279,43 @@ header {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 10px;
-    background-color: rgb(47, 49, 54);
-    box-shadow: 0px 0px 2px black;
     transition: all .3s;
+    box-shadow: 0px 0px 2px black;
+    background-color: rgb(47, 49, 54);
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .button_react:hover {
+    box-shadow: 0px 0px 0px black;
     background-color: rgb(50, 53, 58);
     border: 1px solid rgb(93, 96, 100);
-    box-shadow: 0px 0px 0px black;
 }
 
 #transitador {
-    background-color: var(--cyan);
+    top: 0%;
+    height: 0%;
     z-index: 3;
     width: 100%;
-    height: 0%;
     position: fixed;
-    top: 0%;
     animation: carrega_pag 1s;
+    background-color: var(--cyan);
 }
 
 .comando_line {
-    background-color: rgb(32, 34, 37);
-    color: rgb(220, 221, 210);
     font-weight: 500;
-    border-radius: 5px;
     padding-left: 3px;
+    border-radius: 5px;
     padding-right: 3px;
+    color: rgb(220, 221, 210);
+    background-color: rgb(32, 34, 37);
 }
 
 footer {
-    background-color: var(--gray);
-    padding: 15px;
-    position: relative;
     z-index: 1;
     bottom: 0px;
+    padding: 15px;
+    position: relative;
+    background-color: var(--gray);
 }
 
 #sub_footer {
@@ -328,9 +328,9 @@ footer>nav {
 }
 
 footer>nav>a {
-    text-decoration: none;
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
 a {
@@ -339,24 +339,24 @@ a {
 }
 
 #icone_redes {
-    text-shadow: 0px 0px 5px black;
-    min-width: 10%;
-    right: 10px;
     top: 30%;
-    position: absolute;
     height: auto;
+    right: 10px;
+    min-width: 10%;
+    position: absolute;
+    text-shadow: 0px 0px 5px black;
 }
 
 mr,
 mx,
 mx_tag {
-    background-color: rgb(32, 34, 37);
-    color: rgb(220, 221, 210);
     font-weight: 500;
-    border-radius: 5px;
     padding-left: 3px;
+    border-radius: 5px;
     padding-right: 3px;
+    color: rgb(220, 221, 210);
     animation: pisca_comando 2s;
+    background-color: rgb(32, 34, 37);
 }
 
 mx {
@@ -371,19 +371,27 @@ mx_tag {
     padding-right: 5px;
 }
 
+#discord_logo {
+    z-index: 3;
+    float: left;
+    width: 65px;
+    padding-left: 15px;
+    filter: drop-shadow(0px 0px 2px black);
+}
+
 #ceira_solutions {
+    z-index: 3;
     width: 150px;
     float: right;
-    padding-left: 15px;
-    z-index: 3;
     padding-top: 2px;
+    padding-left: 15px;
     filter: drop-shadow(0px 0px 5px black);
 }
 
 .emj {
+    float: left;
     text-align: center;
     width: 30px !important;
-    float: left;
     filter: drop-shadow(0px 0px 3px black);
 }
 
@@ -392,11 +400,11 @@ a {
 }
 
 #emj_steam {
-    filter: drop-shadow(0px 0px 3px black);
-    margin-left: 5px;
-    padding-right: 2px;
     width: 25px;
     float: left;
+    margin-left: 5px;
+    padding-right: 2px;
+    filter: drop-shadow(0px 0px 3px black);
 }
 
 footer>nav {

@@ -3,7 +3,8 @@ var c = document.getElementById('canv'),
 var w = c.width = window.innerWidth,
   h = c.height = window.innerHeight;
 
-Snowy();
+Snowy()
+
 function Snowy() {
   var snow, arr = [];
   var num = 600, tsc = 1, sp = 1;

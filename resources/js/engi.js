@@ -115,11 +115,9 @@ function traduz_site() {
         for (var i = 0; i < strings_traduz.length; i++) {
             alvos = document.getElementsByClassName(strings_traduz[i])
 
-            for (var x = 0; x < alvos.length; x++) {
+            for (var x = 0; x < alvos.length; x++)
                 alvos[x].innerHTML = traducoes[i]
-            }
         }
-
 
         if (idioma === "en-us")
             document.getElementById("conteudo_termos").innerHTML = `<h2>Terms of Service & Privacy</h2>
@@ -145,10 +143,9 @@ function traduz_site() {
                 to have
                 some data temporarily saved in our database. Data such as,
             <ul>
-                <li>Your current avatar</li>
+                <li>Your current avatar (avatar link only)</li>
                 <li>Your discord user ID</li>
-                <li>Your username</li>
-                <li>The servers in which you hold moderate positions</li>
+                <li>Your discord username</li>
                 <li>Your preferred bot language (default set to pt-br)</li>
             </ul>
 
@@ -180,7 +177,8 @@ function traduz_site() {
                 <li>Links to external platform profiles</li>
                 <li>Customization of the profile created by Alonsal</li>
                 <li>Shortcuts and cosmetics, including embed colors</li>
-                <li>Alonsal behavior settings. As commands visible only to you</li>
+                <li>The servers in which you hold moderate positions</li>
+                <li>Alonsal behavior settings. Like commands visible only to you and other customizations</li>
             </ul>
             </p>
 
@@ -244,7 +242,7 @@ function traduz_site() {
                 an activation by third parties.<br><br>
 
                 You may also be subject to being reported to other servers as an individual who caused
-                problems on a server. When reported by a moderator, he will register you on the bad list
+                problems on a server. When reported by a moderator, he will register you on the <br>bad list
                 Alonsal's behavior, and you will be visible to all other servers if the moderator comes
                 announcing this addition for servers that have the <mx>📢 External Reports</mx> feature
                 enabled.<br><br>
@@ -270,7 +268,7 @@ function traduz_site() {
                 your username in our database.<br>
                 By default, all users saved in the Alonsal database have an expiration date, this expiration date
                 expiration date is internally called <mx>"Downtime"</mx> and it represents when a user
-                is inactive. When this date is reached, Alonsal will mark all data related to the server
+                is inactive. When this date is reached, <br>Alonsal will mark all data related to the server
                 or to the user for deletion, allowing time for the user or the server to respond.
                 can interrupt the scheduled deletion.<br><br>When using Alonsal, you can set a delay time
                 personalized inactivity, and the
@@ -300,7 +298,7 @@ function traduz_site() {
             <h4>Data levels</h4>
             The data saved by Alonsal about you has two scopes, global and server.
             Both scopes are represented in several tables through the resources available in the bot, and by itself
-            same, all scopes are accessible in an integrated way through <mx>/data</mx>, so that you, as
+            same, all scopes are<br>accessible in an integrated way through <mx>/data</mx>, so that you, as
             user can delete data of all types.<br><br>
 
             <hr>
@@ -345,9 +343,7 @@ function traduz_site() {
                 some information anonymously as the bot is used.<br><br>Data such as,
 
             <ul>
-                <li>Commands used</li>
-                <li>Buttons used</li>
-                <li>Menus used</li>
+                <li>Commands, buttons and menus used</li>
                 <li>Busy bufunfas (alonsal money)</li>
                 <li>Server originating from the command</li>
                 <li>Entry and exit of servers</li>
@@ -392,10 +388,9 @@ function traduz_site() {
             ter
             alguns dados salvos de forma temporária em nossa base de dados. Dados esses como,
         <ul>
-            <li>Seu avatar atual</li>
+            <li>Seu avatar atual (apenas link do avatar)</li>
             <li>Seu ID de usuário discord</li>
-            <li>Seu nome de usuário</li>
-            <li>Os servidores em que você possui cargos moderativos</li>
+            <li>Seu nome de usuário discord</li>
             <li>Seu idioma de preferência no bot (definido por padrão como pt-br)</li>
         </ul>
 
@@ -427,7 +422,8 @@ function traduz_site() {
             <li>Links para perfis de plataformas externas</li>
             <li>Customizações do perfil criado pelo Alonsal</li>
             <li>Atalhos e cosméticos, incluindo cores de embeds</li>
-            <li>Configurações de comportamentos do Alonsal. Como comandos visíveis apenas para você</li>
+            <li>Os servidores em que você possui cargos moderativos</li>
+            <li>Configurações de comportamentos do Alonsal. Como comandos visíveis apenas para você e outras customizações</li>
         </ul>
         </p>
 
@@ -547,7 +543,7 @@ function traduz_site() {
         <h4>Níveis de dados</h4>
         Os dados salvos pelo Alonsal sobre você possuem dois escopos, sendo o global e o de servidor.
         Ambos os escopos estão representados em várias tabelas através dos recursos disponíveis no bot, e por si
-        mesmas, todos os escopos são acessíveis de forma<br>integrada através do <mx>/data</mx>, para que você como
+        mesmas, todos os escopos são acessíveis de forma integrada através do <mx>/data</mx>, para que você como
         usuário possa excluir dados de todos os tipos.<br><br>
 
         <hr>
@@ -592,22 +588,20 @@ function traduz_site() {
             algumas informações de forma anônima conforme o bot é utilizado.<br><br>Dados esses como,
 
         <ul>
-            <li>Comandos utilizados</li>
-            <li>Botões utilizados</li>
-            <li>Menus utilizados</li>
-            <li>Bufunfas movimentadas (dinheiro do alonsal)</li>
-            <li>Servidor originário do comando</li>
+            <li>Comandos, botões e menus utilizados</li>
+            <li>Bufunfas movimentadas (a moeda interna alonsal)</li>
+            <li>Servidor que gerou o comando</li>
             <li>Entrada e saída de servidores</li>
         </ul>
 
         Em escopo de servidor, algumas informações são menos escondidas, sendo assim, temos conhecimento de quais
         servidores os comandos estão sendo utilizados, e quais comandos estão sendo ativados. Mas não temos acesso
-        sobre as informações que são enviadas junto com esses comandos, como textos, seleções e afins.<br><br>
+        sobre as informações que são enviadas junto com esses comandos, como textos, seleções de botões ou menus e afins.<br><br>
 
         Para o escopo do usuário, muitos dados são tratados de forma anônima, e em sua grande maioria, servem apenas
         para gerar estatísticas<br>
         de uso diário do Alonsal. Sendo algumas dessas informações, como a quantidade de comandos utilizados, de
-        acesso público através do <mx>/alonsal</mx>.
+        acesso público através do comando <mx>/alonsal</mx>.
 
         <br><br>
         Dados esses podem ser utilizados e estão disponíveis apenas para uso do Alonsal em suas diversas funções,
@@ -635,7 +629,7 @@ function infos_comandos(idioma, comando) {
     if (idioma === "pt-br") idioma = "pt"
 
     if (json_comandos.length < 1) { // Salvando os dados num array para usar localmente
-        fetch(`https://raw.githubusercontent.com/odnols/site-do-alonsal/main/json/guia_${idioma}.json`)
+        fetch(`https://raw.githubusercontent.com/odnols/site-do-alonsal/main/resources/json/guia_${idioma}.json`)
             .then(response => response.json())
             .then(async dados => {
 

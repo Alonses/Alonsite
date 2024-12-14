@@ -147,20 +147,6 @@
                 "usos": "|mostra informações do canal onde o comando é executado, >#<|mostra informações do canal mencionado, >ID<|mostra informações do canal com o ID informado",
                 "funcao": "Mostra informações do canal informado, tais como data de criação, se é NSFW, se é um canal de áudio, o servidor, seu ID e etc"
             },
-            "steam": {
-                "comando": "Perfil da Steam",
-                "emoji": "<img src=\"https://th.bing.com/th/id/R.dc9023a21d267f5a69f80d73f6e89dc2?rik=3XtZuRHyuD3yhQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ffroyoshark%2fenkel%2f512%2fSteam-icon.png&ehk=Q%2bLzz3YeY7Z8gPsTI2r1YF4KgfPnV%2bHMJkEoSx%2bKPy0%3d&risl=&pid=ImgRaw&r=0\" style=\"height: 46px\">",
-                "aliases": "/steam",
-                "usos": "slondotk|mostra o perfil do slondo na Steam",
-                "funcao": "Exibe várias informações de um perfil pesquisado, informações como, jogos possuídos, conquistas alcançadas, jogos 100% finalizados, insígnias, nível, capturas de tela e etc.<br>Para pesquisar seu perfil, crie um link customizado para seu perfil Steam e use ele ao pesquisar com o <mr>.asus</mr>"
-            },
-            "anagrama": {
-                "comando": "Anagramas",
-                "emoji": "💅",
-                "aliases": "/anagrama",
-                "usos": "slomdo|retorna 3 anagramas formados com a entrada \"slomdo\"",
-                "funcao": "Cria anagramas com a entrada informada, também exibe a quantidade de combinações possíveis e 3 outras combinações geradas randomicamente"
-            },
             "calc": {
                 "comando": "Calculadora",
                 "emoji": "🧮",
@@ -207,18 +193,91 @@
                 "aliases": "/pulapredios",
                 "usos": "|retorna um link para o Pula Prédios!",
                 "funcao": "O jogo em javascript montado pelo Slondo, enceirado ao máximo como deve ser"
+            },
+            "games": {
+                "comando": "Games gratuitos",
+                "emoji": "🎮",
+                "aliases": "/games",
+                "usos": "|retorna todos os jogos gratuitos disponiveis para pegar atualmente",
+                "funcao": "Veja os jogos gratuitos do momento"
             }
         }
     },
     "custom": {
-        "header": "Comandos de customização 🎨",
+        "header": "Comandos de customização 🎉",
         "commands": {
             "user_painel": {
                 "comando": "Painel de controle pessoal",
                 "emoji": "✉️",
-                "aliases": "/mail",
+                "aliases": "/painel pessoal",
                 "usos": ">seu_texto<|envia um texto para o Alonsal",
                 "funcao": "Envie mensagens e sugestões para o Alonsal com o comando <mr>.amail</mr>"
+            }
+        }
+    },
+    "user": {
+        "header": "Comandos do usuário 👤",
+        "commands": {
+            "user_painel": {
+                "comando": "Painel de controle pessoal",
+                "emoji": "👤",
+                "aliases": "/painel pessoal",
+                "usos": "|abre um menu para vários controles do Alonsal",
+                "funcao": "Controle as funções do Alonsal"
+            },
+            "badge": {
+                "comando": "Badges",
+                "emoji": "👤",
+                "aliases": "/badge",
+                "usos": "|Exibe as suas badges do Alonsal para que possa fixar uma ao seu perfil ou remover a fixada.",
+                "funcao": "Veja suas badges do Alonsal."
+            },
+            "data": {
+                "comando": "Dados",
+                "emoji": "👤",
+                "aliases": "/data",
+                "usos": "|Exibe os dados salvos pelo Alonsal para que possa excluir ou definir prazos de exclusão automatizados.",
+                "funcao": "Veja os dados que o Alonsal salvou sobre você."
+            },
+            "now": {
+                "comando": "Agora",
+                "emoji": "👤",
+                "aliases": "/agora",
+                "usos": "|Exibe o que o usuário está ouvindo atualmente, deve ser conectado previamente com o LastmFM através do <a href='#' onclick='infos_comandos(\"user.perfil_link\")'><mr>/perfil link</mr></a>",
+                "funcao": "Mostrar a música que um usuário está ouvindo atualmente"
+            },
+            "idioma": {
+                "comando": "Idioma do Alonsal",
+                "emoji": "🇺🇸",
+                "aliases": "/idioma",
+                "usos": "br|define o idioma do Alonsal como português, en|define o idioma do Alonsal como inglês",
+                "funcao": "Altera o idioma do Alonsal para você, todos os comandos e retornos do Alonsal para você serão no idioma definido, até mensagens em mensagem direta"
+            },
+            "steam": {
+                "comando": "Perfil da Steam",
+                "emoji": "<img src=\"https://th.bing.com/th/id/R.dc9023a21d267f5a69f80d73f6e89dc2?rik=3XtZuRHyuD3yhQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ffroyoshark%2fenkel%2f512%2fSteam-icon.png&ehk=Q%2bLzz3YeY7Z8gPsTI2r1YF4KgfPnV%2bHMJkEoSx%2bKPy0%3d&risl=&pid=ImgRaw&r=0\" style=\"height: 23px\">",
+                "aliases": "/steam",
+                "usos": "slondotk|mostra o perfil do slondo na Steam",
+                "funcao": "Exibe várias informações de um perfil pesquisado, informações como, jogos possuídos, conquistas alcançadas, jogos 100% finalizados, insígnias, nível, capturas de tela e etc.<br>Para pesquisar seu perfil, crie um link customizado para seu perfil Steam e use ele ao pesquisar com o <mr>.asus</mr>"
+            },
+            "perfil_link": {
+                "comando": "Linkar ao perfil",
+                "emoji": "👤",
+                "aliases": "/perfil link",
+                "chaves": [
+                    "🎮 Steam",
+                    "🎶 LastFM",
+                    "🗽 Locale",
+                    "🚀 Pula prédios"
+                ],
+                "usos": {
+                    "geral": ">plataforma< >seu_nome<|Conecta uma rede social ao Alonsal para acesso mais rápido as funções.",
+                    "🎮 Steam": ">🎮 Steam< >Slomdo<|Conecta a steam ao Alonsal.",
+                    "🎶 LastFM": ">🎶 LastFM< >Slomdo<|Conecta o LastFM ao Alonsal.",
+                    "🗽 Locale": ">🗽 Locale< >Slomdo<|Salva uma localização para uso no <a href='#' onclick='infos_comandos(\"util.tempo\")'><mr>/tempo</mr></a> posteriormente.",
+                    "🚀 Pula prédios": ">🚀 Pula prédios< >Slomdo<|Conecta o Pula prédios ao Alonsal."
+                },
+                "funcao": "Conecte suas redes sociais ao Alonsal"
             }
         }
     },
@@ -229,65 +288,16 @@
             "guild_painel": {
                 "comando": "Painel de controle do servidor",
                 "emoji": "✉️",
-                "aliases": "/mail",
+                "aliases": "/painel guild",
                 "usos": ">seu_texto<|envia um texto para o Alonsal",
                 "funcao": "Envie mensagens e sugestões para o Alonsal com o comando <mr>.amail</mr>"
             },
             "anuncio": {
                 "comando": "Anúncio de games",
                 "emoji": "🎮",
-                "aliases": "/games notifica",
+                "aliases": "/notificar config",
                 "usos": ">@<|define um canal para receber anúncios de games gratuitos, rem|desliga o anúncio de games para o canal",
                 "funcao": "Avisa o cargo informado toda vez que houver jogos gratuitos disponíveis por tempo limitado"
-            },
-            "info": {
-                "comando": "Informações do Alonsal",
-                "emoji": "🆔",
-                "aliases": "/info",
-                "usos": "|informações do alonsal",
-                "funcao": "Retorna informações sobre o Alonsal"
-            },
-            "site": {
-                "comando": "Site do Alonsal",
-                "emoji": "💻",
-                "aliases": "/site",
-                "usos": "|site do alonsal",
-                "funcao": "Retorna o link para este site!"
-            },
-            "mail": {
-                "comando": "Mensageria do Alonsal",
-                "emoji": "✉️",
-                "aliases": "/mail",
-                "usos": ">seu_texto<|envia um texto para o Alonsal",
-                "funcao": "Envie mensagens e sugestões para o Alonsal com o comando <mr>.amail</mr>"
-            },
-            "convite": {
-                "comando": "Convite do Alonsal",
-                "emoji": "💌",
-                "aliases": "/convite",
-                "usos": "|convite para adicionar o Alonsal num server",
-                "funcao": "Convide o alonsal para um servidor!"
-            },
-            "server": {
-                "comando": "Server do Alonsal",
-                "emoji": "💃",
-                "aliases": "/server",
-                "usos": "|convite para o servidor do Alonsal",
-                "funcao": "Entre no servidor do Alonsal"
-            },
-            "suporte": {
-                "comando": "Ajude o Alonsal",
-                "emoji": "🍰",
-                "aliases": "/suporte",
-                "usos": "|links para ajudar o Alonsal",
-                "funcao": "Ajude a desenvolver e manter o Alonsal, toda ajuda é bem vinda"
-            },
-            "idioma": {
-                "comando": "Idioma do Alonsal",
-                "emoji": "🇺🇸",
-                "aliases": "/idioma",
-                "usos": "br|define o idioma do Alonsal como português, en|define o idioma do Alonsal como inglês",
-                "funcao": "Altera o idioma do Alonsal no servidor, todos os comandos e retornos do Alonsal são baseados no idioma definido do servidor, até mensagens em mensagem direta"
             },
             "add_emoji": {
                 "comando": "Adicionar emojis",
@@ -323,6 +333,79 @@
                 "aliases": ".alock, .alk, .aunlk, .aunlock, .adestravar, .aliberar",
                 "usos": "|altera as permissões para o @everyone não poder mais falar no canal",
                 "funcao": "Trava e destrava o canal, para destravar o canal use <mr>.aunlk</mr> e as configurações serão repostas ao padrão anterior"
+            }
+        }
+    },
+    "manu": {
+        "header": "Comandos de manutenção 📡",
+        "commands": {
+            "alonsal": {
+                "comando": "Informações do Alonsal",
+                "emoji": "🆔",
+                "aliases": "/alonsal",
+                "usos": "|informações do alonsal",
+                "funcao": "Retorna informações sobre o Alonsal"
+            },
+            "mail": {
+                "comando": "Mensageria do Alonsal",
+                "emoji": "✉️",
+                "aliases": "/mail",
+                "usos": ">seu_texto<|envia um texto para o Alonsal",
+                "funcao": "Envie mensagens e sugestões para o Alonsal com o comando <mr>.amail</mr>"
+            },
+            "convite": {
+                "comando": "Convite do Alonsal",
+                "emoji": "💌",
+                "aliases": "/convite",
+                "usos": "|convite para adicionar o Alonsal num server",
+                "funcao": "Convide o alonsal para um servidor!"
+            },
+            "discord": {
+                "comando": "Server do Alonsal",
+                "emoji": "💃",
+                "aliases": "/discord",
+                "usos": "|convite para o servidor do Alonsal",
+                "funcao": "Entre no servidor do Alonsal"
+            },
+            "git": {
+                "comando": "Github do Alonsal",
+                "emoji": "🐱‍👤",
+                "aliases": "/git",
+                "usos": "|retorna um link para o github do Alonsal",
+                "funcao": "O repositório do Alonsal"
+            },
+            "suporte": {
+                "comando": "Ajude o Alonsal",
+                "emoji": "🍰",
+                "aliases": "/suporte",
+                "usos": "|links para ajudar o Alonsal",
+                "funcao": "Ajude a desenvolver e manter o Alonsal, toda ajuda é bem vinda"
+            }
+        }
+    },
+    "bank": {
+        "header": "Comandos monetários 💸",
+        "commands": {
+            "bank": {
+                "comando": "Banco",
+                "emoji": "🏦",
+                "aliases": "/banco",
+                "usos": "|veja o seu banco e o de outros usuários",
+                "funcao": "Veja o seu banco e o de outros usuários"
+            },
+            "pay": {
+                "comando": "Dei-lhe",
+                "emoji": "💸",
+                "aliases": "/dei-lhe",
+                "usos": ">@usuario< >quantia<|transfira bufunfas para outros usuários",
+                "funcao": "transfira bufunfas para outros usuários"
+            },
+            "daily": {
+                "comando": "Bônus diário",
+                "emoji": "💸",
+                "aliases": "/daily",
+                "usos": "|ganhe um valor em bufunfas no dia!",
+                "funcao": "Pegue sua bufunfa diária"
             }
         }
     }

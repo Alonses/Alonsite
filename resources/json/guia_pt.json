@@ -1,5 +1,6 @@
 {
     "dive": {
+        "header": "Comandos Divertidos 😜",
         "rank": {
             "comando": "Rank",
             "emoji": "🏅",
@@ -65,6 +66,7 @@
         }
     },
     "util": {
+        "header": "Comandos Utilitários 💡",
         "ping": {
             "comando": "Ping",
             "emoji": "🏓",
@@ -172,6 +174,7 @@
         }
     },
     "jogo": {
+        "header": "Comandos de Jogos 🎲",
         "jokenpo": {
             "comando": "Jokenpô",
             "emoji": "✂️",
@@ -202,6 +205,7 @@
         }
     },
     "custom": {
+        "header": "Comandos de customização 🎨",
         "user_painel": {
             "comando": "Painel de controle pessoal",
             "emoji": "✉️",
@@ -211,6 +215,8 @@
         }
     },
     "mode": {
+        "header": "Comandos Moderativos 💂",
+        "footer": "♨️ | <em>Mensagens com este símbolo serão excluídas automaticamente.</em><br>🛑 | <em>Estes comandos não são habilitados para usuários sem cargos administrativos.</em><br>🇺🇸 | <em>Use the command <mr>/language</mr> to switch to <mr>american english</mr></em>",
         "guild_painel": {
             "comando": "Painel de controle do servidor",
             "emoji": "✉️",

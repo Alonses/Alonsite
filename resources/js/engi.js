@@ -1,4 +1,4 @@
-var comandos = 0, termos = 0, idioma = "pt-br", numero_pag = 0, json_comandos = [], num_command = 0
+var comandos = 0, termos = 0, idioma = "pt", numero_pag = 0, json_comandos = {}, num_command = 0
 
 function transita_commands(auto) {
 
@@ -64,15 +64,33 @@ function transita_terms(auto) {
     }, 1000)
 }
 
-function troca_pag(num_pag) {
+function troca_pag(comando) {
 
-    numero_pagina = num_pag
+    let pag_comandos = ""
 
-    if (idioma == "pt-br" || idioma == null)
-        paginas = ["Comandos Divertidos 😜 <br><a href='#' onclick=\"infos_comandos(\'pt\', 0)\"><div class='emj'>🏅</div> <mr>/rank</mr></a> - Veja o rank do servidor ou de um usuário</a><br><a href='#' onclick=\"infos_comandos(\'pt\', 1)\"><div class='emj'>🐮</div> <mr>/gado <@></mr></a> - Teste a Gadisse de alguém<br><a href='#' onclick=\"infos_comandos(\'pt\', 3)\"><div class='emj'>🙌</div> <mr>/baidu</mr></a> - Louvado seja! <br><a href='#' onclick=\"infos_comandos(\'pt\', 5)\"><div class='emj'>📘</div> <mr>/curiosidade</mr></a> - Uma curiosidade aleatória<br><a href='#' onclick=\"infos_comandos(\'pt\', 6)\"><div class='emj'>🃏</div> <mr>/cazalbe</mr></a> - Cazalbe!<br><a href='#' onclick=\"infos_comandos(\'pt\', 7)\"><div class='emj'>✒</div> <mr>/text</mr></a> - Operações com texto", "Comandos Utilitários 💡<br><a href='#' onclick=\"infos_comandos(\'pt\', 8)\"><div class='emj'>🏓</div> <mr>/ping</mr></a> - Mostra seu ping<br><a href='#' onclick=\"infos_comandos(\'pt\', 9)\"><div class='emj'>🔣</div> <mr>/morse 8&7!</mr> | <mr>/morse ---.. .-... --...</mr></a> - Codifica e decodifica do morse<br><a href='#' onclick=\"infos_comandos(\'pt\', 10)\"><div class='emj'>👨🏻‍💻</div> <mr>/binario Alonso</mr> | <mr>/binario 11100011</mr></a> - Codifica e decodifica do binário<br><a href='#' onclick=\"infos_comandos(\'pt\', 11)\"><div class='emj'>◀️</div> <mr>/reverse Alonso</mr></a> - Inverte e desinverte o texto<br><a href='#' onclick=\"infos_comandos(\'pt\', 48)\"><div class='emj'>🔏</div> <mr>/password</mr> | <mr>/password 15</mr></a> - Gera senhas<br><a href='#' onclick=\"infos_comandos(\'pt\', 44)\"><div class='emj'>🧮</div> <mr>/calc 2 + 1</mr> | <mr>/calc 5!</mr></a> - Calculadora alonsal<br><a href='#' onclick=\"infos_comandos(\'pt\', 13)\"><div class='emj'>🔍</div> <mr>/wiki Alonso</mr></a> - Pesquisa na wikipedia<br><a href='#' onclick=\"infos_comandos(\'pt\', 14)\"><div class='emj'>⛅</div> <mr>/tempo</mr></a> - Clima atual de algum local<br><a href='#' onclick=\"infos_comandos(\'pt\', 15)\"><div class='emj'>🏛</div> <mr>/history</mr></a> - Um acontecimento numa data<br><a href='#' onclick=\"infos_comandos(\'pt\', 16)\"><div class='emj'>🦗</div> <mr>/moji >emoji<</mr></a> - Aumenta o tamanho do emoji<br><a href='#' onclick=\"infos_comandos(\'pt\', 41)\"><div class='emoj'><img id='emj_steam' src=\"https://th.bing.com/th/id/R.dc9023a21d267f5a69f80d73f6e89dc2?rik=3XtZuRHyuD3yhQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ffroyoshark%2fenkel%2f512%2fSteam-icon.png&ehk=Q%2bLzz3YeY7Z8gPsTI2r1YF4KgfPnV%2bHMJkEoSx%2bKPy0%3d&risl=&pid=ImgRaw&r=0\"></div> <mr>/steam slondotk</mr></a> - O perfil de alguém na steam<br><a href='#' onclick=\"infos_comandos(\'pt\', 17)\"><div class='emj'>👤</div> <mr>/user avatar</mr></a> - Ver seu avatar ou de outro usuário<br><a href='#' onclick=\"infos_comandos(\'pt\', 18)\"><div class='emj'>👥</div> <mr>/server icon</mr></a> - Ver o ícone do servidor <br><a href='#' onclick=\"infos_comandos(\'pt\', 19)\"><div class='emj'>🌎</div> <mr>/minecraft</mr></a> - Exibe infos de um item do Minecraft<br><a href='#' onclick=\"infos_comandos(\'pt\', 20)\"><div class='emj'>🌐</div> <mr>/server info</mr></a> - Informações do servidor<br><a href='#' onclick=\"infos_comandos(\'pt\', 21)\"><div class='emj'>🎐</div> <mr>/user info</mr></a> - Informações de um usuário<br><a href='#' onclick=\"infos_comandos(\'pt\', 22)\"><div class='emj'>📑</div> <mr>/canal</mr></a> - Informações de um canal", "Comandos de Jogos 🎲<br><a href='#' onclick=\"infos_comandos(\'pt\', 23)\"><div class='emj'>✂️</div> <mr>/jokenpo</mr></a> - Jokenpô<br><a href='#' onclick=\"infos_comandos(\'pt\', 24)\"><div class='emj'>🟡</div> <mr>/coin</mr></a> - Teste sua sorte<br><a href='#' onclick=\"infos_comandos(\'pt\', 25)\"><div class='emj'>🎲</div> <mr>/dado</mr></a> - Roda um ou vários dados com várias faces<br><a href='#' onclick=\"infos_comandos(\'pt\', 26)\"><div class='emj'>🏗️</div> <mr>/pulapredios</mr></a> - Jogo do Pula Prédios!<br><a href='#' onclick=\"infos_comandos(\'pt\', 27)\"><div class='emj'>🎮</div> <mr>/ngm >@cargo<</mr></a> - Anúncios de jogos Gratuitos<br>", "Manutenção do Alonsal 📡<br><a href='#' onclick=\"infos_comandos(\'pt\', 28)\"><div class='emj'>🆔</div> <mr>/info</mr></a> - Informações minhas<br><a href='#' onclick=\"infos_comandos(\'pt\', 29)\"><div class='emj'>💻</div> <mr>/site</mr></a> - O meu site com diversos comandos<br><a href='#' onclick=\"infos_comandos(\'pt\', 30)\"><div class='emj'>✉️</div> <mr>/mail >sua_mensagem<</mr></a> - Envie uma mensagem para mim! :P<br><a href='#' onclick=\"infos_comandos(\'pt\', 31)\"><div class='emj'>💌</div> <mr>/convite</mr></a> - Convide-me para um Servidor!<br><a href='#' onclick=\"infos_comandos(\'pt\', 32)\"><div class='emj'>💃</div><mr>/server</mr></a> - Entre no Hub multiconectado do Alonsal<br><a href='#' onclick=\"infos_comandos(\'pt\', 33)\"><div class='emj'>🍰</div> <mr>/suporte</mr></a> - Ajude a manter e desenvolver o Alonsal <br><a href='#' onclick=\"infos_comandos(\'pt\', 34)\"><div class='emj'>🇺🇸</div> <mr>/idioma</mr></a> - Altera o idioma do Alonsal", "Comandos Moderativos 💂<br><a href='#' onclick=\"infos_comandos(\'pt\', 35)\"><div class='emj'>🕺</div> <mr>/ddemoji 🕺 dancando</mr></a> - Adiciona um emoji ao servidor<br><a href='#' onclick=\"infos_comandos(\'pt\', 36)\"><div class='emj'>😢</div> <mr>/rmoji 😢</mr></a> - Remove um emoji do servidor<br><a href='#' onclick=\"infos_comandos(\'pt\', 37)\"><div class='emj'>🗑️</div> <mr>/clear 10</mr></a> - Remove várias mensagens de uma vez<br><a href='#' onclick=\"infos_comandos(\'pt\', 46)\"><div class='emj'>🔐</div> <mr>/chat bloquear</mr> | <mr>/chat desbloquear</mr></a> - Bloqueia e desbloqueia um canal<br><a href='#' onclick=\"infos_comandos(\'pt\', 27)\"><div class='emj'>🎮</div> <mr>/notificar config >@cargo< >@canal<</mr></a> - Anúncios de jogos Gratuitos<br><br>♨️ | <em>Mensagens com este símbolo serão excluídas automaticamente.</em><br>🛑 | <em>Estes comandos não são habilitados para usuários sem cargos administrativos.</em><br>🇺🇸 | <em>Use the command <mr>/language</mr> to switch to <mr>american english</mr></em>"]
+    Object.keys(json_comandos).forEach(area => {
 
-    document.getElementById("pagina_comandos").innerHTML = paginas[num_pag]
+        if (comando)
+            if (area.includes(comando.split(".")[0])) {
 
+                pag_comandos = `<hr><h4>${json_comandos[area].header}</h4>`
+
+                Object.keys(json_comandos[area].commands).forEach(comando => {
+
+                    let descricao = json_comandos[area]["commands"][comando].funcao
+
+                    if (descricao.length > 40)
+                        descricao = `${descricao.slice(0, 40)}...`
+
+                    pag_comandos += `<a href='#' onclick=\"infos_comandos(\'${area}.${comando}\')\"><div class='emj'>${json_comandos[area]["commands"][comando].emoji}</div> <mr>${json_comandos[area]["commands"][comando].aliases}</mr></a> - ${descricao}</a><br>`
+                })
+
+                if (json_comandos[area].footer) // Conteúdo no rodapé da lista de comandos
+                    pag_comandos += `<hr>${json_comandos[area].footer}`
+            }
+    })
+
+    document.getElementById("pagina_comandos").innerHTML = pag_comandos
     alvos = document.getElementsByClassName("button_react")
 
     for (var i = 0; i < alvos.length; i++) {
@@ -80,7 +98,7 @@ function troca_pag(num_pag) {
         alvos[i].style.border = "1px solid rgba(0, 0, 0, 0)"
     }
 
-    altera_selecionado = document.getElementsByClassName("select_" + num_pag)
+    altera_selecionado = document.getElementsByClassName(`select_${comando.split(".")[0]}`)
 
     altera_selecionado[0].style.backgroundColor = "rgb(59, 64, 90)"
     altera_selecionado[0].style.border = "1px solid rgb(88, 101, 242)"
@@ -90,10 +108,8 @@ function alterar_idioma() {
 
     idioma = localStorage.getItem("idioma_site_alonsal")
 
-    if (idioma == "en-us")
-        idioma = "pt-br"
-    else if (typeof idioma == "undefined" || idioma == "pt-br" || idioma == "null")
-        idioma = "en-us"
+    if (idioma == "en-us") idioma = "pt"
+    else if (typeof idioma == "undefined" || idioma == "pt-br" || idioma == "null") idioma = "en"
 
     localStorage.setItem("idioma_site_alonsal", idioma)
 
@@ -105,12 +121,12 @@ function traduz_site() {
     if (typeof idioma === "undefined")
         return
     else {
-        let strings_traduz = ["trad_aoba", "trad_commands_apr", "trad_server", "trad_convide", "trad_convidar", "trad_commands", "trad_descri_inicial", "trad_bandeira", "trad_infos_secundarias", "trad_infos_secundarias2", "trad_diversao", "trad_utilidades", "trad_jogos", "trad_manutencao", "trad_versao", "trad_moderacao", "trad_usuario", "trad_terms", "trad_terms_2", "trad_customizacao"]
+        let strings_traduz = ["trad_aoba", "trad_commands_apr", "trad_server", "trad_convide", "trad_convidar", "trad_commands", "trad_descri_inicial", "trad_bandeira", "trad_infos_secundarias", "trad_infos_secundarias2", "trad_diversao", "trad_utilidades", "trad_jogos", "trad_manutencao", "trad_versao", "trad_moderacao", "trad_usuario", "trad_terms", "trad_terms_2", "trad_customizacao", "trad_monetario"]
 
         if (idioma === "en-us")
-            traducoes = ["Hey, I'm Alonsal!", "Below is my list of commands ;D", "My Server", "Invite Me", "Invite", "Commands", "I was born with the desire to help people in some useful functions, and with your permission, I can contribute to various places on your server!", "🇧🇷", "I'm divided into 7 categories, they:", "I currently have more than 80 commands!", "Fun", "Utilities", "Games", "Managment", "Version", "Moderation", "User", "Terms of service", "Terms", "Customizations"]
+            traducoes = ["Hey, I'm Alonsal!", "Below is my list of commands ;D", "My Server", "Invite Me", "Invite", "Commands", "I was born with the desire to help people in some useful functions, and with your permission, I can contribute to various places on your server!", "🇧🇷", "I'm divided into 8 categories, they:", "I currently have more than 80 commands!", "Fun", "Utilities", "Games", "Managment", "Version", "Moderation", "User", "Terms of service", "Terms", "Customizations", "Bufunfas"]
         else
-            traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸", "Estou dividido em 7 categorias, sendo elas:", "Atualmente tenho mais de 80 comandos!", "Diversão", "Utilidades", "Jogos", "Manutenção", "Versão", "Moderação", "Usuário", "Termos de serviço", "Termos", "Customizações"]
+            traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸", "Estou dividido em 8 categorias, sendo elas:", "Atualmente tenho mais de 80 comandos!", "Diversão", "Utilidades", "Jogos", "Manutenção", "Versão", "Moderação", "Usuário", "Termos de serviço", "Termos", "Customizações", "Bufunfas"]
 
         for (var i = 0; i < strings_traduz.length; i++) {
             alvos = document.getElementsByClassName(strings_traduz[i])
@@ -612,29 +628,21 @@ function traduz_site() {
     }
 
     json_comandos = []
-
-    troca_pag(numero_pagina)
-    infos_comandos(idioma, num_command)
 }
 
-
-function infos_comandos(idioma, comando) {
+function infos_comandos(comando) {
 
     num_command = comando
+    if (idioma == null) idioma = "pt"
 
-    if (idioma == null)
-        idioma = "pt"
+    if (!json_comandos["dive"]) { // Salvando os dados num array para usar localmente
 
-    if (idioma === "en-us") idioma = "en"
-    if (idioma === "pt-br") idioma = "pt"
-
-    if (json_comandos.length < 1) { // Salvando os dados num array para usar localmente
-        fetch(`https://raw.githubusercontent.com/odnols/site-do-alonsal/main/resources/json/guia_${idioma}.json`)
+        fetch(`https://raw.githubusercontent.com/odnols/site-do-alonsal/main/resources/json/guia_${idioma.slice(0, 2)}.json`)
             .then(response => response.json())
             .then(async dados => {
 
-                const comando_alvo = dados.guia[comando]
-                json_comandos = dados.guia
+                json_comandos = dados
+                const comando_alvo = json_comandos[comando.split(".")[0]]["commands"][comando.split(".")[1]]
 
                 document.getElementById("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`
                 document.getElementById("comando_usos").innerHTML = `Uso : <mr>${comando_alvo.aliases.split(",")[0]} ${comando_alvo.usos.split(",")[0]}</mr>`
@@ -674,7 +682,7 @@ function infos_comandos(idioma, comando) {
                     document.getElementById("comando_nome").innerHTML = "This command has not yet been translated to your language, wait a minute! 🚧"
             })
     } else { // Coleta os dados do array ao invés de requisitar ao git novamente
-        const comando_alvo = json_comandos[comando]
+        const comando_alvo = json_comandos[comando.split(".")[0]]["commands"][comando.split(".")[1]]
 
         if (typeof comando_alvo === "undefined") {
             document.getElementById("comando_nome").innerHTML = "Não foi possível carregar informações deste comando no momento 😿"

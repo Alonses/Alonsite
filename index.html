@@ -5,7 +5,7 @@
     <meta charset="utf8">
     <title>👽 Alonsal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="resources/img/alonsal.png">
+    <link rel="shortcut icon" href="resources/img/natalx.png">
 
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/neve.css">
@@ -23,7 +23,7 @@
 <body onload="traduz_site()">
 
     <div id="fundo_pag"></div>
-    <!-- <canvas id='canv'></canvas> -->
+    <canvas id='canv'></canvas>
 
     <header>
         <h1 style="padding-left: 2%; float: left;"><span class="trad_aoba"></span></h1>
@@ -61,7 +61,7 @@
     </div>
 
     <div id="infos_iniciais">
-        <img id="img_alonsal" src="resources/img/alonsal.png">
+        <img id="img_alonsal" src="resources/img/natalx.png">
 
         <div id="descri_top">
             <p id="descri_aln"><span class="trad_descri_inicial"></span></p> <br><br><br>
@@ -79,11 +79,12 @@
 
                 <mx_tag>💂 <span class="trad_moderacao"></span></mx_tag>
                 <mx_tag>💡 <span class="trad_utilidades"></span></mx_tag>
+                <mx_tag>🎲 <span class="trad_jogos"></span></mx_tag>
                 <mx_tag>😂 <span class="trad_diversao"></span></mx_tag> <br><br>
                 <mx_tag>🎉 <span class="trad_customizacao"></span></mx_tag>
-                <mx_tag>🎲 <span class="trad_jogos"></span></mx_tag>
-                <mx_tag>👤 <span class="trad_usuario"></span></mx_tag>
-                <mx_tag>📡 <span class="trad_manutencao"></span></mx_tag> <br><br>
+                <mx_tag>💸 <span class="trad_monetario"></span></mx_tag>
+                <mx_tag>👤 <span class="trad_usuario"></span></mx_tag><br><br>
+                <mx_tag>📡 <span class="trad_manutencao"></span></mx_tag><br><br>
 
                 <span class="trad_infos_secundarias2"></span>
             </h5>
@@ -98,12 +99,14 @@
             </div>
 
             <div id="menu_reacoes">
-                <span class="button_react select_0" onclick="troca_pag(0)">😂</span>
-                <span class="button_react select_1" onclick="troca_pag(1)">💡</span>
-                <span class="button_react select_4" onclick="troca_pag(4)">💂</span>
-                <!-- <span class="button_react select_5" onclick="troca_pag(5)">👤</span> -->
-                <span class="button_react select_2" onclick="troca_pag(2)">🎲</span>
-                <span class="button_react select_3" onclick="troca_pag(3)">📡</span>
+                <span class="button_react select_dive" onclick="troca_pag('dive.')">😂</span>
+                <span class="button_react select_util" onclick="troca_pag('util.')">💡</span>
+                <span class="button_react select_user" onclick="troca_pag('user.')">👤</span>
+                <span class="button_react select_mode" onclick="troca_pag('mode.')">💂</span>
+                <span class="button_react select_jogo" onclick="troca_pag('jogo.')">🎲</span>
+                <span class="button_react select_bank" onclick="troca_pag('bank.')">💸</span>
+                <span class="button_react select_custom" onclick="troca_pag('custom.')">🎉</span>
+                <span class="button_react select_manu" onclick="troca_pag('manu.')">📡</span>
             </div>
         </div>
 
@@ -177,7 +180,10 @@
     if (url.includes("#commands"))
         transita_commands()
 
-    troca_pag(0)
+    infos_comandos("dive.rank")
+    setTimeout(() => {
+        troca_pag("dive.")
+    }, 500)
 
     idioma = localStorage.getItem("idioma_site_alonsal")
 
@@ -191,6 +197,6 @@
             transita_commands("auto")
 </script>
 
-<!-- <script src="resources/js/neve.js"></script> -->
+<script src="resources/js/neve.js"></script>
 
 </html>

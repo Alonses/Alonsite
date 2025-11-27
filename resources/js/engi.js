@@ -1,24 +1,35 @@
 var comandos = 0, termos = 0, idioma = "pt", numero_pag = 0, json_comandos = {}, num_command = 0
 
+function get(elemento) {
+
+    let div = document.getElementById(elemento)
+
+    // Verificando se há elementos com o ID informado, em caso negativo, procura por elementos com a mesma classe informada
+    if (!div) div = document.getElementsByClassName(elemento)
+
+    return div
+}
+
+
 function transita_commands(auto) {
 
     if (typeof auto != "undefined")
         comandos = 0
 
-    let transitador = document.getElementById("transitador")
+    let transitador = get("transitador")
     transitador.style.height = "0px"
     transitador.style.animation = `transita_commands ${comandos ? "reverse" : ""} 1s`
 
     setTimeout(() => {
         if (comandos == 1) {
-            document.getElementById("comandos").style.display = "none"
-            document.getElementById("infos_iniciais").style.display = "block"
-            document.getElementById("infos_secundarias").style.display = "block"
+            get("comandos").style.display = "none"
+            get("infos_iniciais").style.display = "block"
+            get("infos_secundarias").style.display = "block"
         } else {
-            document.getElementById("comandos").style.display = "block"
-            document.getElementById("termos").style.display = "none"
-            document.getElementById("infos_iniciais").style.display = "none"
-            document.getElementById("infos_secundarias").style.display = "none"
+            get("comandos").style.display = "block"
+            get("termos").style.display = "none"
+            get("infos_iniciais").style.display = "none"
+            get("infos_secundarias").style.display = "none"
 
             termos = 0
         }
@@ -37,20 +48,20 @@ function transita_terms(auto) {
     if (typeof auto != "undefined")
         termos = 0
 
-    let transitador = document.getElementById("transitador")
+    let transitador = get("transitador")
     transitador.style.height = "0px"
     transitador.style.animation = `transita_terms ${!termos ? "reverse" : ""} 1s`
 
     setTimeout(() => {
         if (termos == 1) {
-            document.getElementById("termos").style.display = "none"
-            document.getElementById("infos_iniciais").style.display = "block"
-            document.getElementById("infos_secundarias").style.display = "block"
+            get("termos").style.display = "none"
+            get("infos_iniciais").style.display = "block"
+            get("infos_secundarias").style.display = "block"
         } else {
-            document.getElementById("termos").style.display = "block"
-            document.getElementById("comandos").style.display = "none"
-            document.getElementById("infos_iniciais").style.display = "none"
-            document.getElementById("infos_secundarias").style.display = "none"
+            get("termos").style.display = "block"
+            get("comandos").style.display = "none"
+            get("infos_iniciais").style.display = "none"
+            get("infos_secundarias").style.display = "none"
 
             comandos = 0
         }
@@ -90,15 +101,15 @@ function troca_pag(comando) {
             }
     })
 
-    document.getElementById("pagina_comandos").innerHTML = pag_comandos
-    alvos = document.getElementsByClassName("button_react")
+    get("pagina_comandos").innerHTML = pag_comandos
+    alvos = get("button_react")
 
     for (var i = 0; i < alvos.length; i++) {
         alvos[i].style.backgroundColor = "rgb(47, 49, 54)"
         alvos[i].style.border = "1px solid rgba(0, 0, 0, 0)"
     }
 
-    altera_selecionado = document.getElementsByClassName(`select_${comando.split(".")[0]}`)
+    altera_selecionado = get(`select_${comando.split(".")[0]}`)
 
     altera_selecionado[0].style.backgroundColor = "rgb(59, 64, 90)"
     altera_selecionado[0].style.border = "1px solid rgb(88, 101, 242)"
@@ -129,14 +140,14 @@ function traduz_site() {
             traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸", "Estou dividido em 8 categorias, sendo elas:", "Atualmente tenho mais de 80 comandos!", "Diversão", "Utilidades", "Jogos", "Manutenção", "Versão", "Moderação", "Usuário", "Termos de serviço", "Termos", "Customizações", "Bufunfas"]
 
         for (var i = 0; i < strings_traduz.length; i++) {
-            alvos = document.getElementsByClassName(strings_traduz[i])
+            alvos = get(strings_traduz[i])
 
             for (var x = 0; x < alvos.length; x++)
                 alvos[x].innerHTML = traducoes[i]
         }
 
         if (idioma === "en-us")
-            document.getElementById("conteudo_termos").innerHTML = `<h2>Terms of Service & Privacy</h2>
+            get("conteudo_termos").innerHTML = `<h2>Terms of Service & Privacy</h2>
             <hr>
             <p>Alonsal is a multitasking bot that is constantly evolving, so that all features can work as expected.
                 in the best possible way,<br>it is necessary that we save some user data through the various
@@ -283,7 +294,7 @@ function traduz_site() {
                 When using it, you can request personalized deletions for specific or total data for the
                 your username in our database.<br>
                 By default, all users saved in the Alonsal database have an expiration date, this expiration date
-                expiration date is internally called <mx>"Downtime"</mx> and it represents when a user
+                expiration date is internally called "<mx>Downtime</mx>" and it represents when a user
                 is inactive. When this date is reached, <br>Alonsal will mark all data related to the server
                 or to the user for deletion, allowing time for the user or the server to respond.
                 can interrupt the scheduled deletion.<br><br>When using Alonsal, you can set a delay time
@@ -381,7 +392,7 @@ function traduz_site() {
             part.<br><br>
             </p>`
         else
-            document.getElementById("conteudo_termos").innerHTML = `<h2>Termos de serviço & Privacidade</h2>
+            get("conteudo_termos").innerHTML = `<h2>Termos de serviço & Privacidade</h2>
         <hr>
         <p>O Alonsal é um bot multitarefas em constante evolução, para que todos os recursos possam funcionar da
             melhor forma possível, <br>é necessário que salvemos alguns dados dos usuários através dos diversos
@@ -528,7 +539,7 @@ function traduz_site() {
             Ao utilizar ele você poderá solicitar exclusões personalizadas por dados específicos ou totais para o
             seu usuário em nosso banco de dados.<br>
             Por padrão, todos os usuários salvos no banco de dados do Alonsal possuem data de validade, essa data de
-            validade é chamada internamente de <mx>"Tempo de inatividade"</mx> e ela representa quando um usuário
+            validade é chamada internamente de "<mx>Tempo de inatividade</mx>" e ela representa quando um usuário
             está inativo. Ao ser alcançada essa data, o Alonsal irá marcar todos os dados relacionados ao servidor
             ou ao usuário para exclusão, concedendo um tempo<br>de manifestação para que o usuário ou o servidor
             possam interromper a exclusão programada.<br><br>Ao utilizar o Alonsal, você poderá definir um tempo de
@@ -644,19 +655,19 @@ function infos_comandos(comando) {
                 json_comandos = dados
                 const comando_alvo = json_comandos[comando.split(".")[0]]["commands"][comando.split(".")[1]]
 
-                document.getElementById("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`
-                document.getElementById("comando_usos").innerHTML = `Uso : <mr>${comando_alvo.aliases.split(",")[0]} ${comando_alvo.usos.split(",")[0]}</mr>`
-                document.getElementById("comando_descricao").innerHTML = `Funcionamento : ${comando_alvo.funcao}`
+                get("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`
+                get("comando_usos").innerHTML = `Uso : <mr>${comando_alvo.aliases.split(",")[0]} ${comando_alvo.usos.split(",")[0]}</mr>`
+                get("comando_descricao").innerHTML = `Funcionamento : ${comando_alvo.funcao}`
 
                 if (idioma === "en")
-                    document.getElementById("comando_descricao").innerHTML = `Action : ${comando_alvo.funcao}`
+                    get("comando_descricao").innerHTML = `Action : ${comando_alvo.funcao}`
 
                 let aliases = comando_alvo.aliases.split(",")
                 for (let i = 0; i < aliases.length; i++) {
                     aliases[i] = `<mr>${aliases[i]}</mr>`
                 }
 
-                document.getElementById("comando_aliases").innerHTML = `Aliases : ${aliases.join(" ")}`
+                get("comando_aliases").innerHTML = `Aliases : ${aliases.join(" ")}`
 
                 let usos = comando_alvo.usos.split(",")
 
@@ -667,47 +678,47 @@ function infos_comandos(comando) {
                     usos[i] = `<mr>${aliases[0].replace("<mr>", "").replace("</mr>", "")} ${usos[i].split("|")[0]}</mr> - ${descricao}`
                 }
 
-                document.getElementById("comando_usos").innerHTML = `Usos :<br> ${usos.join("<br>")}`
+                get("comando_usos").innerHTML = `Usos :<br> ${usos.join("<br>")}`
 
                 if (idioma === "en")
-                    document.getElementById("comando_usos").innerHTML = `Uses :<br> ${usos.join("<br>")}`
+                    get("comando_usos").innerHTML = `Uses :<br> ${usos.join("<br>")}`
             })
             .catch(() => {
-                document.getElementById("comando_nome").innerHTML = "Não foi possível carregar informações deste comando no momento 😿"
-                document.getElementById("comando_usos").innerHTML = ""
-                document.getElementById("comando_aliases").innerHTML = ""
-                document.getElementById("comando_descricao").innerHTML = ""
+                get("comando_nome").innerHTML = "Não foi possível carregar informações deste comando no momento 😿"
+                get("comando_usos").innerHTML = ""
+                get("comando_aliases").innerHTML = ""
+                get("comando_descricao").innerHTML = ""
 
                 if (idioma === "en")
-                    document.getElementById("comando_nome").innerHTML = "This command has not yet been translated to your language, wait a minute! 🚧"
+                    get("comando_nome").innerHTML = "This command has not yet been translated to your language, wait a minute! 🚧"
             })
     } else { // Coleta os dados do array ao invés de requisitar ao git novamente
         const comando_alvo = json_comandos[comando.split(".")[0]]["commands"][comando.split(".")[1]]
 
         if (typeof comando_alvo === "undefined") {
-            document.getElementById("comando_nome").innerHTML = "Não foi possível carregar informações deste comando no momento 😿"
-            document.getElementById("comando_usos").innerHTML = ""
-            document.getElementById("comando_aliases").innerHTML = ""
-            document.getElementById("comando_descricao").innerHTML = ""
+            get("comando_nome").innerHTML = "Não foi possível carregar informações deste comando no momento 😿"
+            get("comando_usos").innerHTML = ""
+            get("comando_aliases").innerHTML = ""
+            get("comando_descricao").innerHTML = ""
 
             if (idioma === "en")
-                document.getElementById("comando_nome").innerHTML = "This command has not yet been translated to your language, wait a minute! 🚧"
+                get("comando_nome").innerHTML = "This command has not yet been translated to your language, wait a minute! 🚧"
 
             return
         }
 
-        document.getElementById("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`
-        document.getElementById("comando_descricao").innerHTML = `Funcionamento : ${comando_alvo.funcao}`
+        get("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`
+        get("comando_descricao").innerHTML = `Funcionamento : ${comando_alvo.funcao}`
 
         if (idioma === "en")
-            document.getElementById("comando_descricao").innerHTML = `Action : ${comando_alvo.funcao}`
+            get("comando_descricao").innerHTML = `Action : ${comando_alvo.funcao}`
 
         let aliases = comando_alvo.aliases.split(",")
         for (let i = 0; i < aliases.length; i++) {
             aliases[i] = `<mr>${aliases[i]}</mr>`
         }
 
-        document.getElementById("comando_aliases").innerHTML = `Aliases : ${aliases.join(" ")}`
+        get("comando_aliases").innerHTML = `Aliases : ${aliases.join(" ")}`
 
         let usos = comando_alvo.usos.split(",")
 
@@ -719,9 +730,9 @@ function infos_comandos(comando) {
             usos[i] = `<mr>${aliases[0].replace("<mr>", "").replace("</mr>", "")}${uso}</mr> - ${descricao}`
         }
 
-        document.getElementById("comando_usos").innerHTML = `Usos :<br> ${usos.join("<br>")}`
+        get("comando_usos").innerHTML = `Usos :<br> ${usos.join("<br>")}`
 
         if (idioma === "en")
-            document.getElementById("comando_usos").innerHTML = `Uses :<br> ${usos.join("<br>")}`
+            get("comando_usos").innerHTML = `Uses :<br> ${usos.join("<br>")}`
     }
 }

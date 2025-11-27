@@ -89,3 +89,31 @@
         box-shadow: 0px 0px 0px black;
     }
 }
+
+/* animação */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.9;
+        box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.6);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) scale(2.2);
+        opacity: 0;
+        box-shadow: 0 0 0 18px rgba(229, 57, 53, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(2.2);
+        opacity: 0;
+    }
+}
+
+/* respeitar preferência por reduzir movimento */
+@media (prefers-reduced-motion: reduce) {
+    .live-pulse::after {
+        animation: none;
+        display: none;
+    }
+}

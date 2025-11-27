@@ -9,6 +9,7 @@ function Snowy() {
   var snow, arr = [];
   var num = 100, tsc = 1, sp = 1;
   var sc = 1.3, t = 0, mv = 20, min = 1;
+
   for (var i = 0; i < num; ++i) {
     snow = new Flake();
     snow.y = Math.random() * (h + 50);
@@ -51,6 +52,7 @@ function Snowy() {
     }
   }
 }
+
 /*________________________________________*/
 window.addEventListener('resize', function () {
   c.width = w = window.innerWidth;

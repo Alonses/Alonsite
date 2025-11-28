@@ -38,10 +38,9 @@ function sincroniza_tempo() {
 
     get("tempo_musica").innerHTML = `${formatTime(tocando.current)} / ${formatTime(tocando.music.duration)}`
 
-    if (tocando.current < tocando.music.duration)
+    if (tocando.current < (tocando.music.duration + 1))
         setTimeout(() => { sincroniza_tempo(++tocando.current) }, 1000)
-    else
-        sync_alonpi()
+    else sync_alonpi()
 }
 
 function radio(radio_ativo) {

@@ -418,7 +418,7 @@ footer>nav {
     height: 20px;
     position: fixed;
     margin-top: 86px;
-    background-image: url("./resources/img/texturas/mosaico.png");
+    background-image: url("../../resources/img/texturas/mosaico.png");
     box-shadow: 0px 0px 15px black;
 }
 

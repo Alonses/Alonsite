@@ -1,4 +1,4 @@
-var comandos = 0, termos = 0, idioma = "pt", numero_pag = 0, json_comandos = {}, num_command = 0
+let comandos = 0, termos = 0, idioma = "pt-br", numero_pag = 0, json_comandos = {}, num_command = 0
 
 function get(elemento) {
 
@@ -9,7 +9,6 @@ function get(elemento) {
 
     return div
 }
-
 
 function transita_commands(auto) {
 
@@ -104,7 +103,7 @@ function troca_pag(comando) {
     get("pagina_comandos").innerHTML = pag_comandos
     alvos = get("button_react")
 
-    for (var i = 0; i < alvos.length; i++) {
+    for (let i = 0; i < alvos.length; i++) {
         alvos[i].style.backgroundColor = "rgb(47, 49, 54)"
         alvos[i].style.border = "1px solid rgba(0, 0, 0, 0)"
     }
@@ -118,33 +117,19 @@ function troca_pag(comando) {
 function alterar_idioma() {
 
     idioma = localStorage.getItem("idioma_site_alonsal")
+    if (idioma == "en-us") idioma = "pt-br"
+    else if (idioma == "pt-br") idioma = "en-us"
 
-    if (idioma == "en-us") idioma = "pt"
-    else if (typeof idioma == "undefined" || idioma == "pt-br" || idioma == "null") idioma = "en"
+    localStorage.setItem("idioma_site_alonsal", idioma ?? "en-us")
 
-    localStorage.setItem("idioma_site_alonsal", idioma)
-
+    loadLanguage(idioma)
     traduz_site()
 }
 
 function traduz_site() {
 
-    if (typeof idioma === "undefined")
-        return
+    if (!idioma) return
     else {
-        let strings_traduz = ["trad_aoba", "trad_commands_apr", "trad_server", "trad_convide", "trad_convidar", "trad_commands", "trad_descri_inicial", "trad_bandeira", "trad_infos_secundarias", "trad_infos_secundarias2", "trad_diversao", "trad_utilidades", "trad_jogos", "trad_manutencao", "trad_versao", "trad_moderacao", "trad_usuario", "trad_terms", "trad_terms_2", "trad_customizacao", "trad_monetario"]
-
-        if (idioma === "en-us")
-            traducoes = ["Hey, I'm Alonsal!", "Below is my list of commands ;D", "My Server", "Invite Me", "Invite", "Commands", "I was born with the desire to help people in some useful functions, and with your permission, I can contribute to various places on your server!", "🇧🇷", "I'm divided into 8 categories, they:", "I currently have more than 80 commands!", "Fun", "Utilities", "Games", "Managment", "Version", "Moderation", "User", "Terms of service", "Terms", "Customizations", "Bufunfas"]
-        else
-            traducoes = ["Aoba, Eu sou o Alonsal!", "Abaixo está minha lista de comandos ;D", "Meu servidor", "Me Convide", "Convidar", "Comandos", "Nasci com a vontade de ajudar pessoas com algumas funções úteis, e com sua permissão, posso contribuir em vários lugares do seu servidor!", "🇺🇸", "Estou dividido em 8 categorias, sendo elas:", "Atualmente tenho mais de 80 comandos!", "Diversão", "Utilidades", "Jogos", "Manutenção", "Versão", "Moderação", "Usuário", "Termos de serviço", "Termos", "Customizações", "Bufunfas"]
-
-        for (var i = 0; i < strings_traduz.length; i++) {
-            alvos = get(strings_traduz[i])
-
-            for (var x = 0; x < alvos.length; x++)
-                alvos[x].innerHTML = traducoes[i]
-        }
 
         if (idioma === "en-us")
             get("conteudo_termos").innerHTML = `<h2>Terms of Service & Privacy</h2>
@@ -644,11 +629,11 @@ function traduz_site() {
 function infos_comandos(comando) {
 
     num_command = comando
-    if (idioma == null) idioma = "pt"
+    if (idioma == null) idioma = "pt-br"
 
     if (!json_comandos["dive"]) { // Salvando os dados num array para usar localmente
 
-        fetch(`https://raw.githubusercontent.com/odnols/site-do-alonsal/main/resources/json/guia_${idioma.slice(0, 2)}.json`)
+        fetch(`https://raw.githubusercontent.com/Alonses/Alonsite/refs/heads/main/resources/json/guia_${idioma.slice(0, 2)}.json`)
             .then(response => response.json())
             .then(async dados => {
 
@@ -656,18 +641,14 @@ function infos_comandos(comando) {
                 const comando_alvo = json_comandos[comando.split(".")[0]]["commands"][comando.split(".")[1]]
 
                 get("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`
-                get("comando_usos").innerHTML = `Uso : <mr>${comando_alvo.aliases.split(",")[0]} ${comando_alvo.usos.split(",")[0]}</mr>`
-                get("comando_descricao").innerHTML = `Funcionamento : ${comando_alvo.funcao}`
-
-                if (idioma === "en")
-                    get("comando_descricao").innerHTML = `Action : ${comando_alvo.funcao}`
+                get("comando_usos").innerHTML = `${translations["comando.uso"]}: <mr>${comando_alvo.aliases.split(",")[0]} ${comando_alvo.usos.split(",")[0]}</mr>`
+                get("comando_descricao").innerHTML = `${translations["comando.funcionamento"]}: ${comando_alvo.funcao}`
 
                 let aliases = comando_alvo.aliases.split(",")
-                for (let i = 0; i < aliases.length; i++) {
+                for (let i = 0; i < aliases.length; i++)
                     aliases[i] = `<mr>${aliases[i]}</mr>`
-                }
 
-                get("comando_aliases").innerHTML = `Aliases : ${aliases.join(" ")}`
+                get("comando_aliases").innerHTML = `${translations["comando.aliases"]}: ${aliases.join(" ")}`
 
                 let usos = comando_alvo.usos.split(",")
 
@@ -678,47 +659,34 @@ function infos_comandos(comando) {
                     usos[i] = `<mr>${aliases[0].replace("<mr>", "").replace("</mr>", "")} ${usos[i].split("|")[0]}</mr> - ${descricao}`
                 }
 
-                get("comando_usos").innerHTML = `Usos :<br> ${usos.join("<br>")}`
-
-                if (idioma === "en")
-                    get("comando_usos").innerHTML = `Uses :<br> ${usos.join("<br>")}`
+                get("comando_usos").innerHTML = `${translations["comando.usos"]}:<br> ${usos.join("<br>")}`
             })
             .catch(() => {
-                get("comando_nome").innerHTML = "Não foi possível carregar informações deste comando no momento 😿"
+                get("comando_nome").innerHTML = translations["comando.falta_traducao"]
                 get("comando_usos").innerHTML = ""
                 get("comando_aliases").innerHTML = ""
                 get("comando_descricao").innerHTML = ""
-
-                if (idioma === "en")
-                    get("comando_nome").innerHTML = "This command has not yet been translated to your language, wait a minute! 🚧"
             })
     } else { // Coleta os dados do array ao invés de requisitar ao git novamente
         const comando_alvo = json_comandos[comando.split(".")[0]]["commands"][comando.split(".")[1]]
 
         if (typeof comando_alvo === "undefined") {
-            get("comando_nome").innerHTML = "Não foi possível carregar informações deste comando no momento 😿"
+            get("comando_nome").innerHTML = translations["comando.falta_traducao"]
             get("comando_usos").innerHTML = ""
             get("comando_aliases").innerHTML = ""
             get("comando_descricao").innerHTML = ""
-
-            if (idioma === "en")
-                get("comando_nome").innerHTML = "This command has not yet been translated to your language, wait a minute! 🚧"
 
             return
         }
 
         get("comando_nome").innerHTML = `${comando_alvo.comando} ${comando_alvo.emoji}`
-        get("comando_descricao").innerHTML = `Funcionamento : ${comando_alvo.funcao}`
-
-        if (idioma === "en")
-            get("comando_descricao").innerHTML = `Action : ${comando_alvo.funcao}`
+        get("comando_descricao").innerHTML = `${translations["comando.funcionamento"]}: ${comando_alvo.funcao}`
 
         let aliases = comando_alvo.aliases.split(",")
-        for (let i = 0; i < aliases.length; i++) {
+        for (let i = 0; i < aliases.length; i++)
             aliases[i] = `<mr>${aliases[i]}</mr>`
-        }
 
-        get("comando_aliases").innerHTML = `Aliases : ${aliases.join(" ")}`
+        get("comando_aliases").innerHTML = `Aliases: ${aliases.join(" ")}`
 
         let usos = comando_alvo.usos.split(",")
 
@@ -730,9 +698,6 @@ function infos_comandos(comando) {
             usos[i] = `<mr>${aliases[0].replace("<mr>", "").replace("</mr>", "")}${uso}</mr> - ${descricao}`
         }
 
-        get("comando_usos").innerHTML = `Usos :<br> ${usos.join("<br>")}`
-
-        if (idioma === "en")
-            get("comando_usos").innerHTML = `Uses :<br> ${usos.join("<br>")}`
+        get("comando_usos").innerHTML = `${translations["comando.usos"]}:<br> ${usos.join("<br>")}`
     }
 }

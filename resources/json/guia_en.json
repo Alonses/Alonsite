@@ -276,7 +276,7 @@
             "lock": {
                 "comando": "Lock & unlock Channel",
                 "emoji": "🔐",
-                "aliases": ".alock, .alk, .aunlk, .aunlock, .adestravar, .aliberar",
+                "aliases": "/chat lock, /chat unlock",
                 "usos": "|change permissions so @everyone can no longer speak on the channel",
                 "funcao": "Locks and unlocks the channel, to unlock the channel use <mr>.aunlk</mr> and the settings will be reset to the previous default"
             }

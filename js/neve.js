@@ -10,7 +10,7 @@ function Snowy() {
   var num = 100, tsc = 1, sp = 1;
   var sc = 1.3, t = 0, mv = 20, min = 1;
 
-  for (var i = 0; i < num; ++i) {
+  for (let i = 0; i < num; ++i) {
     snow = new Flake();
     snow.y = Math.random() * (h + 50);
     snow.x = Math.random() * w;
@@ -27,7 +27,7 @@ function Snowy() {
     $.fillStyle = 'hsla(242, 95%, 3%, 1)';
     $.fillRect(0, 0, w, h);
     $.fill();
-    for (var i = 0; i < arr.length; ++i) {
+    for (let i = 0; i < arr.length; ++i) {
       f = arr[i];
       f.t += .05;
       f.t = f.t >= Math.PI * 2 ? 0 : f.t;

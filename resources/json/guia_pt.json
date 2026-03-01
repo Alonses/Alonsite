@@ -330,7 +330,7 @@
             "lock": {
                 "comando": "Travar & destravar canal",
                 "emoji": "🔐",
-                "aliases": ".alock, .alk, .aunlk, .aunlock, .adestravar, .aliberar",
+                "aliases": "/chat bloquear, /chat desbloquear",
                 "usos": "|altera as permissões para o @everyone não poder mais falar no canal",
                 "funcao": "Trava e destrava o canal, para destravar o canal use <mr>.aunlk</mr> e as configurações serão repostas ao padrão anterior"
             }
@@ -369,7 +369,7 @@
             },
             "git": {
                 "comando": "Github do Alonsal",
-                "emoji": "🐱‍👤",
+                "emoji": "🐱",
                 "aliases": "/git",
                 "usos": "|retorna um link para o github do Alonsal",
                 "funcao": "O repositório do Alonsal"

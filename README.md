@@ -1,7 +1,6 @@
 ﻿# 👽 Site do Alonsal
 
-O Site está em constante atualização para trazer as novidades mais recentes disponíveis online de modo prático aos usuários.<br>
-Clique aqui para [ver o site](https://alonsal.discloud.app)!
+O Site está em constante atualização para trazer as novidades mais recentes disponíveis online de modo prático aos usuários.
 
 <h1>🔣 Traduções</h1>
 O site também possui suporte para o inglês através de apenas um botão.
